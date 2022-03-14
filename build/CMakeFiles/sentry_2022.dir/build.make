@@ -106,6 +106,7 @@ sentry_2022_EXTERNAL_OBJECTS = \
 ../bin/sentry_2022: /usr/lib/x86_64-linux-gnu/liblapack.so
 ../bin/sentry_2022: /usr/lib/x86_64-linux-gnu/libblas.so
 ../bin/sentry_2022: /usr/local/lib/libfmt.a
+../bin/sentry_2022: /usr/local/lib/libfmt.a
 ../bin/sentry_2022: /opt/intel/openvino_2021/opencv/lib/libopencv_gapi.so.4.5.3
 ../bin/sentry_2022: /opt/intel/openvino_2021/opencv/lib/libopencv_highgui.so.4.5.3
 ../bin/sentry_2022: /opt/intel/openvino_2021/opencv/lib/libopencv_ml.so.4.5.3

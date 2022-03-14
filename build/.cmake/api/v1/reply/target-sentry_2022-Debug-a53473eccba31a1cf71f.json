@@ -38,6 +38,12 @@
 			{
 				"command" : 1,
 				"file" : 0,
+				"line" : 42,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
 				"line" : 32,
 				"parent" : 0
 			},
@@ -57,6 +63,12 @@
 				"command" : 2,
 				"file" : 0,
 				"line" : 35,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 40,
 				"parent" : 0
 			},
 			{
@@ -92,30 +104,34 @@
 			"defines" : 
 			[
 				{
-					"backtrace" : 3,
+					"backtrace" : 4,
 					"define" : "GFLAGS_IS_A_DLL=0"
 				}
 			],
 			"includes" : 
 			[
 				{
-					"backtrace" : 4,
+					"backtrace" : 5,
 					"path" : "/home/nuc/Desktop/sentry_2022"
 				},
 				{
-					"backtrace" : 4,
+					"backtrace" : 5,
 					"path" : "/home/nuc/Desktop/sentry_2022/build"
 				},
 				{
-					"backtrace" : 5,
+					"backtrace" : 6,
 					"path" : "/home/nuc/Desktop/sentry_2022/autoaim"
 				},
 				{
-					"backtrace" : 6,
+					"backtrace" : 7,
 					"path" : "/home/nuc/Desktop/sentry_2022/devices"
 				},
 				{
-					"backtrace" : 7,
+					"backtrace" : 8,
+					"path" : "/home/nuc/Desktop/sentry_2022/utils"
+				},
+				{
+					"backtrace" : 9,
 					"isSystem" : true,
 					"path" : "/opt/intel/openvino_2021.4.752/opencv/include"
 				},
@@ -130,7 +146,7 @@
 					"path" : "/opt/intel/openvino_2021/deployment_tools/ngraph/include"
 				},
 				{
-					"backtrace" : 3,
+					"backtrace" : 4,
 					"isSystem" : true,
 					"path" : "/usr/include/eigen3"
 				}
@@ -149,6 +165,10 @@
 		},
 		{
 			"id" : "devices::@0b66dd025354e08ea917"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "utils::@c810615cce0f7acb82dc"
 		}
 	],
 	"id" : "sentry_2022::@6890427a1f51a3e7e1df",
@@ -230,6 +250,10 @@
 			},
 			{
 				"fragment" : "/usr/lib/x86_64-linux-gnu/libblas.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/local/lib/libfmt.a",
 				"role" : "libraries"
 			},
 			{
@@ -383,37 +407,37 @@
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 3,
+			"backtrace" : 4,
 			"isGenerated" : true,
 			"path" : "build/autoaim/CMakeFiles/autoaim.dir/autoaim.cpp.o",
 			"sourceGroupIndex" : 2
 		},
 		{
-			"backtrace" : 3,
+			"backtrace" : 4,
 			"isGenerated" : true,
 			"path" : "build/autoaim/CMakeFiles/autoaim.dir/detector/nanodet_openvino.cpp.o",
 			"sourceGroupIndex" : 2
 		},
 		{
-			"backtrace" : 3,
+			"backtrace" : 4,
 			"isGenerated" : true,
 			"path" : "build/autoaim/CMakeFiles/autoaim.dir/predictor/PredictorAdaptiveEKF.cpp.o",
 			"sourceGroupIndex" : 2
 		},
 		{
-			"backtrace" : 3,
+			"backtrace" : 4,
 			"isGenerated" : true,
 			"path" : "build/autoaim/CMakeFiles/autoaim.dir/predictor/PredictorKalman.cpp.o",
 			"sourceGroupIndex" : 2
 		},
 		{
-			"backtrace" : 8,
+			"backtrace" : 10,
 			"isGenerated" : true,
 			"path" : "build/devices/CMakeFiles/devices.dir/camera/mv_video_capture.cpp.o",
 			"sourceGroupIndex" : 2
 		},
 		{
-			"backtrace" : 8,
+			"backtrace" : 10,
 			"isGenerated" : true,
 			"path" : "build/devices/CMakeFiles/devices.dir/serial/uart_serial.cpp.o",
 			"sourceGroupIndex" : 2

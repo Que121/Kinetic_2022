@@ -7,3 +7,6 @@
 /home/nuc/Desktop/sentry_2022/build/devices/CMakeFiles/rebuild_cache.dir
 /home/nuc/Desktop/sentry_2022/build/devices/CMakeFiles/edit_cache.dir
 /home/nuc/Desktop/sentry_2022/build/devices/CMakeFiles/devices.dir
+/home/nuc/Desktop/sentry_2022/build/utils/CMakeFiles/rebuild_cache.dir
+/home/nuc/Desktop/sentry_2022/build/utils/CMakeFiles/edit_cache.dir
+/home/nuc/Desktop/sentry_2022/build/utils/CMakeFiles/utils.dir

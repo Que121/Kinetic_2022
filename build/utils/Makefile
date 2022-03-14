@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nuc/Desktop/sentry_2022/build/CMakeFiles /home/nuc/Desktop/sentry_2022/build/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	cd /home/nuc/Desktop/sentry_2022/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/nuc/Desktop/sentry_2022/build/CMakeFiles /home/nuc/Desktop/sentry_2022/build/utils/CMakeFiles/progress.marks
+	cd /home/nuc/Desktop/sentry_2022/build && $(MAKE) -f CMakeFiles/Makefile2 utils/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/nuc/Desktop/sentry_2022/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /home/nuc/Desktop/sentry_2022/build && $(MAKE) -f CMakeFiles/Makefile2 utils/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,97 +97,33 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/nuc/Desktop/sentry_2022/build && $(MAKE) -f CMakeFiles/Makefile2 utils/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/nuc/Desktop/sentry_2022/build && $(MAKE) -f CMakeFiles/Makefile2 utils/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/nuc/Desktop/sentry_2022/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named sentry_2022
+# Convenience name for target.
+utils/CMakeFiles/utils.dir/rule:
+	cd /home/nuc/Desktop/sentry_2022/build && $(MAKE) -f CMakeFiles/Makefile2 utils/CMakeFiles/utils.dir/rule
+.PHONY : utils/CMakeFiles/utils.dir/rule
 
-# Build rule for target.
-sentry_2022: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 sentry_2022
-.PHONY : sentry_2022
+# Convenience name for target.
+utils: utils/CMakeFiles/utils.dir/rule
 
-# fast build rule for target.
-sentry_2022/fast:
-	$(MAKE) -f CMakeFiles/sentry_2022.dir/build.make CMakeFiles/sentry_2022.dir/build
-.PHONY : sentry_2022/fast
-
-#=============================================================================
-# Target rules for targets named autoaim
-
-# Build rule for target.
-autoaim: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 autoaim
-.PHONY : autoaim
-
-# fast build rule for target.
-autoaim/fast:
-	$(MAKE) -f autoaim/CMakeFiles/autoaim.dir/build.make autoaim/CMakeFiles/autoaim.dir/build
-.PHONY : autoaim/fast
-
-#=============================================================================
-# Target rules for targets named devices
-
-# Build rule for target.
-devices: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 devices
-.PHONY : devices
-
-# fast build rule for target.
-devices/fast:
-	$(MAKE) -f devices/CMakeFiles/devices.dir/build.make devices/CMakeFiles/devices.dir/build
-.PHONY : devices/fast
-
-#=============================================================================
-# Target rules for targets named utils
-
-# Build rule for target.
-utils: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 utils
 .PHONY : utils
 
 # fast build rule for target.
 utils/fast:
-	$(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/build
+	cd /home/nuc/Desktop/sentry_2022/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/build
 .PHONY : utils/fast
-
-main.o: main.cpp.o
-
-.PHONY : main.o
-
-# target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/sentry_2022.dir/build.make CMakeFiles/sentry_2022.dir/main.cpp.o
-.PHONY : main.cpp.o
-
-main.i: main.cpp.i
-
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/sentry_2022.dir/build.make CMakeFiles/sentry_2022.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/sentry_2022.dir/build.make CMakeFiles/sentry_2022.dir/main.cpp.s
-.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -197,13 +133,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... sentry_2022"
-	@echo "... autoaim"
-	@echo "... devices"
 	@echo "... utils"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
 .PHONY : help
 
 
@@ -215,6 +145,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/nuc/Desktop/sentry_2022/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

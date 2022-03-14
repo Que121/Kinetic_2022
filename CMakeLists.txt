@@ -36,6 +36,14 @@ include_directories(devices)
 add_subdirectory(devices)
 target_link_libraries(sentry_2022 devices)
 
+# fps显示和相机重启
+include_directories(utils)
+add_subdirectory(utils)
+target_link_libraries(sentry_2022 utils)
+
+
+
+
 
 
 

@@ -10,7 +10,7 @@
 #include "detector/nanodet_openvino.hpp"
 
 // 哨兵自瞄启动
-int sentryAutoaim(NanoDet &detector);
+int sentryAutoaim(NanoDet &detector,cv::Mat image);
 
 struct object_rect {
     int x;

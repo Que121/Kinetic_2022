@@ -9,10 +9,21 @@ int main(int argc, char** argv)
   uart::SerialPort serial_ = uart::SerialPort(
     fmt::format("{}{}", CONFIG_FILE_PATH, "/serial/uart_serial_config.xml"));
 
+  basic_pnp::PnP pnp_ = basic_pnp::PnP(
+  fmt::format("{}{}", CONFIG_FILE_PATH, "/camera/mv_camera_config_407.xml"), fmt::format("{}{}", CONFIG_FILE_PATH, "/angle_solve/basic_pnp_config.xml"));
+
   cv::VideoCapture cap_ = cv::VideoCapture(0);
+
+   // 喂入模型
+  auto detector = NanoDet("nanodet.xml");
+
+    // 喂入成功 
+  std::cout<<"success"<<std::endl;
+
   
   while (true) {
     global_fps_.getTick();
+
     if (mv_capture_->isindustryimgInput()) {
       src_img_ = mv_capture_->image();
     } else {
@@ -21,16 +32,12 @@ int main(int argc, char** argv)
     if (!src_img_.empty()) {
       serial_.updateReceiveInformation();
 
+    // 哨兵自瞄函数
+    sentryAutoaim(detector,src_img_);
 
-    // 喂入模型
-    auto detector = NanoDet("nanodet.xml");
+    };
+  }
 
-    // 喂入成功
-    std::cout<<"success"<<std::endl;
-
-    // const char* path = ../..mp4;
-    sentryAutoaim(detector);
-    
 }
 
 

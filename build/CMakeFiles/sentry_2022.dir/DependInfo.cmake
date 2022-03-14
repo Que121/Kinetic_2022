@@ -19,6 +19,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "."
   "../autoaim"
   "../devices"
+  "../utils"
   "/opt/intel/openvino_2021.4.752/opencv/include"
   "/opt/intel/openvino_2021/deployment_tools/inference_engine/include"
   "/opt/intel/openvino_2021/deployment_tools/ngraph/include"

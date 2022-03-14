@@ -1,0 +1,37 @@
+[
+{
+  "directory": "/home/nuc/Desktop/sentry_2022/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9  -DGFLAGS_IS_A_DLL=0 -I/home/nuc/Desktop/sentry_2022 -I/home/nuc/Desktop/sentry_2022/build -I/home/nuc/Desktop/sentry_2022/autoaim -I/home/nuc/Desktop/sentry_2022/devices -isystem /opt/intel/openvino_2021.4.752/opencv/include -isystem /opt/intel/openvino_2021/deployment_tools/inference_engine/include -isystem /opt/intel/openvino_2021/deployment_tools/ngraph/include -isystem /usr/include/eigen3  -g   -Wno-error=deprecated-declarations -std=gnu++14 -o CMakeFiles/sentry_2022.dir/main.cpp.o -c /home/nuc/Desktop/sentry_2022/main.cpp",
+  "file": "/home/nuc/Desktop/sentry_2022/main.cpp"
+},
+{
+  "directory": "/home/nuc/Desktop/sentry_2022/build/autoaim",
+  "command": "/bin/x86_64-linux-gnu-g++-9  -DGFLAGS_IS_A_DLL=0 -I/home/nuc/Desktop/sentry_2022 -I/home/nuc/Desktop/sentry_2022/build -I/home/nuc/Desktop/sentry_2022/autoaim -I/home/nuc/Desktop/sentry_2022/build/autoaim -isystem /opt/intel/openvino_2021.4.752/opencv/include -isystem /usr/include/eigen3 -isystem /opt/intel/openvino_2021/deployment_tools/inference_engine/include -isystem /opt/intel/openvino_2021/deployment_tools/ngraph/include  -g   -Wno-error=deprecated-declarations -std=gnu++14 -o CMakeFiles/autoaim.dir/autoaim.cpp.o -c /home/nuc/Desktop/sentry_2022/autoaim/autoaim.cpp",
+  "file": "/home/nuc/Desktop/sentry_2022/autoaim/autoaim.cpp"
+},
+{
+  "directory": "/home/nuc/Desktop/sentry_2022/build/autoaim",
+  "command": "/bin/x86_64-linux-gnu-g++-9  -DGFLAGS_IS_A_DLL=0 -I/home/nuc/Desktop/sentry_2022 -I/home/nuc/Desktop/sentry_2022/build -I/home/nuc/Desktop/sentry_2022/autoaim -I/home/nuc/Desktop/sentry_2022/build/autoaim -isystem /opt/intel/openvino_2021.4.752/opencv/include -isystem /usr/include/eigen3 -isystem /opt/intel/openvino_2021/deployment_tools/inference_engine/include -isystem /opt/intel/openvino_2021/deployment_tools/ngraph/include  -g   -Wno-error=deprecated-declarations -std=gnu++14 -o CMakeFiles/autoaim.dir/detector/nanodet_openvino.cpp.o -c /home/nuc/Desktop/sentry_2022/autoaim/detector/nanodet_openvino.cpp",
+  "file": "/home/nuc/Desktop/sentry_2022/autoaim/detector/nanodet_openvino.cpp"
+},
+{
+  "directory": "/home/nuc/Desktop/sentry_2022/build/autoaim",
+  "command": "/bin/x86_64-linux-gnu-g++-9  -DGFLAGS_IS_A_DLL=0 -I/home/nuc/Desktop/sentry_2022 -I/home/nuc/Desktop/sentry_2022/build -I/home/nuc/Desktop/sentry_2022/autoaim -I/home/nuc/Desktop/sentry_2022/build/autoaim -isystem /opt/intel/openvino_2021.4.752/opencv/include -isystem /usr/include/eigen3 -isystem /opt/intel/openvino_2021/deployment_tools/inference_engine/include -isystem /opt/intel/openvino_2021/deployment_tools/ngraph/include  -g   -Wno-error=deprecated-declarations -std=gnu++14 -o CMakeFiles/autoaim.dir/predictor/PredictorAdaptiveEKF.cpp.o -c /home/nuc/Desktop/sentry_2022/autoaim/predictor/PredictorAdaptiveEKF.cpp",
+  "file": "/home/nuc/Desktop/sentry_2022/autoaim/predictor/PredictorAdaptiveEKF.cpp"
+},
+{
+  "directory": "/home/nuc/Desktop/sentry_2022/build/autoaim",
+  "command": "/bin/x86_64-linux-gnu-g++-9  -DGFLAGS_IS_A_DLL=0 -I/home/nuc/Desktop/sentry_2022 -I/home/nuc/Desktop/sentry_2022/build -I/home/nuc/Desktop/sentry_2022/autoaim -I/home/nuc/Desktop/sentry_2022/build/autoaim -isystem /opt/intel/openvino_2021.4.752/opencv/include -isystem /usr/include/eigen3 -isystem /opt/intel/openvino_2021/deployment_tools/inference_engine/include -isystem /opt/intel/openvino_2021/deployment_tools/ngraph/include  -g   -Wno-error=deprecated-declarations -std=gnu++14 -o CMakeFiles/autoaim.dir/predictor/PredictorKalman.cpp.o -c /home/nuc/Desktop/sentry_2022/autoaim/predictor/PredictorKalman.cpp",
+  "file": "/home/nuc/Desktop/sentry_2022/autoaim/predictor/PredictorKalman.cpp"
+},
+{
+  "directory": "/home/nuc/Desktop/sentry_2022/build/devices",
+  "command": "/bin/x86_64-linux-gnu-g++-9   -I/home/nuc/Desktop/sentry_2022 -I/home/nuc/Desktop/sentry_2022/build -I/home/nuc/Desktop/sentry_2022/autoaim -I/home/nuc/Desktop/sentry_2022/devices -isystem /opt/intel/openvino_2021.4.752/opencv/include  -g   -std=gnu++14 -o CMakeFiles/devices.dir/camera/mv_video_capture.cpp.o -c /home/nuc/Desktop/sentry_2022/devices/camera/mv_video_capture.cpp",
+  "file": "/home/nuc/Desktop/sentry_2022/devices/camera/mv_video_capture.cpp"
+},
+{
+  "directory": "/home/nuc/Desktop/sentry_2022/build/devices",
+  "command": "/bin/x86_64-linux-gnu-g++-9   -I/home/nuc/Desktop/sentry_2022 -I/home/nuc/Desktop/sentry_2022/build -I/home/nuc/Desktop/sentry_2022/autoaim -I/home/nuc/Desktop/sentry_2022/devices -isystem /opt/intel/openvino_2021.4.752/opencv/include  -g   -std=gnu++14 -o CMakeFiles/devices.dir/serial/uart_serial.cpp.o -c /home/nuc/Desktop/sentry_2022/devices/serial/uart_serial.cpp",
+  "file": "/home/nuc/Desktop/sentry_2022/devices/serial/uart_serial.cpp"
+}
+]

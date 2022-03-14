@@ -1,0 +1,9 @@
+/home/nuc/Desktop/sentry_2022/build/CMakeFiles/rebuild_cache.dir
+/home/nuc/Desktop/sentry_2022/build/CMakeFiles/edit_cache.dir
+/home/nuc/Desktop/sentry_2022/build/CMakeFiles/sentry_2022.dir
+/home/nuc/Desktop/sentry_2022/build/autoaim/CMakeFiles/edit_cache.dir
+/home/nuc/Desktop/sentry_2022/build/autoaim/CMakeFiles/rebuild_cache.dir
+/home/nuc/Desktop/sentry_2022/build/autoaim/CMakeFiles/autoaim.dir
+/home/nuc/Desktop/sentry_2022/build/devices/CMakeFiles/rebuild_cache.dir
+/home/nuc/Desktop/sentry_2022/build/devices/CMakeFiles/edit_cache.dir
+/home/nuc/Desktop/sentry_2022/build/devices/CMakeFiles/devices.dir

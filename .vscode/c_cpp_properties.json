@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/devices/camera/**",
+                "${workspaceFolder}/devices/serial/**",
+                "${workspaceFolder}/module/angle_solve/**",
+                "${workspaceFolder}/module/armor/**",
+                "${workspaceFolder}/module/buff/**",
+                "${workspaceFolder}/module/filter/**",
+                "${workspaceFolder}/utils/**",
+                "${workspaceFolder}"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/g++",
+            "cStandard": "c17",
+            "cppStandard": "c++20",
+            "intelliSenseMode": "${default}",
+            "configurationProvider": "ms-vscode.cmake-tools"
+        }
+    ],
+    "version": 4
+}

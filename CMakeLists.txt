@@ -21,13 +21,20 @@ include_directories(
     ${CMAKE_CURRENT_BINARY_DIR}
 )
 
+# Find and add fmt & Threads as required
+find_package(fmt REQUIRED)
+find_package(Threads REQUIRED)
 
+# Add main.cpp to executable
 add_executable(sentry_2022 main.cpp)
-target_link_libraries(
-  sentry_2022 
+
+target_link_libraries(sentry_2022
+  Threads::Threads
+  fmt::fmt
   ${OpenCV_LIBS}
   ${InferenceEngine_LIBRARIES} 
   ${NGRAPH_LIBRARIES}
+  # ${EXTRA_LIBS}
   )
 
 # 自瞄
@@ -49,8 +56,6 @@ target_link_libraries(sentry_2022 utils)
 include_directories(module)
 add_subdirectory(module)
 target_link_libraries(sentry_2022 module)
-
-
 
 # Set built binary to ~/bin
 set (EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)

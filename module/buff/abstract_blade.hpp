@@ -1,5 +1,12 @@
-
-// @author WCJ (1767851382@qq.com)
+/**
+ * @file abstract_blade.hpp
+ * @author WCJ (1767851382@qq.com)
+ * @brief 扇叶目标类
+ * @date 2021-08-24
+ * 
+ * @copyright Copyright (c) 2021 GUCROBOT_WOLF
+ * 
+ */
 
 #pragma once
 

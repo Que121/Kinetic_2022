@@ -1,0 +1,15 @@
+/home/nuc/Desktop/sentry_2022/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/nuc/Desktop/sentry_2022/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/nuc/Desktop/sentry_2022/cmake-build-debug/CMakeFiles/sentry_2022.dir
+/home/nuc/Desktop/sentry_2022/cmake-build-debug/autoaim/CMakeFiles/rebuild_cache.dir
+/home/nuc/Desktop/sentry_2022/cmake-build-debug/autoaim/CMakeFiles/edit_cache.dir
+/home/nuc/Desktop/sentry_2022/cmake-build-debug/autoaim/CMakeFiles/autoaim.dir
+/home/nuc/Desktop/sentry_2022/cmake-build-debug/devices/CMakeFiles/edit_cache.dir
+/home/nuc/Desktop/sentry_2022/cmake-build-debug/devices/CMakeFiles/rebuild_cache.dir
+/home/nuc/Desktop/sentry_2022/cmake-build-debug/devices/CMakeFiles/devices.dir
+/home/nuc/Desktop/sentry_2022/cmake-build-debug/utils/CMakeFiles/edit_cache.dir
+/home/nuc/Desktop/sentry_2022/cmake-build-debug/utils/CMakeFiles/rebuild_cache.dir
+/home/nuc/Desktop/sentry_2022/cmake-build-debug/utils/CMakeFiles/utils.dir
+/home/nuc/Desktop/sentry_2022/cmake-build-debug/module/CMakeFiles/rebuild_cache.dir
+/home/nuc/Desktop/sentry_2022/cmake-build-debug/module/CMakeFiles/edit_cache.dir
+/home/nuc/Desktop/sentry_2022/cmake-build-debug/module/CMakeFiles/module.dir

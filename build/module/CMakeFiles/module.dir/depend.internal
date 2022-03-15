@@ -167,7 +167,6 @@ module/CMakeFiles/module.dir/buff/basic_buff.cpp.o
  ../module/roi/abstract_roi.hpp
  ../module/roi/basic_roi.hpp
  ../utils/fps.hpp
- /home/nuc/Desktop/sentry_2022/module/buff/abstract_blade.hpp
  /home/nuc/Desktop/sentry_2022/module/buff/abstract_center_r.hpp
  /home/nuc/Desktop/sentry_2022/module/buff/abstract_object.hpp
  /home/nuc/Desktop/sentry_2022/module/buff/abstract_target.hpp

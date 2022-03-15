@@ -14,4 +14,5 @@
 #include "devices/camera/mv_video_capture.hpp"
 #include "devices/serial/uart_serial.hpp"
 #include "utils/fps.hpp"
+#include "angle_solve/basic_pnp.hpp"
 

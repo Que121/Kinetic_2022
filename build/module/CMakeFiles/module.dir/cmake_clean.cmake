@@ -6,6 +6,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/module.dir/filter/basic_kalman.cpp.o"
   "CMakeFiles/module.dir/record/record.cpp.o"
   "CMakeFiles/module.dir/roi/basic_roi.cpp.o"
+  "libmodule.pdb"
+  "libmodule.so"
 )
 
 # Per-language clean rules from dependency scanning.

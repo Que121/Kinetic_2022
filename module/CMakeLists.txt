@@ -20,7 +20,7 @@ aux_source_directory(record record_src)
 aux_source_directory(roi roi_src)
 
 add_library(
-  module OBJECT
+  module SHARED
   ${angle_src}
   ${armor_src} 
   ${buff_src} 
@@ -28,6 +28,5 @@ add_library(
   ${record_src}
   ${roi_src}
   )
-
 
 target_link_libraries(module ${OpenCV_LIBS} fmt::fmt) 

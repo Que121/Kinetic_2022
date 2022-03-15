@@ -74,6 +74,12 @@
 			{
 				"command" : 2,
 				"file" : 0,
+				"line" : 49,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
 				"line" : 12,
 				"parent" : 0
 			},
@@ -81,6 +87,12 @@
 				"command" : 1,
 				"file" : 0,
 				"line" : 41,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 51,
 				"parent" : 0
 			}
 		]
@@ -132,6 +144,10 @@
 				},
 				{
 					"backtrace" : 9,
+					"path" : "/home/nuc/Desktop/sentry_2022/module"
+				},
+				{
+					"backtrace" : 10,
 					"isSystem" : true,
 					"path" : "/opt/intel/openvino_2021.4.752/opencv/include"
 				},
@@ -169,6 +185,9 @@
 		{
 			"backtrace" : 3,
 			"id" : "utils::@c810615cce0f7acb82dc"
+		},
+		{
+			"id" : "module::@938c084cc1e01fd7b9cd"
 		}
 	],
 	"id" : "sentry_2022::@6890427a1f51a3e7e1df",
@@ -250,6 +269,10 @@
 			},
 			{
 				"fragment" : "/usr/lib/x86_64-linux-gnu/libblas.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/local/lib/libfmt.a",
 				"role" : "libraries"
 			},
 			{
@@ -382,7 +405,14 @@
 				3,
 				4,
 				5,
-				6
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13
 			]
 		}
 	],
@@ -419,15 +449,57 @@
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 10,
+			"backtrace" : 11,
 			"isGenerated" : true,
 			"path" : "build/devices/CMakeFiles/devices.dir/camera/mv_video_capture.cpp.o",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 10,
+			"backtrace" : 11,
 			"isGenerated" : true,
 			"path" : "build/devices/CMakeFiles/devices.dir/serial/uart_serial.cpp.o",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"isGenerated" : true,
+			"path" : "build/module/CMakeFiles/module.dir/angle_solve/basic_pnp.cpp.o",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"isGenerated" : true,
+			"path" : "build/module/CMakeFiles/module.dir/armor/basic_armor.cpp.o",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"isGenerated" : true,
+			"path" : "build/module/CMakeFiles/module.dir/armor/fan_armor.cpp.o",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"isGenerated" : true,
+			"path" : "build/module/CMakeFiles/module.dir/buff/basic_buff.cpp.o",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"isGenerated" : true,
+			"path" : "build/module/CMakeFiles/module.dir/filter/basic_kalman.cpp.o",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"isGenerated" : true,
+			"path" : "build/module/CMakeFiles/module.dir/record/record.cpp.o",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"isGenerated" : true,
+			"path" : "build/module/CMakeFiles/module.dir/roi/basic_roi.cpp.o",
 			"sourceGroupIndex" : 1
 		}
 	],

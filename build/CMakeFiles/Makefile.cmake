@@ -13,6 +13,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.16.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.16.3/CMakeSystem.cmake"
   "../devices/CMakeLists.txt"
+  "../module/CMakeLists.txt"
   "../utils/CMakeLists.txt"
   "/opt/intel/openvino_2021/deployment_tools/inference_engine/external/tbb/cmake/TBBConfig.cmake"
   "/opt/intel/openvino_2021/deployment_tools/inference_engine/external/tbb/cmake/TBBConfigVersion.cmake"
@@ -93,6 +94,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "autoaim/CMakeFiles/CMakeDirectoryInformation.cmake"
   "devices/CMakeFiles/CMakeDirectoryInformation.cmake"
   "utils/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "module/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -101,4 +103,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "autoaim/CMakeFiles/autoaim.dir/DependInfo.cmake"
   "devices/CMakeFiles/devices.dir/DependInfo.cmake"
   "utils/CMakeFiles/utils.dir/DependInfo.cmake"
+  "module/CMakeFiles/module.dir/DependInfo.cmake"
   )

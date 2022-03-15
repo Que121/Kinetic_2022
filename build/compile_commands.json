@@ -1,7 +1,7 @@
 [
 {
   "directory": "/home/nuc/Desktop/sentry_2022/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9  -DGFLAGS_IS_A_DLL=0 -I/home/nuc/Desktop/sentry_2022 -I/home/nuc/Desktop/sentry_2022/build -I/home/nuc/Desktop/sentry_2022/autoaim -I/home/nuc/Desktop/sentry_2022/devices -I/home/nuc/Desktop/sentry_2022/utils -isystem /opt/intel/openvino_2021.4.752/opencv/include -isystem /opt/intel/openvino_2021/deployment_tools/inference_engine/include -isystem /opt/intel/openvino_2021/deployment_tools/ngraph/include -isystem /usr/include/eigen3  -g   -Wno-error=deprecated-declarations -std=gnu++14 -o CMakeFiles/sentry_2022.dir/main.cpp.o -c /home/nuc/Desktop/sentry_2022/main.cpp",
+  "command": "/bin/x86_64-linux-gnu-g++-9  -DGFLAGS_IS_A_DLL=0 -I/home/nuc/Desktop/sentry_2022 -I/home/nuc/Desktop/sentry_2022/build -I/home/nuc/Desktop/sentry_2022/autoaim -I/home/nuc/Desktop/sentry_2022/devices -I/home/nuc/Desktop/sentry_2022/utils -I/home/nuc/Desktop/sentry_2022/module -isystem /opt/intel/openvino_2021.4.752/opencv/include -isystem /opt/intel/openvino_2021/deployment_tools/inference_engine/include -isystem /opt/intel/openvino_2021/deployment_tools/ngraph/include -isystem /usr/include/eigen3  -g   -Wno-error=deprecated-declarations -std=gnu++14 -o CMakeFiles/sentry_2022.dir/main.cpp.o -c /home/nuc/Desktop/sentry_2022/main.cpp",
   "file": "/home/nuc/Desktop/sentry_2022/main.cpp"
 },
 {
@@ -33,5 +33,40 @@
   "directory": "/home/nuc/Desktop/sentry_2022/build/devices",
   "command": "/bin/x86_64-linux-gnu-g++-9   -I/home/nuc/Desktop/sentry_2022 -I/home/nuc/Desktop/sentry_2022/build -I/home/nuc/Desktop/sentry_2022/autoaim -I/home/nuc/Desktop/sentry_2022/devices -isystem /opt/intel/openvino_2021.4.752/opencv/include  -g   -std=gnu++14 -o CMakeFiles/devices.dir/serial/uart_serial.cpp.o -c /home/nuc/Desktop/sentry_2022/devices/serial/uart_serial.cpp",
   "file": "/home/nuc/Desktop/sentry_2022/devices/serial/uart_serial.cpp"
+},
+{
+  "directory": "/home/nuc/Desktop/sentry_2022/build/module",
+  "command": "/bin/x86_64-linux-gnu-g++-9   -I/home/nuc/Desktop/sentry_2022 -I/home/nuc/Desktop/sentry_2022/build -I/home/nuc/Desktop/sentry_2022/autoaim -I/home/nuc/Desktop/sentry_2022/devices -I/home/nuc/Desktop/sentry_2022/utils -I/home/nuc/Desktop/sentry_2022/module -isystem /opt/intel/openvino_2021.4.752/opencv/include  -g   -std=gnu++14 -o CMakeFiles/module.dir/angle_solve/basic_pnp.cpp.o -c /home/nuc/Desktop/sentry_2022/module/angle_solve/basic_pnp.cpp",
+  "file": "/home/nuc/Desktop/sentry_2022/module/angle_solve/basic_pnp.cpp"
+},
+{
+  "directory": "/home/nuc/Desktop/sentry_2022/build/module",
+  "command": "/bin/x86_64-linux-gnu-g++-9   -I/home/nuc/Desktop/sentry_2022 -I/home/nuc/Desktop/sentry_2022/build -I/home/nuc/Desktop/sentry_2022/autoaim -I/home/nuc/Desktop/sentry_2022/devices -I/home/nuc/Desktop/sentry_2022/utils -I/home/nuc/Desktop/sentry_2022/module -isystem /opt/intel/openvino_2021.4.752/opencv/include  -g   -std=gnu++14 -o CMakeFiles/module.dir/armor/basic_armor.cpp.o -c /home/nuc/Desktop/sentry_2022/module/armor/basic_armor.cpp",
+  "file": "/home/nuc/Desktop/sentry_2022/module/armor/basic_armor.cpp"
+},
+{
+  "directory": "/home/nuc/Desktop/sentry_2022/build/module",
+  "command": "/bin/x86_64-linux-gnu-g++-9   -I/home/nuc/Desktop/sentry_2022 -I/home/nuc/Desktop/sentry_2022/build -I/home/nuc/Desktop/sentry_2022/autoaim -I/home/nuc/Desktop/sentry_2022/devices -I/home/nuc/Desktop/sentry_2022/utils -I/home/nuc/Desktop/sentry_2022/module -isystem /opt/intel/openvino_2021.4.752/opencv/include  -g   -std=gnu++14 -o CMakeFiles/module.dir/armor/fan_armor.cpp.o -c /home/nuc/Desktop/sentry_2022/module/armor/fan_armor.cpp",
+  "file": "/home/nuc/Desktop/sentry_2022/module/armor/fan_armor.cpp"
+},
+{
+  "directory": "/home/nuc/Desktop/sentry_2022/build/module",
+  "command": "/bin/x86_64-linux-gnu-g++-9   -I/home/nuc/Desktop/sentry_2022 -I/home/nuc/Desktop/sentry_2022/build -I/home/nuc/Desktop/sentry_2022/autoaim -I/home/nuc/Desktop/sentry_2022/devices -I/home/nuc/Desktop/sentry_2022/utils -I/home/nuc/Desktop/sentry_2022/module -isystem /opt/intel/openvino_2021.4.752/opencv/include  -g   -std=gnu++14 -o CMakeFiles/module.dir/buff/basic_buff.cpp.o -c /home/nuc/Desktop/sentry_2022/module/buff/basic_buff.cpp",
+  "file": "/home/nuc/Desktop/sentry_2022/module/buff/basic_buff.cpp"
+},
+{
+  "directory": "/home/nuc/Desktop/sentry_2022/build/module",
+  "command": "/bin/x86_64-linux-gnu-g++-9   -I/home/nuc/Desktop/sentry_2022 -I/home/nuc/Desktop/sentry_2022/build -I/home/nuc/Desktop/sentry_2022/autoaim -I/home/nuc/Desktop/sentry_2022/devices -I/home/nuc/Desktop/sentry_2022/utils -I/home/nuc/Desktop/sentry_2022/module -isystem /opt/intel/openvino_2021.4.752/opencv/include  -g   -std=gnu++14 -o CMakeFiles/module.dir/filter/basic_kalman.cpp.o -c /home/nuc/Desktop/sentry_2022/module/filter/basic_kalman.cpp",
+  "file": "/home/nuc/Desktop/sentry_2022/module/filter/basic_kalman.cpp"
+},
+{
+  "directory": "/home/nuc/Desktop/sentry_2022/build/module",
+  "command": "/bin/x86_64-linux-gnu-g++-9   -I/home/nuc/Desktop/sentry_2022 -I/home/nuc/Desktop/sentry_2022/build -I/home/nuc/Desktop/sentry_2022/autoaim -I/home/nuc/Desktop/sentry_2022/devices -I/home/nuc/Desktop/sentry_2022/utils -I/home/nuc/Desktop/sentry_2022/module -isystem /opt/intel/openvino_2021.4.752/opencv/include  -g   -std=gnu++14 -o CMakeFiles/module.dir/record/record.cpp.o -c /home/nuc/Desktop/sentry_2022/module/record/record.cpp",
+  "file": "/home/nuc/Desktop/sentry_2022/module/record/record.cpp"
+},
+{
+  "directory": "/home/nuc/Desktop/sentry_2022/build/module",
+  "command": "/bin/x86_64-linux-gnu-g++-9   -I/home/nuc/Desktop/sentry_2022 -I/home/nuc/Desktop/sentry_2022/build -I/home/nuc/Desktop/sentry_2022/autoaim -I/home/nuc/Desktop/sentry_2022/devices -I/home/nuc/Desktop/sentry_2022/utils -I/home/nuc/Desktop/sentry_2022/module -isystem /opt/intel/openvino_2021.4.752/opencv/include  -g   -std=gnu++14 -o CMakeFiles/module.dir/roi/basic_roi.cpp.o -c /home/nuc/Desktop/sentry_2022/module/roi/basic_roi.cpp",
+  "file": "/home/nuc/Desktop/sentry_2022/module/roi/basic_roi.cpp"
 }
 ]

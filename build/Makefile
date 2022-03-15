@@ -162,6 +162,19 @@ utils/fast:
 	$(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/build
 .PHONY : utils/fast
 
+#=============================================================================
+# Target rules for targets named module
+
+# Build rule for target.
+module: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 module
+.PHONY : module
+
+# fast build rule for target.
+module/fast:
+	$(MAKE) -f module/CMakeFiles/module.dir/build.make module/CMakeFiles/module.dir/build
+.PHONY : module/fast
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -201,6 +214,7 @@ help:
 	@echo "... autoaim"
 	@echo "... devices"
 	@echo "... utils"
+	@echo "... module"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

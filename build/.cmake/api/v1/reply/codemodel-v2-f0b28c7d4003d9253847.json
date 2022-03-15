@@ -10,7 +10,8 @@
 					[
 						1,
 						2,
-						3
+						3,
+						4
 					],
 					"minimumCMakeVersion" : 
 					{
@@ -20,7 +21,7 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						2
+						3
 					]
 				},
 				{
@@ -62,7 +63,21 @@
 					"source" : "utils",
 					"targetIndexes" : 
 					[
-						3
+						4
+					]
+				},
+				{
+					"build" : "module",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "module",
+					"targetIndexes" : 
+					[
+						2
 					]
 				}
 			],
@@ -75,7 +90,8 @@
 						0,
 						1,
 						2,
-						3
+						3,
+						4
 					],
 					"name" : "sentry_2022",
 					"targetIndexes" : 
@@ -83,7 +99,8 @@
 						0,
 						1,
 						2,
-						3
+						3,
+						4
 					]
 				}
 			],
@@ -104,9 +121,16 @@
 					"projectIndex" : 0
 				},
 				{
+					"directoryIndex" : 4,
+					"id" : "module::@938c084cc1e01fd7b9cd",
+					"jsonFile" : "target-module-Debug-8420c298d92981a12986.json",
+					"name" : "module",
+					"projectIndex" : 0
+				},
+				{
 					"directoryIndex" : 0,
 					"id" : "sentry_2022::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-sentry_2022-Debug-bdb1c0ddf0f232d8c0ee.json",
+					"jsonFile" : "target-sentry_2022-Debug-e6c39e29644f8afe356a.json",
 					"name" : "sentry_2022",
 					"projectIndex" : 0
 				},

@@ -81,7 +81,14 @@ sentry_2022_EXTERNAL_OBJECTS = \
 "/home/nuc/Desktop/sentry_2022/build/autoaim/CMakeFiles/autoaim.dir/predictor/PredictorAdaptiveEKF.cpp.o" \
 "/home/nuc/Desktop/sentry_2022/build/autoaim/CMakeFiles/autoaim.dir/predictor/PredictorKalman.cpp.o" \
 "/home/nuc/Desktop/sentry_2022/build/devices/CMakeFiles/devices.dir/camera/mv_video_capture.cpp.o" \
-"/home/nuc/Desktop/sentry_2022/build/devices/CMakeFiles/devices.dir/serial/uart_serial.cpp.o"
+"/home/nuc/Desktop/sentry_2022/build/devices/CMakeFiles/devices.dir/serial/uart_serial.cpp.o" \
+"/home/nuc/Desktop/sentry_2022/build/module/CMakeFiles/module.dir/angle_solve/basic_pnp.cpp.o" \
+"/home/nuc/Desktop/sentry_2022/build/module/CMakeFiles/module.dir/armor/basic_armor.cpp.o" \
+"/home/nuc/Desktop/sentry_2022/build/module/CMakeFiles/module.dir/armor/fan_armor.cpp.o" \
+"/home/nuc/Desktop/sentry_2022/build/module/CMakeFiles/module.dir/buff/basic_buff.cpp.o" \
+"/home/nuc/Desktop/sentry_2022/build/module/CMakeFiles/module.dir/filter/basic_kalman.cpp.o" \
+"/home/nuc/Desktop/sentry_2022/build/module/CMakeFiles/module.dir/record/record.cpp.o" \
+"/home/nuc/Desktop/sentry_2022/build/module/CMakeFiles/module.dir/roi/basic_roi.cpp.o"
 
 ../bin/sentry_2022: CMakeFiles/sentry_2022.dir/main.cpp.o
 ../bin/sentry_2022: autoaim/CMakeFiles/autoaim.dir/autoaim.cpp.o
@@ -90,6 +97,13 @@ sentry_2022_EXTERNAL_OBJECTS = \
 ../bin/sentry_2022: autoaim/CMakeFiles/autoaim.dir/predictor/PredictorKalman.cpp.o
 ../bin/sentry_2022: devices/CMakeFiles/devices.dir/camera/mv_video_capture.cpp.o
 ../bin/sentry_2022: devices/CMakeFiles/devices.dir/serial/uart_serial.cpp.o
+../bin/sentry_2022: module/CMakeFiles/module.dir/angle_solve/basic_pnp.cpp.o
+../bin/sentry_2022: module/CMakeFiles/module.dir/armor/basic_armor.cpp.o
+../bin/sentry_2022: module/CMakeFiles/module.dir/armor/fan_armor.cpp.o
+../bin/sentry_2022: module/CMakeFiles/module.dir/buff/basic_buff.cpp.o
+../bin/sentry_2022: module/CMakeFiles/module.dir/filter/basic_kalman.cpp.o
+../bin/sentry_2022: module/CMakeFiles/module.dir/record/record.cpp.o
+../bin/sentry_2022: module/CMakeFiles/module.dir/roi/basic_roi.cpp.o
 ../bin/sentry_2022: CMakeFiles/sentry_2022.dir/build.make
 ../bin/sentry_2022: /usr/local/lib/libceres.a
 ../bin/sentry_2022: /usr/lib/x86_64-linux-gnu/libglog.so
@@ -105,6 +119,7 @@ sentry_2022_EXTERNAL_OBJECTS = \
 ../bin/sentry_2022: /usr/lib/x86_64-linux-gnu/libcxsparse.so
 ../bin/sentry_2022: /usr/lib/x86_64-linux-gnu/liblapack.so
 ../bin/sentry_2022: /usr/lib/x86_64-linux-gnu/libblas.so
+../bin/sentry_2022: /usr/local/lib/libfmt.a
 ../bin/sentry_2022: /usr/local/lib/libfmt.a
 ../bin/sentry_2022: /usr/local/lib/libfmt.a
 ../bin/sentry_2022: /opt/intel/openvino_2021/opencv/lib/libopencv_gapi.so.4.5.3

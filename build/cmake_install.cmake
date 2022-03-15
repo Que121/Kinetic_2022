@@ -42,6 +42,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/nuc/Desktop/sentry_2022/build/autoaim/cmake_install.cmake")
   include("/home/nuc/Desktop/sentry_2022/build/devices/cmake_install.cmake")
   include("/home/nuc/Desktop/sentry_2022/build/utils/cmake_install.cmake")
+  include("/home/nuc/Desktop/sentry_2022/build/module/cmake_install.cmake")
 
 endif()
 

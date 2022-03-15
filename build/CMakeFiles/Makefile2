@@ -57,6 +57,7 @@ all: CMakeFiles/sentry_2022.dir/all
 all: autoaim/all
 all: devices/all
 all: utils/all
+all: module/all
 
 .PHONY : all
 
@@ -64,6 +65,7 @@ all: utils/all
 preinstall: autoaim/preinstall
 preinstall: devices/preinstall
 preinstall: utils/preinstall
+preinstall: module/preinstall
 
 .PHONY : preinstall
 
@@ -72,6 +74,7 @@ clean: CMakeFiles/sentry_2022.dir/clean
 clean: autoaim/clean
 clean: devices/clean
 clean: utils/clean
+clean: module/clean
 
 .PHONY : clean
 
@@ -112,6 +115,24 @@ devices/clean: devices/CMakeFiles/devices.dir/clean
 .PHONY : devices/clean
 
 #=============================================================================
+# Directory level rules for directory module
+
+# Recursive "all" directory target.
+module/all: module/CMakeFiles/module.dir/all
+
+.PHONY : module/all
+
+# Recursive "preinstall" directory target.
+module/preinstall:
+
+.PHONY : module/preinstall
+
+# Recursive "clean" directory target.
+module/clean: module/CMakeFiles/module.dir/clean
+
+.PHONY : module/clean
+
+#=============================================================================
 # Directory level rules for directory utils
 
 # Recursive "all" directory target.
@@ -136,14 +157,15 @@ utils/clean: utils/CMakeFiles/utils.dir/clean
 CMakeFiles/sentry_2022.dir/all: autoaim/CMakeFiles/autoaim.dir/all
 CMakeFiles/sentry_2022.dir/all: devices/CMakeFiles/devices.dir/all
 CMakeFiles/sentry_2022.dir/all: utils/CMakeFiles/utils.dir/all
+CMakeFiles/sentry_2022.dir/all: module/CMakeFiles/module.dir/all
 	$(MAKE) -f CMakeFiles/sentry_2022.dir/build.make CMakeFiles/sentry_2022.dir/depend
 	$(MAKE) -f CMakeFiles/sentry_2022.dir/build.make CMakeFiles/sentry_2022.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nuc/Desktop/sentry_2022/build/CMakeFiles --progress-num=7,8 "Built target sentry_2022"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nuc/Desktop/sentry_2022/build/CMakeFiles --progress-num=14,15 "Built target sentry_2022"
 .PHONY : CMakeFiles/sentry_2022.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/sentry_2022.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nuc/Desktop/sentry_2022/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nuc/Desktop/sentry_2022/build/CMakeFiles 15
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/sentry_2022.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/nuc/Desktop/sentry_2022/build/CMakeFiles 0
 .PHONY : CMakeFiles/sentry_2022.dir/rule
@@ -238,6 +260,33 @@ utils: utils/CMakeFiles/utils.dir/rule
 utils/CMakeFiles/utils.dir/clean:
 	$(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/clean
 .PHONY : utils/CMakeFiles/utils.dir/clean
+
+#=============================================================================
+# Target rules for target module/CMakeFiles/module.dir
+
+# All Build rule for target.
+module/CMakeFiles/module.dir/all:
+	$(MAKE) -f module/CMakeFiles/module.dir/build.make module/CMakeFiles/module.dir/depend
+	$(MAKE) -f module/CMakeFiles/module.dir/build.make module/CMakeFiles/module.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nuc/Desktop/sentry_2022/build/CMakeFiles --progress-num=7,8,9,10,11,12,13 "Built target module"
+.PHONY : module/CMakeFiles/module.dir/all
+
+# Build rule for subdir invocation for target.
+module/CMakeFiles/module.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nuc/Desktop/sentry_2022/build/CMakeFiles 7
+	$(MAKE) -f CMakeFiles/Makefile2 module/CMakeFiles/module.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nuc/Desktop/sentry_2022/build/CMakeFiles 0
+.PHONY : module/CMakeFiles/module.dir/rule
+
+# Convenience name for target.
+module: module/CMakeFiles/module.dir/rule
+
+.PHONY : module
+
+# clean rule for target.
+module/CMakeFiles/module.dir/clean:
+	$(MAKE) -f module/CMakeFiles/module.dir/build.make module/CMakeFiles/module.dir/clean
+.PHONY : module/CMakeFiles/module.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

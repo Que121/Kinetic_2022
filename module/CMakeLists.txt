@@ -8,10 +8,8 @@ include_directories(${OpenCV_INCLUDE_DIRS})
 
 # pnp解算
 aux_source_directory(angle_solve angle_src)
-# 装甲板检测（只使用能量机关部分）
+# 装甲板检测
 aux_source_directory(armor armor_src)
-# 能量机关检测
-aux_source_directory(buff buff_src)
 # 滤波器
 aux_source_directory(filter filter_src)
 # 视频录制

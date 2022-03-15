@@ -83,35 +83,9 @@ module/CMakeFiles/module.dir/armor/basic_armor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/module.dir/armor/basic_armor.cpp.s"
 	cd /home/nuc/Desktop/sentry_2022/build/module && /bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nuc/Desktop/sentry_2022/module/armor/basic_armor.cpp -o CMakeFiles/module.dir/armor/basic_armor.cpp.s
 
-module/CMakeFiles/module.dir/armor/fan_armor.cpp.o: module/CMakeFiles/module.dir/flags.make
-module/CMakeFiles/module.dir/armor/fan_armor.cpp.o: ../module/armor/fan_armor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nuc/Desktop/sentry_2022/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object module/CMakeFiles/module.dir/armor/fan_armor.cpp.o"
-	cd /home/nuc/Desktop/sentry_2022/build/module && /bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/module.dir/armor/fan_armor.cpp.o -c /home/nuc/Desktop/sentry_2022/module/armor/fan_armor.cpp
-
-module/CMakeFiles/module.dir/armor/fan_armor.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/module.dir/armor/fan_armor.cpp.i"
-	cd /home/nuc/Desktop/sentry_2022/build/module && /bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nuc/Desktop/sentry_2022/module/armor/fan_armor.cpp > CMakeFiles/module.dir/armor/fan_armor.cpp.i
-
-module/CMakeFiles/module.dir/armor/fan_armor.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/module.dir/armor/fan_armor.cpp.s"
-	cd /home/nuc/Desktop/sentry_2022/build/module && /bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nuc/Desktop/sentry_2022/module/armor/fan_armor.cpp -o CMakeFiles/module.dir/armor/fan_armor.cpp.s
-
-module/CMakeFiles/module.dir/buff/basic_buff.cpp.o: module/CMakeFiles/module.dir/flags.make
-module/CMakeFiles/module.dir/buff/basic_buff.cpp.o: ../module/buff/basic_buff.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nuc/Desktop/sentry_2022/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object module/CMakeFiles/module.dir/buff/basic_buff.cpp.o"
-	cd /home/nuc/Desktop/sentry_2022/build/module && /bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/module.dir/buff/basic_buff.cpp.o -c /home/nuc/Desktop/sentry_2022/module/buff/basic_buff.cpp
-
-module/CMakeFiles/module.dir/buff/basic_buff.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/module.dir/buff/basic_buff.cpp.i"
-	cd /home/nuc/Desktop/sentry_2022/build/module && /bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nuc/Desktop/sentry_2022/module/buff/basic_buff.cpp > CMakeFiles/module.dir/buff/basic_buff.cpp.i
-
-module/CMakeFiles/module.dir/buff/basic_buff.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/module.dir/buff/basic_buff.cpp.s"
-	cd /home/nuc/Desktop/sentry_2022/build/module && /bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nuc/Desktop/sentry_2022/module/buff/basic_buff.cpp -o CMakeFiles/module.dir/buff/basic_buff.cpp.s
-
 module/CMakeFiles/module.dir/filter/basic_kalman.cpp.o: module/CMakeFiles/module.dir/flags.make
 module/CMakeFiles/module.dir/filter/basic_kalman.cpp.o: ../module/filter/basic_kalman.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nuc/Desktop/sentry_2022/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object module/CMakeFiles/module.dir/filter/basic_kalman.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nuc/Desktop/sentry_2022/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object module/CMakeFiles/module.dir/filter/basic_kalman.cpp.o"
 	cd /home/nuc/Desktop/sentry_2022/build/module && /bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/module.dir/filter/basic_kalman.cpp.o -c /home/nuc/Desktop/sentry_2022/module/filter/basic_kalman.cpp
 
 module/CMakeFiles/module.dir/filter/basic_kalman.cpp.i: cmake_force
@@ -124,7 +98,7 @@ module/CMakeFiles/module.dir/filter/basic_kalman.cpp.s: cmake_force
 
 module/CMakeFiles/module.dir/record/record.cpp.o: module/CMakeFiles/module.dir/flags.make
 module/CMakeFiles/module.dir/record/record.cpp.o: ../module/record/record.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nuc/Desktop/sentry_2022/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object module/CMakeFiles/module.dir/record/record.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nuc/Desktop/sentry_2022/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object module/CMakeFiles/module.dir/record/record.cpp.o"
 	cd /home/nuc/Desktop/sentry_2022/build/module && /bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/module.dir/record/record.cpp.o -c /home/nuc/Desktop/sentry_2022/module/record/record.cpp
 
 module/CMakeFiles/module.dir/record/record.cpp.i: cmake_force
@@ -137,7 +111,7 @@ module/CMakeFiles/module.dir/record/record.cpp.s: cmake_force
 
 module/CMakeFiles/module.dir/roi/basic_roi.cpp.o: module/CMakeFiles/module.dir/flags.make
 module/CMakeFiles/module.dir/roi/basic_roi.cpp.o: ../module/roi/basic_roi.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nuc/Desktop/sentry_2022/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object module/CMakeFiles/module.dir/roi/basic_roi.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nuc/Desktop/sentry_2022/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object module/CMakeFiles/module.dir/roi/basic_roi.cpp.o"
 	cd /home/nuc/Desktop/sentry_2022/build/module && /bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/module.dir/roi/basic_roi.cpp.o -c /home/nuc/Desktop/sentry_2022/module/roi/basic_roi.cpp
 
 module/CMakeFiles/module.dir/roi/basic_roi.cpp.i: cmake_force
@@ -152,8 +126,6 @@ module/CMakeFiles/module.dir/roi/basic_roi.cpp.s: cmake_force
 module_OBJECTS = \
 "CMakeFiles/module.dir/angle_solve/basic_pnp.cpp.o" \
 "CMakeFiles/module.dir/armor/basic_armor.cpp.o" \
-"CMakeFiles/module.dir/armor/fan_armor.cpp.o" \
-"CMakeFiles/module.dir/buff/basic_buff.cpp.o" \
 "CMakeFiles/module.dir/filter/basic_kalman.cpp.o" \
 "CMakeFiles/module.dir/record/record.cpp.o" \
 "CMakeFiles/module.dir/roi/basic_roi.cpp.o"
@@ -163,8 +135,6 @@ module_EXTERNAL_OBJECTS =
 
 module/libmodule.so: module/CMakeFiles/module.dir/angle_solve/basic_pnp.cpp.o
 module/libmodule.so: module/CMakeFiles/module.dir/armor/basic_armor.cpp.o
-module/libmodule.so: module/CMakeFiles/module.dir/armor/fan_armor.cpp.o
-module/libmodule.so: module/CMakeFiles/module.dir/buff/basic_buff.cpp.o
 module/libmodule.so: module/CMakeFiles/module.dir/filter/basic_kalman.cpp.o
 module/libmodule.so: module/CMakeFiles/module.dir/record/record.cpp.o
 module/libmodule.so: module/CMakeFiles/module.dir/roi/basic_roi.cpp.o
@@ -186,7 +156,7 @@ module/libmodule.so: /opt/intel/openvino_2021/opencv/lib/libopencv_flann.so.4.5.
 module/libmodule.so: /opt/intel/openvino_2021/opencv/lib/libopencv_imgproc.so.4.5.3
 module/libmodule.so: /opt/intel/openvino_2021/opencv/lib/libopencv_core.so.4.5.3
 module/libmodule.so: module/CMakeFiles/module.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nuc/Desktop/sentry_2022/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX shared library libmodule.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nuc/Desktop/sentry_2022/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX shared library libmodule.so"
 	cd /home/nuc/Desktop/sentry_2022/build/module && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/module.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

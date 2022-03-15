@@ -6,8 +6,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/nuc/Desktop/sentry_2022/module/angle_solve/basic_pnp.cpp" "/home/nuc/Desktop/sentry_2022/build/module/CMakeFiles/module.dir/angle_solve/basic_pnp.cpp.o"
   "/home/nuc/Desktop/sentry_2022/module/armor/basic_armor.cpp" "/home/nuc/Desktop/sentry_2022/build/module/CMakeFiles/module.dir/armor/basic_armor.cpp.o"
-  "/home/nuc/Desktop/sentry_2022/module/armor/fan_armor.cpp" "/home/nuc/Desktop/sentry_2022/build/module/CMakeFiles/module.dir/armor/fan_armor.cpp.o"
-  "/home/nuc/Desktop/sentry_2022/module/buff/basic_buff.cpp" "/home/nuc/Desktop/sentry_2022/build/module/CMakeFiles/module.dir/buff/basic_buff.cpp.o"
   "/home/nuc/Desktop/sentry_2022/module/filter/basic_kalman.cpp" "/home/nuc/Desktop/sentry_2022/build/module/CMakeFiles/module.dir/filter/basic_kalman.cpp.o"
   "/home/nuc/Desktop/sentry_2022/module/record/record.cpp" "/home/nuc/Desktop/sentry_2022/build/module/CMakeFiles/module.dir/record/record.cpp.o"
   "/home/nuc/Desktop/sentry_2022/module/roi/basic_roi.cpp" "/home/nuc/Desktop/sentry_2022/build/module/CMakeFiles/module.dir/roi/basic_roi.cpp.o"

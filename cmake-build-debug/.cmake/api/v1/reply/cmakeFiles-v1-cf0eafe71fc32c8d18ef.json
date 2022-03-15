@@ -243,21 +243,6 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/nuc/clion-2021.3.3/bin/cmake/linux/share/cmake-3.21/Modules/CheckIncludeFile.c.in"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/home/nuc/clion-2021.3.3/bin/cmake/linux/share/cmake-3.21/Modules/CheckFunctionExists.c"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/home/nuc/clion-2021.3.3/bin/cmake/linux/share/cmake-3.21/Modules/CheckFunctionExists.c"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
 			"path" : "/home/nuc/clion-2021.3.3/bin/cmake/linux/share/cmake-3.21/Modules/FindPackageHandleStandardArgs.cmake"
 		},
 		{
@@ -392,11 +377,6 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/nuc/clion-2021.3.3/bin/cmake/linux/share/cmake-3.21/Modules/CheckFunctionExists.c"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
 			"path" : "/home/nuc/clion-2021.3.3/bin/cmake/linux/share/cmake-3.21/Modules/FindThreads.cmake"
 		},
 		{
@@ -453,16 +433,6 @@
 			"isCMake" : true,
 			"isExternal" : true,
 			"path" : "/home/nuc/clion-2021.3.3/bin/cmake/linux/share/cmake-3.21/Modules/FindPackageMessage.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/home/nuc/clion-2021.3.3/bin/cmake/linux/share/cmake-3.21/Modules/CheckFunctionExists.c"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/home/nuc/clion-2021.3.3/bin/cmake/linux/share/cmake-3.21/Modules/CheckFunctionExists.c"
 		},
 		{
 			"isCMake" : true,
@@ -597,26 +567,6 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/nuc/clion-2021.3.3/bin/cmake/linux/share/cmake-3.21/Modules/CheckFunctionExists.c"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/home/nuc/clion-2021.3.3/bin/cmake/linux/share/cmake-3.21/Modules/CheckFunctionExists.c"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/home/nuc/clion-2021.3.3/bin/cmake/linux/share/cmake-3.21/Modules/CheckFunctionExists.c"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/home/nuc/clion-2021.3.3/bin/cmake/linux/share/cmake-3.21/Modules/CheckFunctionExists.c"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
 			"path" : "/home/nuc/clion-2021.3.3/bin/cmake/linux/share/cmake-3.21/Modules/CMakeParseArguments.cmake"
 		},
 		{
@@ -656,11 +606,6 @@
 			"isCMake" : true,
 			"isExternal" : true,
 			"path" : "/home/nuc/clion-2021.3.3/bin/cmake/linux/share/cmake-3.21/Modules/CMakeParseArguments.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/home/nuc/clion-2021.3.3/bin/cmake/linux/share/cmake-3.21/Modules/CheckFunctionExists.c"
 		},
 		{
 			"isExternal" : true,

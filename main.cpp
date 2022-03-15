@@ -5,8 +5,9 @@ int main(int argc, char** argv)
   cv::Mat src_img_, roi_img_;
   mindvision::VideoCapture* mv_capture_ = new mindvision::VideoCapture(
     mindvision::CameraParam(0, mindvision::RESOLUTION_1280_X_800, mindvision::EXPOSURE_600));
-     
-  uart::SerialPort serial_ = uart::SerialPort(
+
+
+    uart::SerialPort serial_ = uart::SerialPort(
     fmt::format("{}{}", CONFIG_FILE_PATH, "/serial/uart_serial_config.xml"));
 
   basic_pnp::PnP pnp_ = basic_pnp::PnP(
@@ -35,6 +36,8 @@ int main(int argc, char** argv)
 
     // 哨兵自瞄函数
     sentryAutoaim(detector,src_img_);
+
+
 
     
 

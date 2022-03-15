@@ -179,60 +179,6 @@ armor/basic_armor.cpp.s:
 	cd /home/nuc/Desktop/sentry_2022/build && $(MAKE) -f module/CMakeFiles/module.dir/build.make module/CMakeFiles/module.dir/armor/basic_armor.cpp.s
 .PHONY : armor/basic_armor.cpp.s
 
-armor/fan_armor.o: armor/fan_armor.cpp.o
-
-.PHONY : armor/fan_armor.o
-
-# target to build an object file
-armor/fan_armor.cpp.o:
-	cd /home/nuc/Desktop/sentry_2022/build && $(MAKE) -f module/CMakeFiles/module.dir/build.make module/CMakeFiles/module.dir/armor/fan_armor.cpp.o
-.PHONY : armor/fan_armor.cpp.o
-
-armor/fan_armor.i: armor/fan_armor.cpp.i
-
-.PHONY : armor/fan_armor.i
-
-# target to preprocess a source file
-armor/fan_armor.cpp.i:
-	cd /home/nuc/Desktop/sentry_2022/build && $(MAKE) -f module/CMakeFiles/module.dir/build.make module/CMakeFiles/module.dir/armor/fan_armor.cpp.i
-.PHONY : armor/fan_armor.cpp.i
-
-armor/fan_armor.s: armor/fan_armor.cpp.s
-
-.PHONY : armor/fan_armor.s
-
-# target to generate assembly for a file
-armor/fan_armor.cpp.s:
-	cd /home/nuc/Desktop/sentry_2022/build && $(MAKE) -f module/CMakeFiles/module.dir/build.make module/CMakeFiles/module.dir/armor/fan_armor.cpp.s
-.PHONY : armor/fan_armor.cpp.s
-
-buff/basic_buff.o: buff/basic_buff.cpp.o
-
-.PHONY : buff/basic_buff.o
-
-# target to build an object file
-buff/basic_buff.cpp.o:
-	cd /home/nuc/Desktop/sentry_2022/build && $(MAKE) -f module/CMakeFiles/module.dir/build.make module/CMakeFiles/module.dir/buff/basic_buff.cpp.o
-.PHONY : buff/basic_buff.cpp.o
-
-buff/basic_buff.i: buff/basic_buff.cpp.i
-
-.PHONY : buff/basic_buff.i
-
-# target to preprocess a source file
-buff/basic_buff.cpp.i:
-	cd /home/nuc/Desktop/sentry_2022/build && $(MAKE) -f module/CMakeFiles/module.dir/build.make module/CMakeFiles/module.dir/buff/basic_buff.cpp.i
-.PHONY : buff/basic_buff.cpp.i
-
-buff/basic_buff.s: buff/basic_buff.cpp.s
-
-.PHONY : buff/basic_buff.s
-
-# target to generate assembly for a file
-buff/basic_buff.cpp.s:
-	cd /home/nuc/Desktop/sentry_2022/build && $(MAKE) -f module/CMakeFiles/module.dir/build.make module/CMakeFiles/module.dir/buff/basic_buff.cpp.s
-.PHONY : buff/basic_buff.cpp.s
-
 filter/basic_kalman.o: filter/basic_kalman.cpp.o
 
 .PHONY : filter/basic_kalman.o
@@ -329,12 +275,6 @@ help:
 	@echo "... armor/basic_armor.o"
 	@echo "... armor/basic_armor.i"
 	@echo "... armor/basic_armor.s"
-	@echo "... armor/fan_armor.o"
-	@echo "... armor/fan_armor.i"
-	@echo "... armor/fan_armor.s"
-	@echo "... buff/basic_buff.o"
-	@echo "... buff/basic_buff.i"
-	@echo "... buff/basic_buff.s"
 	@echo "... filter/basic_kalman.o"
 	@echo "... filter/basic_kalman.i"
 	@echo "... filter/basic_kalman.s"

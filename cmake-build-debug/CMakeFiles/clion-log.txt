@@ -1,15 +1,6 @@
 /home/nuc/clion-2021.3.3/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/nuc/clion-2021.3.3/bin/ninja/linux/ninja -G Ninja /home/nuc/Desktop/sentry_2022
--- Looking for pthread.h
--- Looking for pthread.h - found
--- Performing Test CMAKE_HAVE_LIBC_PTHREAD
--- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
--- Looking for pthread_create in pthreads
--- Looking for pthread_create in pthreads - not found
--- Looking for pthread_create in pthread
--- Looking for pthread_create in pthread - found
--- Found Threads: TRUE  
+-- Found OpenCV: /usr/local (found version "4.5.5") 
 -- Found OpenCV: /usr/local (found suitable version "4.5.5", minimum required is "4") 
--- Found CXSparse: /usr/include/suitesparse (found suitable version "3.2.0", minimum required is "3.2.0") 
 -- Found AMD headers in: /usr/include/suitesparse
 -- Found AMD library: /usr/lib/x86_64-linux-gnu/libamd.so
 -- Found CAMD headers in: /usr/include/suitesparse
@@ -25,11 +16,8 @@
 -- Found Intel Thread Building Blocks (TBB) library (2020.2 / 11102) include location: . Assuming SuiteSparseQR was compiled with TBB.
 -- Found Config headers in: /usr/include/suitesparse
 -- Found Config library: /usr/lib/x86_64-linux-gnu/libsuitesparseconfig.so
--- Looking for shm_open in rt
--- Looking for shm_open in rt - found
 -- Adding librt to SuiteSparse_config libraries (required on Linux & Unix [not OSX] if SuiteSparse is compiled with timing).
 -- Could NOT find METIS (missing: METIS_INCLUDE_DIR METIS_LIBRARY) 
--- Found SuiteSparse: TRUE (Required is at least version "5.7.1") found components: AMD CAMD CCOLAMD CHOLMOD COLAMD SPQR 
 -- Found required Ceres dependency: Eigen version 3.3.7 in /usr/lib/cmake/eigen3
 -- Found required Ceres dependency: glog
 -- Found required Ceres dependency: gflags

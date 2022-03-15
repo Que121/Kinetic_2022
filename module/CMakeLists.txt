@@ -20,8 +20,7 @@ aux_source_directory(roi roi_src)
 add_library(
   module SHARED
   ${angle_src}
-  ${armor_src} 
-  ${buff_src} 
+  ${armor_src}
   ${filter_src}
   ${record_src}
   ${roi_src}

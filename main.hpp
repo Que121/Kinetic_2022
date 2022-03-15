@@ -13,4 +13,5 @@
 #include "autoaim/autoaim.hpp"
 #include "devices/camera/mv_video_capture.hpp"
 #include "devices/serial/uart_serial.hpp"
+#include "utils/fps.hpp"
 

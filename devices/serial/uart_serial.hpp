@@ -1,14 +1,6 @@
 /**
  * @file uart_serial.hpp
- * @author WCJ (1767851382@qq.com) 
- *         XX  (2796393320@qq.com)
- *         HZK
- *         RCX
  * @brief  串口通讯
- * @date 2021-08-27
- * 
- * @copyright Copyright (c) 2021 GUCROBOT_WOLF
- * 
  */
 
 #pragma once

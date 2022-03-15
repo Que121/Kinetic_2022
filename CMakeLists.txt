@@ -3,6 +3,10 @@ cmake_minimum_required(VERSION 3.4.1) # 版本要求
 set(CMAKE_CXX_STANDARD 14)
 project(sentry_2022)
 
+# Use standard c++20
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
+
 # Find and add opencv as required
 find_package(OpenCV REQUIRED)
 include_directories(${OpenCV_INCLUDE_DIRS})
@@ -18,7 +22,7 @@ include_directories(
 )
 
 
-add_executable(sentry_2022 main.cpp main.hpp)
+add_executable(sentry_2022 main.cpp)
 target_link_libraries(
   sentry_2022 
   ${OpenCV_LIBS}
@@ -46,5 +50,9 @@ target_link_libraries(sentry_2022 utils)
 
 
 
-
+# Set built binary to ~/bin
 set (EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
+
+# Set configs folder absolute path
+set(CONFIG_FILE_PATH ${PROJECT_SOURCE_DIR}/configs)
+set(SOURCE_PATH ${PROJECT_SOURCE_DIR})

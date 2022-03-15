@@ -10,14 +10,15 @@ int main(int argc, char** argv)
     fmt::format("{}{}", CONFIG_FILE_PATH, "/serial/uart_serial_config.xml"));
 
   basic_pnp::PnP pnp_ = basic_pnp::PnP(
-  fmt::format("{}{}", CONFIG_FILE_PATH, "/camera/mv_camera_config_407.xml"), fmt::format("{}{}", CONFIG_FILE_PATH, "/angle_solve/basic_pnp_config.xml"));
+    fmt::format("{}{}", CONFIG_FILE_PATH, "/camera/mv_camera_config_407.xml"), fmt::format("{}{}", CONFIG_FILE_PATH, "/angle_solve/basic_pnp_config.xml"));
 
   cv::VideoCapture cap_ = cv::VideoCapture(0);
 
-   // 喂入模型
+  // 显示fps
+  fps::FPS global_fps_;
+  // 喂入模型
   auto detector = NanoDet("nanodet.xml");
-
-    // 喂入成功 
+  // 喂入成功 
   std::cout<<"success"<<std::endl;
 
   
@@ -34,6 +35,10 @@ int main(int argc, char** argv)
 
     // 哨兵自瞄函数
     sentryAutoaim(detector,src_img_);
+
+    
+
+    
 
     };
   }

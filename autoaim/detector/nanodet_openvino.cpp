@@ -262,12 +262,6 @@ void NanoDet::nms(std::vector<BoxInfo>& input_boxes, float NMS_THRESH)
     }
 }
 
-struct object_rect {
-    int x;
-    int y;
-    int width;
-    int height;
-};
 // 画框
 void draw_bboxes(const cv::Mat& bgr, const std::vector<BoxInfo>& bboxes, object_rect effect_roi)
 {

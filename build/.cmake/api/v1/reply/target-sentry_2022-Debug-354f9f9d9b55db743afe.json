@@ -12,6 +12,7 @@
 		[
 			"add_executable",
 			"target_link_libraries",
+			"target_compile_definitions",
 			"include_directories"
 		],
 		"files" : 
@@ -38,53 +39,59 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 58,
+				"line" : 57,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 53,
-				"parent" : 0
-			},
-			{
-				"command" : 1,
-				"file" : 0,
-				"line" : 43,
+				"line" : 52,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
+				"file" : 0,
+				"line" : 65,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 42,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
 				"file" : 0,
 				"line" : 19,
 				"parent" : 0
 			},
 			{
-				"command" : 2,
+				"command" : 3,
 				"file" : 0,
-				"line" : 41,
+				"line" : 40,
 				"parent" : 0
 			},
 			{
-				"command" : 2,
+				"command" : 3,
 				"file" : 0,
-				"line" : 46,
+				"line" : 45,
 				"parent" : 0
 			},
 			{
-				"command" : 2,
+				"command" : 3,
 				"file" : 0,
-				"line" : 51,
+				"line" : 50,
 				"parent" : 0
 			},
 			{
-				"command" : 2,
+				"command" : 3,
 				"file" : 0,
-				"line" : 56,
+				"line" : 55,
 				"parent" : 0
 			},
 			{
-				"command" : 2,
+				"command" : 3,
 				"file" : 0,
 				"line" : 12,
 				"parent" : 0
@@ -92,7 +99,7 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 48,
+				"line" : 47,
 				"parent" : 0
 			}
 		]
@@ -117,37 +124,41 @@
 			[
 				{
 					"backtrace" : 5,
+					"define" : "CONFIG_FILE_PATH=\"/home/nuc/Desktop/sentry_2022/configs\""
+				},
+				{
+					"backtrace" : 6,
 					"define" : "GFLAGS_IS_A_DLL=0"
 				}
 			],
 			"includes" : 
 			[
 				{
-					"backtrace" : 6,
+					"backtrace" : 7,
 					"path" : "/home/nuc/Desktop/sentry_2022"
 				},
 				{
-					"backtrace" : 6,
+					"backtrace" : 7,
 					"path" : "/home/nuc/Desktop/sentry_2022/build"
 				},
 				{
-					"backtrace" : 7,
+					"backtrace" : 8,
 					"path" : "/home/nuc/Desktop/sentry_2022/autoaim"
 				},
 				{
-					"backtrace" : 8,
+					"backtrace" : 9,
 					"path" : "/home/nuc/Desktop/sentry_2022/devices"
 				},
 				{
-					"backtrace" : 9,
+					"backtrace" : 10,
 					"path" : "/home/nuc/Desktop/sentry_2022/utils"
 				},
 				{
-					"backtrace" : 10,
+					"backtrace" : 11,
 					"path" : "/home/nuc/Desktop/sentry_2022/module"
 				},
 				{
-					"backtrace" : 11,
+					"backtrace" : 12,
 					"isSystem" : true,
 					"path" : "/opt/intel/openvino_2021.4.752/opencv/include"
 				},
@@ -162,7 +173,7 @@
 					"path" : "/opt/intel/openvino_2021/deployment_tools/ngraph/include"
 				},
 				{
-					"backtrace" : 5,
+					"backtrace" : 6,
 					"isSystem" : true,
 					"path" : "/usr/include/eigen3"
 				}
@@ -418,37 +429,37 @@
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 5,
+			"backtrace" : 6,
 			"isGenerated" : true,
 			"path" : "build/autoaim/CMakeFiles/autoaim.dir/autoaim.cpp.o",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 5,
+			"backtrace" : 6,
 			"isGenerated" : true,
 			"path" : "build/autoaim/CMakeFiles/autoaim.dir/detector/nanodet_openvino.cpp.o",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 5,
+			"backtrace" : 6,
 			"isGenerated" : true,
 			"path" : "build/autoaim/CMakeFiles/autoaim.dir/predictor/PredictorAdaptiveEKF.cpp.o",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 5,
+			"backtrace" : 6,
 			"isGenerated" : true,
 			"path" : "build/autoaim/CMakeFiles/autoaim.dir/predictor/PredictorKalman.cpp.o",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 12,
+			"backtrace" : 13,
 			"isGenerated" : true,
 			"path" : "build/devices/CMakeFiles/devices.dir/camera/mv_video_capture.cpp.o",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 12,
+			"backtrace" : 13,
 			"isGenerated" : true,
 			"path" : "build/devices/CMakeFiles/devices.dir/serial/uart_serial.cpp.o",
 			"sourceGroupIndex" : 1

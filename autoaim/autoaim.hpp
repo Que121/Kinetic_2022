@@ -12,10 +12,5 @@
 // 哨兵自瞄启动
 int sentryAutoaim(NanoDet &detector,cv::Mat image);
 
-struct object_rect {
-    int x;
-    int y;
-    int width;
-    int height;
-};
+
 

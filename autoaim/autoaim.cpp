@@ -65,7 +65,7 @@ int resize_uniform(cv::Mat& src, cv::Mat& dst, cv::Size dst_size,
 // 哨兵自瞄函数
 int sentryAutoaim(NanoDet& detector, cv::Mat image) {
 
-  object_rect effect_roi;
+  object_rect effect_roi{};
   cv::Mat resized_img;
   resize_uniform(image, resized_img, cv::Size(detector.input_size[0], detector.input_size[1]), effect_roi);
 

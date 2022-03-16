@@ -4,7 +4,7 @@
 # compile CXX with /bin/x86_64-linux-gnu-g++-9
 CXX_FLAGS = -g   -Wno-error=deprecated-declarations -std=gnu++14
 
-CXX_DEFINES = -DGFLAGS_IS_A_DLL=0
+CXX_DEFINES = -DCONFIG_FILE_PATH=\"/home/nuc/Desktop/sentry_2022/configs\" -DGFLAGS_IS_A_DLL=0
 
 CXX_INCLUDES = -I/home/nuc/Desktop/sentry_2022 -I/home/nuc/Desktop/sentry_2022/build -I/home/nuc/Desktop/sentry_2022/autoaim -I/home/nuc/Desktop/sentry_2022/devices -I/home/nuc/Desktop/sentry_2022/utils -I/home/nuc/Desktop/sentry_2022/module -isystem /opt/intel/openvino_2021.4.752/opencv/include -isystem /opt/intel/openvino_2021/deployment_tools/inference_engine/include -isystem /opt/intel/openvino_2021/deployment_tools/ngraph/include -isystem /usr/include/eigen3 
 

@@ -1,7 +1,7 @@
 [
 {
   "directory": "/home/nuc/Desktop/sentry_2022/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9  -DGFLAGS_IS_A_DLL=0 -I/home/nuc/Desktop/sentry_2022 -I/home/nuc/Desktop/sentry_2022/build -I/home/nuc/Desktop/sentry_2022/autoaim -I/home/nuc/Desktop/sentry_2022/devices -I/home/nuc/Desktop/sentry_2022/utils -I/home/nuc/Desktop/sentry_2022/module -isystem /opt/intel/openvino_2021.4.752/opencv/include -isystem /opt/intel/openvino_2021/deployment_tools/inference_engine/include -isystem /opt/intel/openvino_2021/deployment_tools/ngraph/include -isystem /usr/include/eigen3  -g   -Wno-error=deprecated-declarations -std=gnu++14 -o CMakeFiles/sentry_2022.dir/main.cpp.o -c /home/nuc/Desktop/sentry_2022/main.cpp",
+  "command": "/bin/x86_64-linux-gnu-g++-9  -DCONFIG_FILE_PATH=\\\"/home/nuc/Desktop/sentry_2022/configs\\\" -DGFLAGS_IS_A_DLL=0 -I/home/nuc/Desktop/sentry_2022 -I/home/nuc/Desktop/sentry_2022/build -I/home/nuc/Desktop/sentry_2022/autoaim -I/home/nuc/Desktop/sentry_2022/devices -I/home/nuc/Desktop/sentry_2022/utils -I/home/nuc/Desktop/sentry_2022/module -isystem /opt/intel/openvino_2021.4.752/opencv/include -isystem /opt/intel/openvino_2021/deployment_tools/inference_engine/include -isystem /opt/intel/openvino_2021/deployment_tools/ngraph/include -isystem /usr/include/eigen3  -g   -Wno-error=deprecated-declarations -std=gnu++14 -o CMakeFiles/sentry_2022.dir/main.cpp.o -c /home/nuc/Desktop/sentry_2022/main.cpp",
   "file": "/home/nuc/Desktop/sentry_2022/main.cpp"
 },
 {

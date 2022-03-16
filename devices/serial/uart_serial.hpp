@@ -148,59 +148,32 @@ class SerialPort {
   explicit SerialPort(std::string _serial_config);
 
   ~SerialPort();
-  /**
-   * @brief 返回接受数据的结构体
-   * 
-   * @return Receive_Data 
-   */
+
+  // 返回接受数据的结构体
   inline Receive_Data returnReceive() { return receive_data_; }
-  /**
-   * @brief 返回子弹速度
-   * 
-   * @return int 
-   */
+
+  // 返回子弹速度
   inline int   returnReceiveBulletVelocity() { return receive_data_.bullet_velocity; }
-  /**
-   * @brief 返回机器人 ID
-   * 
-   * @return int 
-   */
+
+  // 返回机器人 ID
   inline int   returnReceiveRobotId()        { return receive_data_.my_robot_id; }
-  /**
-   * @brief 返回自身颜色
-   * 
-   * @return int 
-   */
+
+  // 返回自身颜色
   inline int   returnReceiceColor()          { return receive_data_.my_color; }
-  /**
-   * @brief 返回模式选择
-   * 
-   * @return int 
-   */
+
+  // 返回模式选择
   inline int   returnReceiveMode()           { return receive_data_.now_run_mode; }
-  /**
-   * @brief 返回陀螺仪 Pitch 轴数据
-   * 
-   * @return float 
-   */
+
+  // 返回陀螺仪 Pitch 轴数据
   inline float returnReceivePitch()          { return receive_data_.Receive_Pitch_Angle_Info.pitch_angle; }
-  /**
-   * @brief 返回陀螺仪 Yaw 轴数据
-   * 
-   * @return float 
-   */
+
+  // 返回陀螺仪 Yaw 轴数据
   inline float returnReceiveYaw()                  { return receive_data_.Receive_Yaw_Angle_Info.yaw_angle; }
-  /**
-   * @brief 返回陀螺仪Yaw轴速度数据
-   * 
-   * @return float 
-   */
+
+  // 返回陀螺仪Yaw轴速度数据
   inline float returnReceiveYawVelocity()          { return receive_data_.Receive_Yaw_Velocity_Info.yaw_veloctiy; }
-  /**
-   * @brief 返回陀螺仪Pitch轴速度数据
-   * 
-   * @return float 
-   */
+
+  // 返回陀螺仪Pitch轴速度数据
   inline float returnReceivePitchVelocity()        { return receive_data_.Receive_Pitch_Velocity_Info.pitch_veloctiy;}
 
   /**
@@ -248,6 +221,7 @@ class SerialPort {
    * @param  depth            深度
    * @param  data_type        是否发现目标
    * @param  is_shooting      开火命令
+   * '
    */
   void writeData(const int&     _yaw,   const int16_t& yaw,
                  const int&     _pitch, const int16_t& pitch,

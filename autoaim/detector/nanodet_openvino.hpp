@@ -150,6 +150,13 @@ const int color_list[80][3] =
     {127 ,127 ,  0},
 };
 
+struct object_rect {
+    int x;
+    int y;
+    int width;
+    int height;
+};
+
 // 画框
 void draw_bboxes(const cv::Mat &bgr, const std::vector<BoxInfo> &bboxes, object_rect effect_roi);
 

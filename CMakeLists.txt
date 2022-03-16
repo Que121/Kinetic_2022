@@ -34,7 +34,6 @@ target_link_libraries(sentry_2022
   ${OpenCV_LIBS}
   ${InferenceEngine_LIBRARIES} 
   ${NGRAPH_LIBRARIES}
-  # ${EXTRA_LIBS}
   )
 
 # 自瞄
@@ -63,3 +62,4 @@ set (EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 # Set configs folder absolute path
 set(CONFIG_FILE_PATH ${PROJECT_SOURCE_DIR}/configs)
 set(SOURCE_PATH ${PROJECT_SOURCE_DIR})
+target_compile_definitions(sentry_2022 PRIVATE "CONFIG_FILE_PATH=\"${CONFIG_FILE_PATH}\"")

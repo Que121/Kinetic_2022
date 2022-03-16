@@ -73,7 +73,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 build cmake_object_order_depends_target_sentry_2022: phony || cmake_object_order_depends_target_autoaim cmake_object_order_depends_target_devices cmake_object_order_depends_target_module cmake_object_order_depends_target_utils
 
 build CMakeFiles/sentry_2022.dir/main.cpp.o: CXX_COMPILER__sentry_2022_Debug /home/nuc/Desktop/sentry_2022/main.cpp || cmake_object_order_depends_target_sentry_2022
-  DEFINES = -DGFLAGS_IS_A_DLL=0
+  DEFINES = -DCONFIG_FILE_PATH=\"/home/nuc/Desktop/sentry_2022/configs\" -DGFLAGS_IS_A_DLL=0
   DEP_FILE = CMakeFiles/sentry_2022.dir/main.cpp.o.d
   FLAGS = -g -Wno-error=deprecated-declarations -std=gnu++14
   INCLUDES = -I/home/nuc/Desktop/sentry_2022 -I/home/nuc/Desktop/sentry_2022/cmake-build-debug -I/home/nuc/Desktop/sentry_2022/autoaim -I/home/nuc/Desktop/sentry_2022/devices -I/home/nuc/Desktop/sentry_2022/utils -I/home/nuc/Desktop/sentry_2022/module -isystem /usr/local/include/opencv4 -isystem /opt/intel/openvino_2021/deployment_tools/inference_engine/include -isystem /opt/intel/openvino_2021/deployment_tools/ngraph/include -isystem /usr/include/eigen3

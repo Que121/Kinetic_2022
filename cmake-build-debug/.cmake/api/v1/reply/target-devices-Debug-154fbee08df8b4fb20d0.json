@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "devices/CMakeFiles/devices.dir/camera/mv_video_capture.cpp.o"
+			"path" : "devices/CMakeFiles/devices.dir/./camera/mv_video_capture.cpp.o"
 		},
 		{
-			"path" : "devices/CMakeFiles/devices.dir/serial/uart_serial.cpp.o"
+			"path" : "devices/CMakeFiles/devices.dir/./serial/uart_serial.cpp.o"
 		}
 	],
 	"backtrace" : 1,
@@ -14,7 +14,8 @@
 		"commands" : 
 		[
 			"add_library",
-			"include_directories"
+			"include_directories",
+			"target_link_libraries"
 		],
 		"files" : 
 		[
@@ -44,13 +45,13 @@
 			{
 				"command" : 1,
 				"file" : 1,
-				"line" : 41,
+				"line" : 40,
 				"parent" : 2
 			},
 			{
 				"command" : 1,
 				"file" : 1,
-				"line" : 46,
+				"line" : 45,
 				"parent" : 2
 			},
 			{
@@ -58,6 +59,12 @@
 				"file" : 1,
 				"line" : 12,
 				"parent" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 13,
+				"parent" : 0
 			}
 		]
 	},
@@ -67,7 +74,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g  "
+					"fragment" : "-g"
 				},
 				{
 					"fragment" : "-std=gnu++14"
@@ -81,7 +88,7 @@
 				},
 				{
 					"backtrace" : 3,
-					"path" : "/home/nuc/Desktop/sentry_2022/build"
+					"path" : "/home/nuc/Desktop/sentry_2022/cmake-build-debug"
 				},
 				{
 					"backtrace" : 4,
@@ -94,10 +101,19 @@
 				{
 					"backtrace" : 6,
 					"isSystem" : true,
-					"path" : "/opt/intel/openvino_2021.4.752/opencv/include"
+					"path" : "/usr/local/include/opencv4"
 				}
 			],
 			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1,
+					7
+				],
+				"standard" : "14"
+			},
 			"sourceIndexes" : 
 			[
 				0,

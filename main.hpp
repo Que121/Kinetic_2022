@@ -16,3 +16,4 @@
 #include "utils/fps.hpp"
 #include "angle_solve/basic_pnp.hpp"
 
+auto idntifier = fmt::format(fg(fmt::color::green) | fmt::emphasis::bold, "sentry_2022");

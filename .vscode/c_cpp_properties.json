@@ -8,7 +8,6 @@
                 "${workspaceFolder}/devices/serial/**",
                 "${workspaceFolder}/module/angle_solve/**",
                 "${workspaceFolder}/module/armor/**",
-                "${workspaceFolder}/module/buff/**",
                 "${workspaceFolder}/module/filter/**",
                 "${workspaceFolder}/utils/**",
                 "${workspaceFolder}"

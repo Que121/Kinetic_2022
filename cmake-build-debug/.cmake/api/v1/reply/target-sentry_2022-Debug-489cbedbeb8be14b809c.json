@@ -12,6 +12,7 @@
 		[
 			"add_executable",
 			"target_link_libraries",
+			"target_compile_definitions",
 			"include_directories"
 		],
 		"files" : 
@@ -38,59 +39,65 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 58,
+				"line" : 57,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 43,
+				"line" : 42,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 48,
+				"line" : 47,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 53,
+				"line" : 52,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
+				"file" : 0,
+				"line" : 65,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
 				"file" : 0,
 				"line" : 19,
 				"parent" : 0
 			},
 			{
-				"command" : 2,
+				"command" : 3,
 				"file" : 0,
-				"line" : 41,
+				"line" : 40,
 				"parent" : 0
 			},
 			{
-				"command" : 2,
+				"command" : 3,
 				"file" : 0,
-				"line" : 46,
+				"line" : 45,
 				"parent" : 0
 			},
 			{
-				"command" : 2,
+				"command" : 3,
 				"file" : 0,
-				"line" : 51,
+				"line" : 50,
 				"parent" : 0
 			},
 			{
-				"command" : 2,
+				"command" : 3,
 				"file" : 0,
-				"line" : 56,
+				"line" : 55,
 				"parent" : 0
 			},
 			{
-				"command" : 2,
+				"command" : 3,
 				"file" : 0,
 				"line" : 12,
 				"parent" : 0
@@ -116,6 +123,10 @@
 			"defines" : 
 			[
 				{
+					"backtrace" : 7,
+					"define" : "CONFIG_FILE_PATH=\"/home/nuc/Desktop/sentry_2022/configs\""
+				},
+				{
 					"backtrace" : 4,
 					"define" : "GFLAGS_IS_A_DLL=0"
 				}
@@ -123,31 +134,31 @@
 			"includes" : 
 			[
 				{
-					"backtrace" : 7,
+					"backtrace" : 8,
 					"path" : "/home/nuc/Desktop/sentry_2022"
 				},
 				{
-					"backtrace" : 7,
+					"backtrace" : 8,
 					"path" : "/home/nuc/Desktop/sentry_2022/cmake-build-debug"
 				},
 				{
-					"backtrace" : 8,
+					"backtrace" : 9,
 					"path" : "/home/nuc/Desktop/sentry_2022/autoaim"
 				},
 				{
-					"backtrace" : 9,
+					"backtrace" : 10,
 					"path" : "/home/nuc/Desktop/sentry_2022/devices"
 				},
 				{
-					"backtrace" : 10,
+					"backtrace" : 11,
 					"path" : "/home/nuc/Desktop/sentry_2022/utils"
 				},
 				{
-					"backtrace" : 11,
+					"backtrace" : 12,
 					"path" : "/home/nuc/Desktop/sentry_2022/module"
 				},
 				{
-					"backtrace" : 12,
+					"backtrace" : 13,
 					"isSystem" : true,
 					"path" : "/usr/local/include/opencv4"
 				},

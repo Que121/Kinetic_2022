@@ -66,7 +66,9 @@ int resize_uniform(cv::Mat& src, cv::Mat& dst, cv::Size dst_size,
 int sentryAutoaim(NanoDet& detector, cv::Mat image) {
 
   object_rect effect_roi{};
+  
   cv::Mat resized_img;
+
   resize_uniform(image, resized_img, cv::Size(detector.input_size[0], detector.input_size[1]), effect_roi);
 
   auto results = detector.detect(resized_img, 0.4, 0.5);
@@ -74,5 +76,6 @@ int sentryAutoaim(NanoDet& detector, cv::Mat image) {
   draw_bboxes(image, results, effect_roi);
 
   cv::waitKey(1);
+
   return 0;
 }

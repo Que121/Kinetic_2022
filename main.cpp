@@ -25,6 +25,7 @@ int main(int argc, char** argv)
   std::cout<<"success"<<std::endl;
 
   while (true) {
+    // 记录第一次时间点
     global_fps_.getTick();
 
     if (mv_capture_->isindustryimgInput()) {

@@ -32,7 +32,7 @@ enum BufferLength {
   WRITE_BUFF_LENGTH = 13,
 };
 
-// The color of our team
+// 我方颜色
 enum Color {
   ALL,
   RED,
@@ -41,22 +41,31 @@ enum Color {
 
 // Description of operation mode information
 enum RunMode {
+  // 默认模式（不启用自瞄）
   DEFAULT_MODE,
-  // Self-Scanning Mode
+
+  // 基础自瞄模式
   SUP_SHOOT,
-  // Talisman Mode
+
+  // 能量机关
   ENERGY_AGENCY,
-  // Hitting the sentry Mode
+
+  // 击打哨兵模式
   SENTRY_STRIKE_MODE,
-  // Little top mode
+
+  // 反小陀螺模式（暂未完善）
   TOP_MODE,
-  // Record video Mode
+
+  // 录制视频
   RECORD_MODE,
-  // Plane Mode
+
+  // 无人机模式（空缺）
   PLANE_MODE,
-  // Sentrys autonomous mode
+
+  // 哨兵模式
   SENTINEL_AUTONOMOUS_MODE,
-  // Radar Mode
+
+  // 雷达模式
   RADAR_MODE,
 };
 // Describe the current robot ID information

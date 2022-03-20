@@ -15,5 +15,6 @@
 #include "devices/serial/uart_serial.hpp"
 #include "utils/fps.hpp"
 #include "angle_solve/basic_pnp.hpp"
+#include "record/record.hpp"
 
 auto idntifier = fmt::format(fg(fmt::color::green) | fmt::emphasis::bold, "sentry_2022");

@@ -9,6 +9,7 @@ namespace uart {
 SerialPort::SerialPort(std::string _serial_config) {
   cv::FileStorage fs_serial(_serial_config, cv::FileStorage::READ);
 
+  // 初始化串口基本参数
   fs_serial["PREFERRED_DEVICE"]        >> serial_config_.preferred_device;
   fs_serial["SET_BAUDRATE"]            >> serial_config_.set_baudrate;
   fs_serial["SHOW_SERIAL_INFORMATION"] >> serial_config_.show_serial_information;

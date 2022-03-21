@@ -51,7 +51,7 @@ include_directories(utils)
 add_subdirectory(utils)
 target_link_libraries(sentry_2022 utils)
 
-# 功能
+# 功能模块
 include_directories(module)
 add_subdirectory(module)
 target_link_libraries(sentry_2022 module)

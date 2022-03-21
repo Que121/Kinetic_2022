@@ -1,6 +1,8 @@
 {
     "files.associations": {
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "bitset": "cpp",
+        "string_view": "cpp"
     },
     "editor.formatOnType": true,
     "editor.formatOnSave": true

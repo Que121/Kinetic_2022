@@ -36,8 +36,12 @@ VideoCapture::~VideoCapture() {
   }
 }
 
+// 判断工业相机是否开启
 bool VideoCapture::isindustryimgInput() {
+
+  
   bool isindustry_camera_open = false;
+  
 
   if (iscamera0_open == 1) {
     if (CameraGetImageBuffer(hCamera, &sFrameInfo, &pbyBuffer, 1000) == CAMERA_STATUS_SUCCESS) {

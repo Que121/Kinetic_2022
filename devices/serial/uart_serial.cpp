@@ -301,13 +301,14 @@ namespace uart
     write_buff_[12] = 0x45;
   }
 
-  //
+  // 判断串口接收数据是否错误或者为空
   bool SerialPort::isEmpty()
   {
     if (receive_buff_[0] != '0' || receive_buff_[REC_INFO_LENGTH - 1] != '0')
     {
       return false;
     }
+
     else
     {
       return true;
@@ -317,22 +318,28 @@ namespace uart
   // 更新串口接收信息
   void SerialPort::updateReceiveInformation()
   {
+
     receiveData();
 
+    // 判断是否接收为空
     if (isEmpty())
     {
       return;
     }
+
+    // 如果接收为空，则使用上一次接收的数据
     else
     {
       last_receive_data_ = receive_data_;
     }
 
+    // 遍历接收到的数据
     for (size_t i = 0; i != sizeof(transform_arr_) / sizeof(transform_arr_[0]); ++i)
     {
       transform_arr_[i] = receive_buff_[i + 1] - '0';
     }
 
+    // 我方装甲板颜色
     switch (transform_arr_[0])
     {
     case RED:
@@ -346,36 +353,47 @@ namespace uart
       break;
     }
 
+    // 机器人模式选择
     switch (transform_arr_[1])
     {
+    // 基础自瞄模式
     case SUP_SHOOT:
       receive_data_.now_run_mode = SUP_SHOOT;
       break;
+    // 能量机关击打模式
     case ENERGY_AGENCY:
       receive_data_.now_run_mode = ENERGY_AGENCY;
       break;
+    // 击打哨兵模式个
     case SENTRY_STRIKE_MODE:
       receive_data_.now_run_mode = SENTRY_STRIKE_MODE;
       break;
+    // 反陀螺模式（未完善）
     case TOP_MODE:
       receive_data_.now_run_mode = TOP_MODE;
       break;
+    // 录制视频
     case RECORD_MODE:
       receive_data_.now_run_mode = RECORD_MODE;
       break;
+    // 无人机模式（暂无）  
     case PLANE_MODE:
       receive_data_.now_run_mode = PLANE_MODE;
       break;
+    // 哨兵模式  
     case SENTINEL_AUTONOMOUS_MODE:
       receive_data_.now_run_mode = SENTINEL_AUTONOMOUS_MODE;
       break;
+    // 雷达模式  
     case RADAR_MODE:
       receive_data_.now_run_mode = RADAR_MODE;
+    // 默认模式=>基础自瞄模式
     default:
       receive_data_.now_run_mode = SUP_SHOOT;
       break;
     }
-
+    
+    // 机器人id
     switch (transform_arr_[2])
     {
     case HERO:

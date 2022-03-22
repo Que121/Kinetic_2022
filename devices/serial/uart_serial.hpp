@@ -93,9 +93,9 @@ namespace uart
   struct Receive_Data
   {
     int my_color;
-    int now_run_mode;
+    int now_run_mode; // 运行模式
     int my_robot_id;
-    int bullet_velocity;
+    int bullet_velocity; // 弹丸速度
 
     // Description of the yaw axis angle of the gyroscope (signed)
     union Receive_Yaw_Angle_Information
@@ -128,7 +128,7 @@ namespace uart
       my_color = ALL;
       now_run_mode = SUP_SHOOT;
       my_robot_id = INFANTRY;
-      bullet_velocity = 30;
+      bullet_velocity = 30; //
       Receive_Yaw_Angle_Info.yaw_angle = 0.f;
       Receive_Yaw_Velocity_Info.yaw_veloctiy = 0.f;
       Receive_Pitch_Angle_Info.pitch_angle = 0.f;
@@ -314,7 +314,7 @@ namespace uart
     int transform_arr_[4];
     unsigned char write_buff_[WRITE_BUFF_LENGTH];
     unsigned char crc_buff_[CRC_BUFF_LENGTH];
-    unsigned char receive_buff_[REC_INFO_LENGTH];
+    unsigned char receive_buff_[REC_INFO_LENGTH]; //
     unsigned char receive_buff_temp_[REC_INFO_LENGTH * 2];
     unsigned char exchangebyte_;
 

@@ -1,11 +1,35 @@
 # Create project
-cmake_minimum_required(VERSION 3.4.1) # 版本要求
-set(CMAKE_CXX_STANDARD 14)
+cmake_minimum_required(VERSION 3.10.0) # 版本要求
 project(sentry_2022)
 
 # Use standard c++20
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
+
+
+# Add mindvision-sdk directory and include path for target
+add_library(MVSDK SHARED IMPORTED)
+get_filename_component(MVSDK_PATH 3rdparty/mindvision/linux REALPATH)
+
+# Check system architecture for mindvision-sdk library
+execute_process(COMMAND uname -m COMMAND tr -d '\n' OUTPUT_VARIABLE ARCHITECTURE)
+message(STATUS "Checking platform architecture for MVSDK: ${ARCHITECTURE}")
+if(${ARCHITECTURE} STREQUAL x86_64)
+    set(MIMDVISION_SDK_LIBRARY ${MVSDK_PATH}/lib/x64/libMVSDK.so)
+elseif(${ARCHITECTURE} STREQUAL x86)
+    set(MIMDVISION_SDK_LIBRARY ${MVSDK_PATH}/lib/x86/libMVSDK.so)
+elseif(${ARCHITECTURE} STREQUAL aarch64)
+    set(MIMDVISION_SDK_LIBRARY ${MVSDK_PATH}/lib/arm64/libMVSDK.so)
+elseif(${ARCHITECTURE} STREQUAL armv7)
+    set(MIMDVISION_SDK_LIBRARY ${MVSDK_PATH}/lib/arm/libMVSDK.so)
+else()
+    message(FATAL_ERROR "Not supported architecture for MVSDK: ${ARCHITECTURE}")
+endif()
+set_property(TARGET MVSDK PROPERTY IMPORTED_LOCATION ${MIMDVISION_SDK_LIBRARY})
+# Add mindvision lib to build target
+list(APPEND EXTRA_LIBS MVSDK)
+# Add mindvision include path
+list(APPEND EXTRA_INCLUDES 3rdparty/mindvision/linux/include)
 
 # Find and add opencv as required
 find_package(OpenCV REQUIRED)

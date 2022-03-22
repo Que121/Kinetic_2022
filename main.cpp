@@ -14,6 +14,11 @@ int main(int argc, char **argv)
   uart::SerialPort serial_ = uart::SerialPort(
       fmt::format("{}{}", CONFIG_FILE_PATH, "/serial/uart_serial_config.xml"));
 
+  // 装甲板识别模块初始化
+  basic_armor::Detector basic_armor_ = basic_armor::Detector(
+      fmt::format("{}{}",
+                  CONFIG_FILE_PATH, "/armor/basic_armor_config.xml"));
+
   // pnp解算模块初始化
   basic_pnp::PnP pnp_ = basic_pnp::PnP(
       fmt::format("{}{}",
@@ -32,7 +37,7 @@ int main(int argc, char **argv)
 
   // 视频保存
   cv::VideoWriter vw_src;                                                         // 实例化保存视频类
-  cv::FileStorage re_config_get(record_.video_save_path_, cv::FileStorage::READ); // 打开录制是平
+  cv::FileStorage re_config_get(record_.video_save_path_, cv::FileStorage::READ); // 打开录制视频
   re_config_get["_PATH"] >> record_.path_;
   std::string save_path_ = "/record/";
   vw_src.open(CONFIG_FILE_PATH + save_path_ + to_string(record_.path_) + ".avi", cv::VideoWriter::fourcc('M', 'J', 'P', 'G'),
@@ -110,7 +115,7 @@ int main(int argc, char **argv)
       case uart::RADAR_MODE:
         break;
 
-      // 手瞄
+      // 手瞄？
       default:
 
         break;

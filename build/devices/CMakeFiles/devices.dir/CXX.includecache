@@ -6,6 +6,22 @@
 
 #IncludeRegexTransform: 
 
+/home/nuc/Desktop/sentry_2022/devices/camera/mv_video_capture.cpp
+mv_video_capture.hpp
+/home/nuc/Desktop/sentry_2022/devices/camera/mv_video_capture.hpp
+
+/home/nuc/Desktop/sentry_2022/devices/camera/mv_video_capture.hpp
+fmt/core.h
+-
+fmt/color.h
+-
+opencv2/core.hpp
+-
+opencv2/imgproc/imgproc_c.h
+-
+CameraApi.h
+-
+
 /home/nuc/Desktop/sentry_2022/devices/serial/uart_serial.cpp
 uart_serial.hpp
 /home/nuc/Desktop/sentry_2022/devices/serial/uart_serial.hpp
@@ -95,6 +111,16 @@ opencv2/core/check.hpp
 /opt/intel/openvino_2021.4.752/opencv/include/opencv2/core/check.hpp
 opencv2/core/base.hpp
 -
+
+/opt/intel/openvino_2021.4.752/opencv/include/opencv2/core/core_c.h
+opencv2/core/types_c.h
+/opt/intel/openvino_2021.4.752/opencv/include/opencv2/core/opencv2/core/types_c.h
+cxcore.h
+/opt/intel/openvino_2021.4.752/opencv/include/opencv2/core/cxcore.h
+cxcore.h
+/opt/intel/openvino_2021.4.752/opencv/include/opencv2/core/cxcore.h
+opencv2/core/utility.hpp
+/opt/intel/openvino_2021.4.752/opencv/include/opencv2/core/opencv2/core/utility.hpp
 
 /opt/intel/openvino_2021.4.752/opencv/include/opencv2/core/cuda.hpp
 opencv2/core.hpp
@@ -349,6 +375,24 @@ opencv2/core/cvstd.hpp
 /opt/intel/openvino_2021.4.752/opencv/include/opencv2/core/opencv2/core/cvstd.hpp
 opencv2/core/matx.hpp
 /opt/intel/openvino_2021.4.752/opencv/include/opencv2/core/opencv2/core/matx.hpp
+
+/opt/intel/openvino_2021.4.752/opencv/include/opencv2/core/types_c.h
+ipl.h
+-
+ipl/ipl.h
+-
+opencv2/core/cvdef.h
+/opt/intel/openvino_2021.4.752/opencv/include/opencv2/core/opencv2/core/cvdef.h
+assert.h
+-
+stdlib.h
+-
+string.h
+-
+float.h
+-
+opencv2/core.hpp
+/opt/intel/openvino_2021.4.752/opencv/include/opencv2/core/opencv2/core.hpp
 
 /opt/intel/openvino_2021.4.752/opencv/include/opencv2/core/utility.hpp
 opencv2/core.hpp
@@ -844,9 +888,17 @@ opencv2/core.hpp
 ./imgproc/segmentation.hpp
 /opt/intel/openvino_2021.4.752/opencv/include/opencv2/imgproc/segmentation.hpp
 
+/opt/intel/openvino_2021.4.752/opencv/include/opencv2/imgproc/imgproc_c.h
+opencv2/imgproc/types_c.h
+/opt/intel/openvino_2021.4.752/opencv/include/opencv2/imgproc/opencv2/imgproc/types_c.h
+
 /opt/intel/openvino_2021.4.752/opencv/include/opencv2/imgproc/segmentation.hpp
 opencv2/imgproc.hpp
 /opt/intel/openvino_2021.4.752/opencv/include/opencv2/imgproc/opencv2/imgproc.hpp
+
+/opt/intel/openvino_2021.4.752/opencv/include/opencv2/imgproc/types_c.h
+opencv2/core/core_c.h
+/opt/intel/openvino_2021.4.752/opencv/include/opencv2/imgproc/opencv2/core/core_c.h
 
 /opt/intel/openvino_2021.4.752/opencv/include/opencv2/ml.hpp
 opencv2/core.hpp

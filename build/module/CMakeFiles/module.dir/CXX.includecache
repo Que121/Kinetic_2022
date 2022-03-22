@@ -54,6 +54,22 @@ devices/serial/uart_serial.hpp
 module/filter/basic_kalman.hpp
 /home/nuc/Desktop/sentry_2022/module/armor/module/filter/basic_kalman.hpp
 
+/home/nuc/Desktop/sentry_2022/module/record/record.cpp
+record.hpp
+/home/nuc/Desktop/sentry_2022/module/record/record.hpp
+iostream
+-
+
+/home/nuc/Desktop/sentry_2022/module/record/record.hpp
+fmt/color.h
+-
+fmt/core.h
+-
+opencv2/opencv.hpp
+-
+string
+-
+
 /opt/intel/openvino_2021.4.752/opencv/include/opencv2/calib3d.hpp
 opencv2/core.hpp
 /opt/intel/openvino_2021.4.752/opencv/include/opencv2/opencv2/core.hpp

@@ -415,24 +415,29 @@ namespace uart
       receive_data_.my_robot_id = INFANTRY;
       break;
     }
-
+    
+    // 弹丸速度。“-2”是为了微调？
     receive_data_.bullet_velocity = receive_buff_[14] - 2;
-
+    
+    // yaw轴陀螺仪数据（联合体）
     for (size_t i = 0; i != sizeof(receive_data_.Receive_Yaw_Angle_Info.arr_yaw_angle); ++i)
     {
       receive_data_.Receive_Yaw_Angle_Info.arr_yaw_angle[i] = receive_buff_[i + 4];
     }
 
+    // pitch轴陀螺仪数据（联合体）
     for (size_t i = 0; i != sizeof(receive_data_.Receive_Yaw_Velocity_Info.arr_yaw_velocity); ++i)
     {
       receive_data_.Receive_Yaw_Velocity_Info.arr_yaw_velocity[i] = receive_buff_[i + 10];
     }
 
+    // 陀螺仪Yaw轴速度数据
     for (size_t i = 0; i != sizeof(this->receive_data_.Receive_Pitch_Angle_Info.arr_pitch_angle); ++i)
     {
       receive_data_.Receive_Pitch_Angle_Info.arr_pitch_angle[i] = receive_buff_[i + 8];
     }
 
+    // 陀螺仪Pitch轴速度数据
     for (size_t i = 0; i != sizeof(this->receive_data_.Receive_Pitch_Velocity_Info.arr_pitch_velocity); ++i)
     {
       receive_data_.Receive_Pitch_Velocity_Info.arr_pitch_velocity[i] = receive_buff_[i + 12];

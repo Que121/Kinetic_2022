@@ -92,20 +92,22 @@ namespace uart
   // Serial port information receiving structure
   struct Receive_Data
   {
-    int my_color;
+    int my_color; // 我方机器人颜色
     int now_run_mode; // 运行模式
-    int my_robot_id;
+    int my_robot_id; // 机器人id
     int bullet_velocity; // 弹丸速度
 
     // Description of the yaw axis angle of the gyroscope (signed)
+    // yaw轴的陀螺仪数据（联合体）
     union Receive_Yaw_Angle_Information
     {
       float yaw_angle;
       uint8_t arr_yaw_angle[4] = {0};
     } Receive_Yaw_Angle_Info;
-
+    
+    // 
     union Receive_Yaw_Velocity_Information
-    {
+    {               
       float yaw_veloctiy;
       uint8_t arr_yaw_velocity[4] = {0};
     } Receive_Yaw_Velocity_Info;

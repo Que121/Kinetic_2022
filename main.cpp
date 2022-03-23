@@ -8,11 +8,14 @@ int main(int argc, char **argv)
 
   // 迈德威视初始化，创建相机类对象
   mindvision::VideoCapture *mv_capture_ = new mindvision::VideoCapture(
-      mindvision::CameraParam(0, mindvision::RESOLUTION_1280_X_800, mindvision::EXPOSURE_600)); // 记得修改分辨率
+      mindvision::CameraParam(0,
+                              mindvision::RESOLUTION_1280_X_800,
+                              mindvision::EXPOSURE_600)); // 记得修改分辨率
 
   // 串口模块初始化
   uart::SerialPort serial_ = uart::SerialPort(
-      fmt::format("{}{}", CONFIG_FILE_PATH, "/serial/uart_serial_config.xml"));
+      fmt::format("{}{}",
+                  CONFIG_FILE_PATH, "/serial/uart_serial_config.xml"));
 
   // 装甲板识别模块初始化
   basic_armor::Detector basic_armor_ = basic_armor::Detector(
@@ -80,12 +83,18 @@ int main(int argc, char **argv)
       case uart::SUP_SHOOT:
         if (basic_armor_.runBasicArmor(src_img_, serial_.returnReceive()))
         {
-          pnp_.solvePnP(serial_.returnReceiveBulletVelocity(), basic_armor_.returnFinalArmorDistinguish(0), basic_armor_.returnFinalArmorRotatedRect(0));
+          // pnp解算
+          pnp_.solvePnP(serial_.returnReceiveBulletVelocity(),
+                        basic_armor_.returnFinalArmorDistinguish(0),
+                        basic_armor_.returnFinalArmorRotatedRect(0));
         }
-
+        serial_.updataWriteData(pnp_.returnYawAngle(),
+                                pnp_.returnPitchAngle(),
+                                pnp_.returnDepth(),
+                                basic_armor_.returnArmorNum(), 0);
         break;
 
-      // 能量机关击打模式
+      // 能量机关击打模式 
       case uart::ENERGY_AGENCY:
         break;
 

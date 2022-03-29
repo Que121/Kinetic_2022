@@ -292,15 +292,30 @@ void draw_bboxes(const cv::Mat &bgr, const std::vector<BoxInfo> &bboxes, object_
   {
     const BoxInfo &bbox = bboxes[i];
 
-    cv::Scalar color = cv::Scalar(color_list[bbox.label][0], color_list[bbox.label][1], color_list[bbox.label][2]);
+    // 定义颜色
+    cv::Scalar color = cv::Scalar(color_list[bbox.label][0],
+                                  color_list[bbox.label][1],
+                                  color_list[bbox.label][2]);
     // fprintf(stderr, "%d = %.5f at %.2f %.2f %.2f %.2f\n", bbox.label, bbox.score,
     //     bbox.x1, bbox.y1, bbox.x2, bbox.y2);
 
-    cv::rectangle(image, cv::Rect(cv::Point((bbox.x1 - effect_roi.x) * width_ratio, (bbox.y1 - effect_roi.y) * height_ratio), cv::Point((bbox.x2 - effect_roi.x) * width_ratio, (bbox.y2 - effect_roi.y) * height_ratio)), color);
+    cv::rectangle(image,
+                  cv::Rect(cv::Point((bbox.x1 - effect_roi.x) * width_ratio,
+                                     (bbox.y1 - effect_roi.y) * height_ratio),
+                           cv::Point((bbox.x2 - effect_roi.x) * width_ratio,
+                                     (bbox.y2 - effect_roi.y) * height_ratio)),
+                  color);
 
     char text[256];
 
-    // 打印标签和概率
+    /**
+     * @brief 输入字符串到text
+     *
+     * @param text 字符数组名
+     * @param class_names 识别的类别名称
+     * @param bbox.score 概率
+     *
+     */
     sprintf(text, "%s %.1f%%", class_names[bbox.label], bbox.score * 100);
 
     int baseLine = 0;
@@ -310,18 +325,29 @@ void draw_bboxes(const cv::Mat &bgr, const std::vector<BoxInfo> &bboxes, object_
      * fontScale为文本大小的倍数（以字体库中的大小为基准而放大的倍数），
      * thickness为文本的粗细。
      * 最后一个参数baseLine是指距离文本最低点对应的y坐标
-     *
      */
     cv::Size label_size = cv::getTextSize(text, cv::FONT_HERSHEY_SIMPLEX, 0.4, 1, &baseLine);
 
     int x = (bbox.x1 - effect_roi.x) * width_ratio;
     int y = (bbox.y1 - effect_roi.y) * height_ratio - label_size.height - baseLine;
+
     if (y < 0)
       y = 0;
+
     if (x + label_size.width > image.cols)
       x = image.cols - label_size.width;
 
-    cv::rectangle(image, cv::Rect(cv::Point(x, y), cv::Size(label_size.width, label_size.height + baseLine)),
+    /**
+     * @brief 画出矩形
+     *
+     * @param image 输入图像
+     * @param Rect 输入矩形（左上角坐标，宽高）
+     * @param color 颜色
+     */
+    cv::rectangle(image,
+                  cv::Rect(cv::Point(x, y),
+                           cv::Size(label_size.width,
+                                    label_size.height + baseLine)),
                   color, -1);
 
     cv::putText(image, text, cv::Point(x, y + label_size.height),

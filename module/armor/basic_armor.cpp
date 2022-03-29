@@ -83,6 +83,7 @@ namespace basic_armor
     return sqrt((a.x - b.x) * (a.x - b.x) + (a.y - b.y) * (a.y - b.y));
   }
 
+  // 释放内存
   void Detector::freeMemory()
   {
     lost_armor_success = armor_success;
@@ -93,6 +94,7 @@ namespace basic_armor
     armor_.clear();
     armor_.shrink_to_fit();
   }
+
   // 寻找灯条
   bool Detector::findLight()
   {
@@ -191,16 +193,16 @@ namespace basic_armor
                                const uart::Receive_Data _receive_data)
   {
     // 预处理
-    runImage(_src_img, _receive_data.my_color);
+    runImage(_src_img, _receive_data.my_color); // 输入源图像和我方颜色
 
     // 复制原图像
     draw_img_ = _src_img.clone();
 
     if (findLight()) // 寻找灯条
     {
-      if (fittingArmor()) // 装甲板匹配
+      if (fittingArmor()) // 装甲板匹配zeros
       {
-        finalArmor();
+        finalArmor(); // 确定装甲板
         lost_cnt_ = 10;
 
         // 画图开关
@@ -217,6 +219,7 @@ namespace basic_armor
         return true;
       }
     }
+
     if (armor_config_.armor_draw == 1 ||
         light_config_.light_draw == 1 ||
         armor_config_.armor_edit == 1 ||
@@ -381,14 +384,16 @@ namespace basic_armor
     }
   }
 
+  // 最优装甲板排序
   void Detector::finalArmor()
   {
-    armor_success = true;
+    armor_success = true; // 成功匹配到装甲板
 
-    if (armor_.size() == 1)
+    if (armor_.size() == 1) // 如果只有一块装甲板，打印输出only one armor
     {
       fmt::print("[{}] Info, only one armor\n", idntifier_green);
     }
+
     else
     {
       fmt::print("[{}] Info, multiple armors\n", idntifier_green);
@@ -408,6 +413,7 @@ namespace basic_armor
     }
   }
 
+  // 匹配装甲板
   bool Detector::fittingArmor()
   {
     if (armor_config_.armor_edit == 1)
@@ -496,6 +502,7 @@ namespace basic_armor
     return true;
   }
 
+  // 灯条拟合装甲板
   bool Detector::lightJudge(const int i, const int j)
   {
     armor_data_.left_light_height =
@@ -567,6 +574,7 @@ namespace basic_armor
     return false;
   }
 
+  // 计算图像颜色平均强度
   int Detector::averageColor()
   {
     armor_data_.left_light_height =
@@ -611,6 +619,7 @@ namespace basic_armor
     return average_intensity;
   }
 
+  // 预处理（根据我方颜色进行预处理）==> 更改为根据标签号数选择击打
   void Detector::runImage(const cv::Mat &_src_img, const int _my_color)
   {
     // 选择预处理类型（ BGR / HSV ）
@@ -626,7 +635,12 @@ namespace basic_armor
       break;
     }
   }
+  // 根据标签号数选择击打
+  void Detector::runImage_labelsChoose(const cv::Mat &_src_img, const int _my_color)
+  {
+  }
 
+  // 合并图像
   cv::Mat Detector::fuseImage(const cv::Mat _bin_gray_img, const cv::Mat _bin_color_img, const cv::Mat _while_img)
   {
     cv::bitwise_and(_bin_color_img, _bin_gray_img, _bin_color_img);
@@ -636,6 +650,7 @@ namespace basic_armor
     return _bin_color_img;
   }
 
+  // 白色通道处理
   inline cv::Mat Detector::whilePretreat(const cv::Mat &_src_img)
   {
     cv::cvtColor(_src_img, gray_while_img_, cv::COLOR_BGR2GRAY);
@@ -706,6 +721,7 @@ namespace basic_armor
     return bin_gray_img;
   }
 
+  // BGR预处理
   inline cv::Mat Detector::bgrPretreat(const cv::Mat &_src_img, const int _my_color)
   {
     static std::vector<cv::Mat> _split;
@@ -787,6 +803,7 @@ namespace basic_armor
     return bin_color_img;
   }
 
+  // HSV
   inline cv::Mat Detector::hsvPretreat(const cv::Mat &_src_img,
                                        const int _my_color)
   {

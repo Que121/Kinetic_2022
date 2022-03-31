@@ -60,15 +60,15 @@ include CMakeFiles/sentry_2022.dir/flags.make
 CMakeFiles/sentry_2022.dir/main.cpp.o: CMakeFiles/sentry_2022.dir/flags.make
 CMakeFiles/sentry_2022.dir/main.cpp.o: ../main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nuc/Desktop/sentry_2022/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/sentry_2022.dir/main.cpp.o"
-	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sentry_2022.dir/main.cpp.o -c /home/nuc/Desktop/sentry_2022/main.cpp
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sentry_2022.dir/main.cpp.o -c /home/nuc/Desktop/sentry_2022/main.cpp
 
 CMakeFiles/sentry_2022.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sentry_2022.dir/main.cpp.i"
-	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nuc/Desktop/sentry_2022/main.cpp > CMakeFiles/sentry_2022.dir/main.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nuc/Desktop/sentry_2022/main.cpp > CMakeFiles/sentry_2022.dir/main.cpp.i
 
 CMakeFiles/sentry_2022.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sentry_2022.dir/main.cpp.s"
-	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nuc/Desktop/sentry_2022/main.cpp -o CMakeFiles/sentry_2022.dir/main.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nuc/Desktop/sentry_2022/main.cpp -o CMakeFiles/sentry_2022.dir/main.cpp.s
 
 # Object files for target sentry_2022
 sentry_2022_OBJECTS = \
@@ -95,18 +95,6 @@ sentry_2022_EXTERNAL_OBJECTS = \
 ../bin/sentry_2022: module/libmodule.so
 ../bin/sentry_2022: /usr/local/lib/libceres.a
 ../bin/sentry_2022: /usr/lib/x86_64-linux-gnu/libglog.so
-../bin/sentry_2022: /usr/lib/x86_64-linux-gnu/libgflags.so.2.2.2
-../bin/sentry_2022: /usr/lib/x86_64-linux-gnu/libspqr.so
-../bin/sentry_2022: /usr/lib/x86_64-linux-gnu/libcholmod.so
-../bin/sentry_2022: /usr/lib/x86_64-linux-gnu/libamd.so
-../bin/sentry_2022: /usr/lib/x86_64-linux-gnu/libcamd.so
-../bin/sentry_2022: /usr/lib/x86_64-linux-gnu/libccolamd.so
-../bin/sentry_2022: /usr/lib/x86_64-linux-gnu/libcolamd.so
-../bin/sentry_2022: /usr/lib/x86_64-linux-gnu/libsuitesparseconfig.so
-../bin/sentry_2022: /opt/intel/openvino_2021/deployment_tools/inference_engine/external/tbb/lib/libtbb.so.2
-../bin/sentry_2022: /usr/lib/x86_64-linux-gnu/libcxsparse.so
-../bin/sentry_2022: /usr/lib/x86_64-linux-gnu/liblapack.so
-../bin/sentry_2022: /usr/lib/x86_64-linux-gnu/libblas.so
 ../bin/sentry_2022: /opt/intel/openvino_2021/opencv/lib/libopencv_gapi.so.4.5.3
 ../bin/sentry_2022: /opt/intel/openvino_2021/opencv/lib/libopencv_highgui.so.4.5.3
 ../bin/sentry_2022: /opt/intel/openvino_2021/opencv/lib/libopencv_ml.so.4.5.3

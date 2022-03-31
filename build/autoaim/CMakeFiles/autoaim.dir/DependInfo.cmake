@@ -13,7 +13,7 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # Preprocessor definitions for this target.
 set(CMAKE_TARGET_DEFINITIONS_CXX
-  "GFLAGS_IS_A_DLL=0"
+  "FMT_LOCALE"
   )
 
 # The include file search paths:
@@ -23,7 +23,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../autoaim"
   "autoaim"
   "/opt/intel/openvino_2021.4.752/opencv/include"
-  "/usr/include/eigen3"
+  "/usr/local/include/eigen3"
   "/opt/intel/openvino_2021/deployment_tools/inference_engine/include"
   "/opt/intel/openvino_2021/deployment_tools/ngraph/include"
   )

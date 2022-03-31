@@ -60,54 +60,54 @@ include autoaim/CMakeFiles/autoaim.dir/flags.make
 autoaim/CMakeFiles/autoaim.dir/autoaim.cpp.o: autoaim/CMakeFiles/autoaim.dir/flags.make
 autoaim/CMakeFiles/autoaim.dir/autoaim.cpp.o: ../autoaim/autoaim.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nuc/Desktop/sentry_2022/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object autoaim/CMakeFiles/autoaim.dir/autoaim.cpp.o"
-	cd /home/nuc/Desktop/sentry_2022/build/autoaim && /bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/autoaim.dir/autoaim.cpp.o -c /home/nuc/Desktop/sentry_2022/autoaim/autoaim.cpp
+	cd /home/nuc/Desktop/sentry_2022/build/autoaim && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/autoaim.dir/autoaim.cpp.o -c /home/nuc/Desktop/sentry_2022/autoaim/autoaim.cpp
 
 autoaim/CMakeFiles/autoaim.dir/autoaim.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/autoaim.dir/autoaim.cpp.i"
-	cd /home/nuc/Desktop/sentry_2022/build/autoaim && /bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nuc/Desktop/sentry_2022/autoaim/autoaim.cpp > CMakeFiles/autoaim.dir/autoaim.cpp.i
+	cd /home/nuc/Desktop/sentry_2022/build/autoaim && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nuc/Desktop/sentry_2022/autoaim/autoaim.cpp > CMakeFiles/autoaim.dir/autoaim.cpp.i
 
 autoaim/CMakeFiles/autoaim.dir/autoaim.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/autoaim.dir/autoaim.cpp.s"
-	cd /home/nuc/Desktop/sentry_2022/build/autoaim && /bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nuc/Desktop/sentry_2022/autoaim/autoaim.cpp -o CMakeFiles/autoaim.dir/autoaim.cpp.s
+	cd /home/nuc/Desktop/sentry_2022/build/autoaim && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nuc/Desktop/sentry_2022/autoaim/autoaim.cpp -o CMakeFiles/autoaim.dir/autoaim.cpp.s
 
 autoaim/CMakeFiles/autoaim.dir/detector/nanodet_openvino.cpp.o: autoaim/CMakeFiles/autoaim.dir/flags.make
 autoaim/CMakeFiles/autoaim.dir/detector/nanodet_openvino.cpp.o: ../autoaim/detector/nanodet_openvino.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nuc/Desktop/sentry_2022/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object autoaim/CMakeFiles/autoaim.dir/detector/nanodet_openvino.cpp.o"
-	cd /home/nuc/Desktop/sentry_2022/build/autoaim && /bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/autoaim.dir/detector/nanodet_openvino.cpp.o -c /home/nuc/Desktop/sentry_2022/autoaim/detector/nanodet_openvino.cpp
+	cd /home/nuc/Desktop/sentry_2022/build/autoaim && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/autoaim.dir/detector/nanodet_openvino.cpp.o -c /home/nuc/Desktop/sentry_2022/autoaim/detector/nanodet_openvino.cpp
 
 autoaim/CMakeFiles/autoaim.dir/detector/nanodet_openvino.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/autoaim.dir/detector/nanodet_openvino.cpp.i"
-	cd /home/nuc/Desktop/sentry_2022/build/autoaim && /bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nuc/Desktop/sentry_2022/autoaim/detector/nanodet_openvino.cpp > CMakeFiles/autoaim.dir/detector/nanodet_openvino.cpp.i
+	cd /home/nuc/Desktop/sentry_2022/build/autoaim && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nuc/Desktop/sentry_2022/autoaim/detector/nanodet_openvino.cpp > CMakeFiles/autoaim.dir/detector/nanodet_openvino.cpp.i
 
 autoaim/CMakeFiles/autoaim.dir/detector/nanodet_openvino.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/autoaim.dir/detector/nanodet_openvino.cpp.s"
-	cd /home/nuc/Desktop/sentry_2022/build/autoaim && /bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nuc/Desktop/sentry_2022/autoaim/detector/nanodet_openvino.cpp -o CMakeFiles/autoaim.dir/detector/nanodet_openvino.cpp.s
+	cd /home/nuc/Desktop/sentry_2022/build/autoaim && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nuc/Desktop/sentry_2022/autoaim/detector/nanodet_openvino.cpp -o CMakeFiles/autoaim.dir/detector/nanodet_openvino.cpp.s
 
 autoaim/CMakeFiles/autoaim.dir/predictor/PredictorAdaptiveEKF.cpp.o: autoaim/CMakeFiles/autoaim.dir/flags.make
 autoaim/CMakeFiles/autoaim.dir/predictor/PredictorAdaptiveEKF.cpp.o: ../autoaim/predictor/PredictorAdaptiveEKF.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nuc/Desktop/sentry_2022/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object autoaim/CMakeFiles/autoaim.dir/predictor/PredictorAdaptiveEKF.cpp.o"
-	cd /home/nuc/Desktop/sentry_2022/build/autoaim && /bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/autoaim.dir/predictor/PredictorAdaptiveEKF.cpp.o -c /home/nuc/Desktop/sentry_2022/autoaim/predictor/PredictorAdaptiveEKF.cpp
+	cd /home/nuc/Desktop/sentry_2022/build/autoaim && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/autoaim.dir/predictor/PredictorAdaptiveEKF.cpp.o -c /home/nuc/Desktop/sentry_2022/autoaim/predictor/PredictorAdaptiveEKF.cpp
 
 autoaim/CMakeFiles/autoaim.dir/predictor/PredictorAdaptiveEKF.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/autoaim.dir/predictor/PredictorAdaptiveEKF.cpp.i"
-	cd /home/nuc/Desktop/sentry_2022/build/autoaim && /bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nuc/Desktop/sentry_2022/autoaim/predictor/PredictorAdaptiveEKF.cpp > CMakeFiles/autoaim.dir/predictor/PredictorAdaptiveEKF.cpp.i
+	cd /home/nuc/Desktop/sentry_2022/build/autoaim && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nuc/Desktop/sentry_2022/autoaim/predictor/PredictorAdaptiveEKF.cpp > CMakeFiles/autoaim.dir/predictor/PredictorAdaptiveEKF.cpp.i
 
 autoaim/CMakeFiles/autoaim.dir/predictor/PredictorAdaptiveEKF.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/autoaim.dir/predictor/PredictorAdaptiveEKF.cpp.s"
-	cd /home/nuc/Desktop/sentry_2022/build/autoaim && /bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nuc/Desktop/sentry_2022/autoaim/predictor/PredictorAdaptiveEKF.cpp -o CMakeFiles/autoaim.dir/predictor/PredictorAdaptiveEKF.cpp.s
+	cd /home/nuc/Desktop/sentry_2022/build/autoaim && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nuc/Desktop/sentry_2022/autoaim/predictor/PredictorAdaptiveEKF.cpp -o CMakeFiles/autoaim.dir/predictor/PredictorAdaptiveEKF.cpp.s
 
 autoaim/CMakeFiles/autoaim.dir/predictor/PredictorKalman.cpp.o: autoaim/CMakeFiles/autoaim.dir/flags.make
 autoaim/CMakeFiles/autoaim.dir/predictor/PredictorKalman.cpp.o: ../autoaim/predictor/PredictorKalman.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nuc/Desktop/sentry_2022/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object autoaim/CMakeFiles/autoaim.dir/predictor/PredictorKalman.cpp.o"
-	cd /home/nuc/Desktop/sentry_2022/build/autoaim && /bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/autoaim.dir/predictor/PredictorKalman.cpp.o -c /home/nuc/Desktop/sentry_2022/autoaim/predictor/PredictorKalman.cpp
+	cd /home/nuc/Desktop/sentry_2022/build/autoaim && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/autoaim.dir/predictor/PredictorKalman.cpp.o -c /home/nuc/Desktop/sentry_2022/autoaim/predictor/PredictorKalman.cpp
 
 autoaim/CMakeFiles/autoaim.dir/predictor/PredictorKalman.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/autoaim.dir/predictor/PredictorKalman.cpp.i"
-	cd /home/nuc/Desktop/sentry_2022/build/autoaim && /bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nuc/Desktop/sentry_2022/autoaim/predictor/PredictorKalman.cpp > CMakeFiles/autoaim.dir/predictor/PredictorKalman.cpp.i
+	cd /home/nuc/Desktop/sentry_2022/build/autoaim && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nuc/Desktop/sentry_2022/autoaim/predictor/PredictorKalman.cpp > CMakeFiles/autoaim.dir/predictor/PredictorKalman.cpp.i
 
 autoaim/CMakeFiles/autoaim.dir/predictor/PredictorKalman.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/autoaim.dir/predictor/PredictorKalman.cpp.s"
-	cd /home/nuc/Desktop/sentry_2022/build/autoaim && /bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nuc/Desktop/sentry_2022/autoaim/predictor/PredictorKalman.cpp -o CMakeFiles/autoaim.dir/predictor/PredictorKalman.cpp.s
+	cd /home/nuc/Desktop/sentry_2022/build/autoaim && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nuc/Desktop/sentry_2022/autoaim/predictor/PredictorKalman.cpp -o CMakeFiles/autoaim.dir/predictor/PredictorKalman.cpp.s
 
 autoaim: autoaim/CMakeFiles/autoaim.dir/autoaim.cpp.o
 autoaim: autoaim/CMakeFiles/autoaim.dir/detector/nanodet_openvino.cpp.o

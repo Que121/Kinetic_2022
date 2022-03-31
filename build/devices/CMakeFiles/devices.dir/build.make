@@ -60,28 +60,28 @@ include devices/CMakeFiles/devices.dir/flags.make
 devices/CMakeFiles/devices.dir/camera/mv_video_capture.cpp.o: devices/CMakeFiles/devices.dir/flags.make
 devices/CMakeFiles/devices.dir/camera/mv_video_capture.cpp.o: ../devices/camera/mv_video_capture.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nuc/Desktop/sentry_2022/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object devices/CMakeFiles/devices.dir/camera/mv_video_capture.cpp.o"
-	cd /home/nuc/Desktop/sentry_2022/build/devices && /bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/devices.dir/camera/mv_video_capture.cpp.o -c /home/nuc/Desktop/sentry_2022/devices/camera/mv_video_capture.cpp
+	cd /home/nuc/Desktop/sentry_2022/build/devices && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/devices.dir/camera/mv_video_capture.cpp.o -c /home/nuc/Desktop/sentry_2022/devices/camera/mv_video_capture.cpp
 
 devices/CMakeFiles/devices.dir/camera/mv_video_capture.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/devices.dir/camera/mv_video_capture.cpp.i"
-	cd /home/nuc/Desktop/sentry_2022/build/devices && /bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nuc/Desktop/sentry_2022/devices/camera/mv_video_capture.cpp > CMakeFiles/devices.dir/camera/mv_video_capture.cpp.i
+	cd /home/nuc/Desktop/sentry_2022/build/devices && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nuc/Desktop/sentry_2022/devices/camera/mv_video_capture.cpp > CMakeFiles/devices.dir/camera/mv_video_capture.cpp.i
 
 devices/CMakeFiles/devices.dir/camera/mv_video_capture.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/devices.dir/camera/mv_video_capture.cpp.s"
-	cd /home/nuc/Desktop/sentry_2022/build/devices && /bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nuc/Desktop/sentry_2022/devices/camera/mv_video_capture.cpp -o CMakeFiles/devices.dir/camera/mv_video_capture.cpp.s
+	cd /home/nuc/Desktop/sentry_2022/build/devices && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nuc/Desktop/sentry_2022/devices/camera/mv_video_capture.cpp -o CMakeFiles/devices.dir/camera/mv_video_capture.cpp.s
 
 devices/CMakeFiles/devices.dir/serial/uart_serial.cpp.o: devices/CMakeFiles/devices.dir/flags.make
 devices/CMakeFiles/devices.dir/serial/uart_serial.cpp.o: ../devices/serial/uart_serial.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nuc/Desktop/sentry_2022/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object devices/CMakeFiles/devices.dir/serial/uart_serial.cpp.o"
-	cd /home/nuc/Desktop/sentry_2022/build/devices && /bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/devices.dir/serial/uart_serial.cpp.o -c /home/nuc/Desktop/sentry_2022/devices/serial/uart_serial.cpp
+	cd /home/nuc/Desktop/sentry_2022/build/devices && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/devices.dir/serial/uart_serial.cpp.o -c /home/nuc/Desktop/sentry_2022/devices/serial/uart_serial.cpp
 
 devices/CMakeFiles/devices.dir/serial/uart_serial.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/devices.dir/serial/uart_serial.cpp.i"
-	cd /home/nuc/Desktop/sentry_2022/build/devices && /bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nuc/Desktop/sentry_2022/devices/serial/uart_serial.cpp > CMakeFiles/devices.dir/serial/uart_serial.cpp.i
+	cd /home/nuc/Desktop/sentry_2022/build/devices && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nuc/Desktop/sentry_2022/devices/serial/uart_serial.cpp > CMakeFiles/devices.dir/serial/uart_serial.cpp.i
 
 devices/CMakeFiles/devices.dir/serial/uart_serial.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/devices.dir/serial/uart_serial.cpp.s"
-	cd /home/nuc/Desktop/sentry_2022/build/devices && /bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nuc/Desktop/sentry_2022/devices/serial/uart_serial.cpp -o CMakeFiles/devices.dir/serial/uart_serial.cpp.s
+	cd /home/nuc/Desktop/sentry_2022/build/devices && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nuc/Desktop/sentry_2022/devices/serial/uart_serial.cpp -o CMakeFiles/devices.dir/serial/uart_serial.cpp.s
 
 devices: devices/CMakeFiles/devices.dir/camera/mv_video_capture.cpp.o
 devices: devices/CMakeFiles/devices.dir/serial/uart_serial.cpp.o

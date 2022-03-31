@@ -92,6 +92,10 @@
 			"defines" : 
 			[
 				{
+					"backtrace" : 2,
+					"define" : "FMT_LOCALE"
+				},
+				{
 					"define" : "module_EXPORTS"
 				}
 			],

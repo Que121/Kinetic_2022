@@ -2,16 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "autoaim/CMakeFiles/autoaim.dir/autoaim.cpp.o"
+			"path" : "devices/CMakeFiles/devices.dir/camera/mv_video_capture.cpp.o"
 		},
 		{
-			"path" : "autoaim/CMakeFiles/autoaim.dir/detector/nanodet_openvino.cpp.o"
-		},
-		{
-			"path" : "autoaim/CMakeFiles/autoaim.dir/predictor/PredictorAdaptiveEKF.cpp.o"
-		},
-		{
-			"path" : "autoaim/CMakeFiles/autoaim.dir/predictor/PredictorKalman.cpp.o"
+			"path" : "devices/CMakeFiles/devices.dir/serial/uart_serial.cpp.o"
 		}
 	],
 	"backtrace" : 1,
@@ -25,7 +19,7 @@
 		],
 		"files" : 
 		[
-			"autoaim/CMakeLists.txt",
+			"devices/CMakeLists.txt",
 			"CMakeLists.txt"
 		],
 		"nodes" : 
@@ -36,13 +30,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 27,
+				"line" : 12,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 28,
+				"line" : 13,
 				"parent" : 0
 			},
 			{
@@ -62,21 +56,15 @@
 			},
 			{
 				"command" : 2,
-				"file" : 0,
-				"line" : 19,
-				"parent" : 0
+				"file" : 1,
+				"line" : 69,
+				"parent" : 3
 			},
 			{
 				"command" : 2,
 				"file" : 1,
 				"line" : 36,
 				"parent" : 3
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 16,
-				"parent" : 0
 			}
 		]
 	},
@@ -89,10 +77,6 @@
 					"fragment" : "-g  "
 				},
 				{
-					"backtrace" : 2,
-					"fragment" : "-Wno-error=deprecated-declarations"
-				},
-				{
 					"fragment" : "-std=gnu++14"
 				}
 			],
@@ -100,7 +84,7 @@
 			[
 				{
 					"backtrace" : 2,
-					"define" : "GFLAGS_IS_A_DLL=0"
+					"define" : "FMT_LOCALE"
 				}
 			],
 			"includes" : 
@@ -119,45 +103,28 @@
 				},
 				{
 					"backtrace" : 6,
-					"path" : "/home/nuc/Desktop/sentry_2022/build/autoaim"
+					"path" : "/home/nuc/Desktop/sentry_2022/devices"
 				},
 				{
 					"backtrace" : 7,
 					"isSystem" : true,
 					"path" : "/opt/intel/openvino_2021.4.752/opencv/include"
-				},
-				{
-					"backtrace" : 8,
-					"isSystem" : true,
-					"path" : "/usr/include/eigen3"
-				},
-				{
-					"backtrace" : 2,
-					"isSystem" : true,
-					"path" : "/opt/intel/openvino_2021/deployment_tools/inference_engine/include"
-				},
-				{
-					"backtrace" : 2,
-					"isSystem" : true,
-					"path" : "/opt/intel/openvino_2021/deployment_tools/ngraph/include"
 				}
 			],
 			"language" : "CXX",
 			"sourceIndexes" : 
 			[
 				0,
-				1,
-				2,
-				3
+				1
 			]
 		}
 	],
-	"id" : "autoaim::@d04759fb75e888d459f0",
-	"name" : "autoaim",
+	"id" : "devices::@0b66dd025354e08ea917",
+	"name" : "devices",
 	"paths" : 
 	{
-		"build" : "autoaim",
-		"source" : "autoaim"
+		"build" : "devices",
+		"source" : "devices"
 	},
 	"sourceGroups" : 
 	[
@@ -166,9 +133,7 @@
 			"sourceIndexes" : 
 			[
 				0,
-				1,
-				2,
-				3
+				1
 			]
 		}
 	],
@@ -177,25 +142,13 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "autoaim/autoaim.cpp",
+			"path" : "devices/camera/mv_video_capture.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "autoaim/detector/nanodet_openvino.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "autoaim/predictor/PredictorAdaptiveEKF.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "autoaim/predictor/PredictorKalman.cpp",
+			"path" : "devices/serial/uart_serial.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

@@ -188,9 +188,8 @@ namespace basic_armor
     return true;
   }
 
-  // 基础自瞄
-  bool Detector::runBasicArmor(const cv::Mat &_src_img,
-                               const uart::Receive_Data _receive_data)
+  // 识别装甲板
+  bool Detector::runBasicArmor(const cv::Mat &_src_img, const uart::Receive_Data _receive_data)
   {
     // 预处理
     runImage(_src_img, _receive_data.my_color); // 输入源图像和我方颜色
@@ -200,7 +199,7 @@ namespace basic_armor
 
     if (findLight()) // 寻找灯条
     {
-      if (fittingArmor()) // 装甲板匹配zeros
+      if (fittingArmor()) // 装甲板匹配]
       {
         finalArmor(); // 确定装甲板
         lost_cnt_ = 10;
@@ -233,9 +232,14 @@ namespace basic_armor
     return false;
   }
 
-  // 哨兵自瞄
-  bool Detector::sentryMode(const cv::Mat &_src_img,
-                            const uart::Receive_Data _receive_data)
+  bool Detector::openvinoNanodet_runBasicArmor(const cv::Mat &_src_img, const uart::Receive_Data _receive_data)
+  {
+    // 复制原图像
+    draw_img_ = _src_img.clone();
+  }
+
+  // 击打哨兵模式
+  bool Detector::sentryMode(const cv::Mat &_src_img, const uart::Receive_Data _receive_data)
   {
     if (sentry_cnt_ == 0)
     {
@@ -267,7 +271,7 @@ namespace basic_armor
           {
             armor_[0].armor_rect.center.x += abs(forecast_pixels_);
           }
-          last_armor_rect_ = armor_[0].armor_rect;
+          last_armor_rect_ = armor_[0].armor_rect; // 哨兵自瞄r_[0].armor_rect;
           cv::rectangle(draw_img_, armor_[0].armor_rect.boundingRect(),
                         cv::Scalar(0, 255, 0), 3, 8);
           if (armor_config_.armor_draw == 1 || light_config_.light_draw == 1 ||
@@ -303,9 +307,8 @@ namespace basic_armor
     }
   }
 
-  void Detector::initialPredictionData(const float _gyro_speed_data,
-                                       const int _bullet_velocity,
-                                       const float _yaw_angle)
+  // 更新击打哨兵模式参数
+  void Detector::initialPredictionData(const float _gyro_speed_data, const int _bullet_velocity, const float _yaw_angle)
   {
     if (armor_config_.armor_forecast)
     {
@@ -413,7 +416,7 @@ namespace basic_armor
     }
   }
 
-  // 匹配装甲板
+  // 匹配装甲板（弃用）
   bool Detector::fittingArmor()
   {
     if (armor_config_.armor_edit == 1)
@@ -502,7 +505,7 @@ namespace basic_armor
     return true;
   }
 
-  // 灯条拟合装甲板
+  // 灯条拟合装甲板 （弃用）
   bool Detector::lightJudge(const int i, const int j)
   {
     armor_data_.left_light_height =
@@ -635,6 +638,7 @@ namespace basic_armor
       break;
     }
   }
+
   // 根据标签号数选择击打
   void Detector::runImage_labelsChoose(const cv::Mat &_src_img, const int _my_color)
   {
@@ -659,6 +663,7 @@ namespace basic_armor
     return while_img_;
   }
 
+  // GRAY 预处理
   inline cv::Mat Detector::grayPretreat(const cv::Mat &_src_img,
                                         const int _my_color)
   {

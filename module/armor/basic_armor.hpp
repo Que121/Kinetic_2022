@@ -134,8 +134,18 @@ namespace basic_armor
      * @return true          识别到装甲板
      * @return false         没有识别到装甲板
      */
-    bool runBasicArmor(const cv::Mat &_src_img,
-                       const uart::Receive_Data _receive_data);
+    bool runBasicArmor(const cv::Mat &_src_img, const uart::Receive_Data _receive_data);
+
+    /**
+     * @brief openvino加速nanodet识别装甲板
+     *
+     * @param _src_img       原图（ CV_8UC3 ）
+     * @param _receive_data  串口接受的数据
+     * @return true          识别到装甲板
+     * @return false         没有识别到装甲板
+     */
+    bool openvinoNanodet_runBasicArmor(const cv::Mat &_src_img, const uart::Receive_Data _receive_data);
+
     /**
      * @brief 计算两点之间距离
      *
@@ -145,7 +155,7 @@ namespace basic_armor
      */
     float getDistance(const cv::Point a, const cv::Point b);
     /**
-     * @brief 灯条拟合装甲板
+     * @brief 灯条拟合装甲板（弃用）
      *
      * @param i       左灯条在 light_ 的位置
      * @param j       右灯条在 light_ 的位置
@@ -344,7 +354,7 @@ namespace basic_armor
 
     basic_kalman::firstKalman kalman_ = basic_kalman::firstKalman();
     cv::Mat frame;
-    cv::Mat draw_img_;
+    cv::Mat draw_img_; // 复制的原图像
     cv::Mat gray_img_;
     cv::Mat while_img_;
     cv::Mat hsv_img;

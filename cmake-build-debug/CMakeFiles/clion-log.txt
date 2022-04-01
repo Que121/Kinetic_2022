@@ -1,27 +1,31 @@
-/home/nuc/clion-2021.3.3/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/nuc/clion-2021.3.3/bin/ninja/linux/ninja -G Ninja /home/nuc/Desktop/sentry_2022
--- Found OpenCV: /usr/local (found version "4.5.5") 
--- Found OpenCV: /usr/local (found suitable version "4.5.5", minimum required is "4") 
--- Found AMD headers in: /usr/include/suitesparse
--- Found AMD library: /usr/lib/x86_64-linux-gnu/libamd.so
--- Found CAMD headers in: /usr/include/suitesparse
--- Found CAMD library: /usr/lib/x86_64-linux-gnu/libcamd.so
--- Found CCOLAMD headers in: /usr/include/suitesparse
--- Found CCOLAMD library: /usr/lib/x86_64-linux-gnu/libccolamd.so
--- Found CHOLMOD headers in: /usr/include/suitesparse
--- Found CHOLMOD library: /usr/lib/x86_64-linux-gnu/libcholmod.so
--- Found COLAMD headers in: /usr/include/suitesparse
--- Found COLAMD library: /usr/lib/x86_64-linux-gnu/libcolamd.so
--- Found SPQR headers in: /usr/include/suitesparse
--- Found SPQR library: /usr/lib/x86_64-linux-gnu/libspqr.so
--- Found Intel Thread Building Blocks (TBB) library (2020.2 / 11102) include location: . Assuming SuiteSparseQR was compiled with TBB.
--- Found Config headers in: /usr/include/suitesparse
--- Found Config library: /usr/lib/x86_64-linux-gnu/libsuitesparseconfig.so
--- Adding librt to SuiteSparse_config libraries (required on Linux & Unix [not OSX] if SuiteSparse is compiled with timing).
--- Could NOT find METIS (missing: METIS_INCLUDE_DIR METIS_LIBRARY) 
--- Found required Ceres dependency: Eigen version 3.3.7 in /usr/lib/cmake/eigen3
+/home/nuc/clion-2021.3.4/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/nuc/Desktop/sentry_2022
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Checking platform architecture for MVSDK: x86_64
+-- Found OpenCV: /opt/intel/openvino_2021.4.752/opencv (found version "4.5.3") 
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Found OpenCV: /opt/intel/openvino_2021.4.752/opencv (found suitable version "4.5.3", minimum required is "4") 
+-- Found required Ceres dependency: Eigen version 3.3.90 in /usr/local/share/eigen3/cmake
 -- Found required Ceres dependency: glog
--- Found required Ceres dependency: gflags
--- Found Ceres version: 2.1.0 installed in: /usr/local with components: [EigenSparse, SparseLinearAlgebraLibrary, LAPACK, SuiteSparse, CXSparse, SchurSpecializations, Multithreading]
+-- Found Ceres version: 2.1.0 installed in: /usr/local with components: [EigenSparse, SparseLinearAlgebraLibrary, SchurSpecializations, Multithreading]
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/nuc/Desktop/sentry_2022/cmake-build-debug

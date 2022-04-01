@@ -206,7 +206,8 @@ namespace basic_pnp
     target_2d_.clear();
     target_2d_.shrink_to_fit();
   }
-
+  
+  // 基础自瞄模式pnp角度解算
   void PnP::solvePnP(int _ballet_speed,
                      int _armor_type,
                      cv::RotatedRect _rect)

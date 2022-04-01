@@ -17,6 +17,8 @@
 					],
 					"linkDirectories" : 
 					[
+						"/opt/intel/openvino_2021/data_processing/dl_streamer/lib",
+						"/opt/intel/openvino_2021/data_processing/gstreamer/lib",
 						"/usr/lib/gcc/x86_64-linux-gnu/9",
 						"/usr/lib/x86_64-linux-gnu",
 						"/usr/lib",
@@ -61,6 +63,8 @@
 					],
 					"linkDirectories" : 
 					[
+						"/opt/intel/openvino_2021/data_processing/dl_streamer/lib",
+						"/opt/intel/openvino_2021/data_processing/gstreamer/lib",
 						"/usr/lib/gcc/x86_64-linux-gnu/9",
 						"/usr/lib/x86_64-linux-gnu",
 						"/usr/lib",

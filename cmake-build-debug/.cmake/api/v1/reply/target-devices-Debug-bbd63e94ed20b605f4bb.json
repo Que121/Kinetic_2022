@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "devices/CMakeFiles/devices.dir/./camera/mv_video_capture.cpp.o"
+			"path" : "devices/CMakeFiles/devices.dir/camera/mv_video_capture.cpp.o"
 		},
 		{
-			"path" : "devices/CMakeFiles/devices.dir/./serial/uart_serial.cpp.o"
+			"path" : "devices/CMakeFiles/devices.dir/serial/uart_serial.cpp.o"
 		}
 	],
 	"backtrace" : 1,
@@ -14,8 +14,8 @@
 		"commands" : 
 		[
 			"add_library",
-			"include_directories",
-			"target_link_libraries"
+			"target_link_libraries",
+			"include_directories"
 		],
 		"files" : 
 		[
@@ -34,37 +34,37 @@
 				"parent" : 0
 			},
 			{
-				"file" : 1
-			},
-			{
 				"command" : 1,
-				"file" : 1,
-				"line" : 19,
-				"parent" : 2
-			},
-			{
-				"command" : 1,
-				"file" : 1,
-				"line" : 40,
-				"parent" : 2
-			},
-			{
-				"command" : 1,
-				"file" : 1,
-				"line" : 45,
-				"parent" : 2
-			},
-			{
-				"command" : 1,
-				"file" : 1,
-				"line" : 12,
-				"parent" : 2
-			},
-			{
-				"command" : 2,
 				"file" : 0,
 				"line" : 13,
 				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 43,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 64,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 69,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 36,
+				"parent" : 3
 			}
 		]
 	},
@@ -80,28 +80,35 @@
 					"fragment" : "-std=gnu++14"
 				}
 			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 2,
+					"define" : "FMT_LOCALE"
+				}
+			],
 			"includes" : 
 			[
 				{
-					"backtrace" : 3,
+					"backtrace" : 4,
 					"path" : "/home/nuc/Desktop/sentry_2022"
 				},
 				{
-					"backtrace" : 3,
+					"backtrace" : 4,
 					"path" : "/home/nuc/Desktop/sentry_2022/cmake-build-debug"
 				},
 				{
-					"backtrace" : 4,
+					"backtrace" : 5,
 					"path" : "/home/nuc/Desktop/sentry_2022/autoaim"
 				},
 				{
-					"backtrace" : 5,
+					"backtrace" : 6,
 					"path" : "/home/nuc/Desktop/sentry_2022/devices"
 				},
 				{
-					"backtrace" : 6,
+					"backtrace" : 7,
 					"isSystem" : true,
-					"path" : "/usr/local/include/opencv4"
+					"path" : "/opt/intel/openvino_2021.4.752/opencv/include"
 				}
 			],
 			"language" : "CXX",
@@ -110,7 +117,7 @@
 				"backtraces" : 
 				[
 					1,
-					7
+					2
 				],
 				"standard" : "14"
 			},

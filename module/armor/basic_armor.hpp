@@ -22,6 +22,7 @@
 
 #include "devices/serial/uart_serial.hpp"
 #include "module/filter/basic_kalman.hpp"
+#include "autoaim/detector/nanodet_openvino.hpp"
 
 namespace basic_armor
 {
@@ -141,10 +142,11 @@ namespace basic_armor
      *
      * @param _src_img       原图（ CV_8UC3 ）
      * @param _receive_data  串口接受的数据
+     * @param  decettor      Nanodet结构体
      * @return true          识别到装甲板
      * @return false         没有识别到装甲板
      */
-    bool openvinoNanodet_runBasicArmor(const cv::Mat &_src_img, const uart::Receive_Data _receive_data);
+    bool openvinoNanodet_runBasicArmor(const cv::Mat &_src_img, const uart::Receive_Data _receive_data, NanoDet &detector);
 
     /**
      * @brief 计算两点之间距离

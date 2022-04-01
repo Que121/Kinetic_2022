@@ -9,8 +9,11 @@
 #include <opencv2/opencv.hpp>
 #include "detector/nanodet_openvino.hpp"
 
-// 哨兵自瞄启动
-int sentryAutoaim(NanoDet &detector,cv::Mat image);
-
-
-
+/**
+ * @brief openvino加速nanodet识别装甲板主函数
+ *
+ * @param detector
+ * @param image
+ * @return int
+ */
+int openvinoNanodet_armorDetection(NanoDet &detector, cv::Mat image);

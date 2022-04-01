@@ -74,10 +74,9 @@ int resize_uniform(cv::Mat &src, cv::Mat &dst, cv::Size dst_size,
   return 0;
 }
 
-// 自瞄函数
-int Autoaim(NanoDet &detector, cv::Mat image)
-{
 
+int openvinoNanodet_armorDetection(NanoDet &detector, cv::Mat image)
+{
   object_rect effect_roi{};
 
   cv::Mat resized_img;

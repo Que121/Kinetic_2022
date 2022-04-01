@@ -137,6 +137,7 @@ class PnP : public abstract_pnp::PnP {
   void solvePnP(int             _ballet_speed,
                 int             _armor_type,
                 cv::RotatedRect _rect);
+
   /**
    * @brief 角度结算
    *
@@ -150,6 +151,7 @@ class PnP : public abstract_pnp::PnP {
                 int             _width,
                 int             _height,
                 cv::RotatedRect _rect);
+                
   /**
    * @brief 角度结算
    *

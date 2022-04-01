@@ -16,7 +16,7 @@
 					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "3.4.1"
+						"string" : "3.10.0"
 					},
 					"projectIndex" : 0,
 					"source" : ".",
@@ -114,28 +114,28 @@
 				{
 					"directoryIndex" : 1,
 					"id" : "autoaim::@d04759fb75e888d459f0",
-					"jsonFile" : "target-autoaim-Debug-52b3a0e1f33b004f9db4.json",
+					"jsonFile" : "target-autoaim-Debug-414b9c7bd877106c81a8.json",
 					"name" : "autoaim",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "devices::@0b66dd025354e08ea917",
-					"jsonFile" : "target-devices-Debug-154fbee08df8b4fb20d0.json",
+					"jsonFile" : "target-devices-Debug-bbd63e94ed20b605f4bb.json",
 					"name" : "devices",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 4,
 					"id" : "module::@938c084cc1e01fd7b9cd",
-					"jsonFile" : "target-module-Debug-5756bbc050baa6842e95.json",
+					"jsonFile" : "target-module-Debug-b2529c82666822439ec3.json",
 					"name" : "module",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "sentry_2022::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-sentry_2022-Debug-489cbedbeb8be14b809c.json",
+					"jsonFile" : "target-sentry_2022-Debug-994ee0c52b1b211d4522.json",
 					"name" : "sentry_2022",
 					"projectIndex" : 0
 				},

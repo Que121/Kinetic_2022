@@ -78,6 +78,7 @@ namespace basic_armor
     fmt::print("[{}] Info, Armor configuration initial success\n", idntifier_green);
   }
 
+  // 计算两点之间距离
   float Detector::getDistance(const cv::Point a, const cv::Point b)
   {
     return sqrt((a.x - b.x) * (a.x - b.x) + (a.y - b.y) * (a.y - b.y));
@@ -232,10 +233,16 @@ namespace basic_armor
     return false;
   }
 
-  bool Detector::openvinoNanodet_runBasicArmor(const cv::Mat &_src_img, const uart::Receive_Data _receive_data)
+  // openvino加速nanodet识别装甲板
+  bool Detector::openvinoNanodet_runBasicArmor(const cv::Mat &_src_img, const uart::Receive_Data _receive_data, NanoDet &detector)
   {
     // 复制原图像
     draw_img_ = _src_img.clone();
+
+    //
+    int openvinoNanodet_armorDetection(detector, draw_img_)
+    {
+    }
   }
 
   // 击打哨兵模式

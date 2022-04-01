@@ -60,7 +60,7 @@ int main(int argc, char **argv)
     // 记录第一次时间点
     global_fps_.getTick();
 
-    // 判断迈德威视工业相机是否开启
+    // 判断迈德威视工业相机是否在线
     if (mv_capture_->isindustryimgInput())
     {
       src_img_ = mv_capture_->image(); // 如果工业相机启动，src_img为工业相机输入的视频流
@@ -73,28 +73,29 @@ int main(int argc, char **argv)
     // 判断src_img是否为空
     if (!src_img_.empty())
     {
-      // 更新串口接收信息
+      // 更新数据信息
       serial_.updateReceiveInformation();
 
-      // 根据电控的发送信号选择模式
+      // 返回模式选择
       switch (serial_.returnReceiveMode())
       {
       // 基础自瞄模式
       case uart::SUP_SHOOT:
         if (basic_armor_.runBasicArmor(src_img_, serial_.returnReceive()))
         {
-          // pnp解算
+          // 基础自瞄模式pnp角度解算
           pnp_.solvePnP(serial_.returnReceiveBulletVelocity(),
                         basic_armor_.returnFinalArmorDistinguish(0),
                         basic_armor_.returnFinalArmorRotatedRect(0));
         }
+        // 发送数据
         serial_.updataWriteData(pnp_.returnYawAngle(),
                                 pnp_.returnPitchAngle(),
                                 pnp_.returnDepth(),
                                 basic_armor_.returnArmorNum(), 0);
         break;
 
-      // 能量机关击打模式 
+      // 能量机关击打模式
       case uart::ENERGY_AGENCY:
         break;
 
@@ -116,8 +117,6 @@ int main(int argc, char **argv)
 
       // 哨兵模式
       case uart::SENTINEL_AUTONOMOUS_MODE:
-
-        sentryAutoaim(detector, src_img_);
         break;
 
       // 雷达模式

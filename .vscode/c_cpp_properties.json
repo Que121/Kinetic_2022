@@ -10,7 +10,9 @@
                 "${workspaceFolder}/module/armor/**",
                 "${workspaceFolder}/module/filter/**",
                 "${workspaceFolder}/utils/**",
-                "${workspaceFolder}"
+                "${workspaceFolder}",
+                "/opt/intel/openvino_2021.4.752/deployment_tools/inference_engine/include",
+                "/opt/intel/openvino_2021.4.752/deployment_tools/inference_engine/include"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/g++",

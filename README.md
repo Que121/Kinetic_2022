@@ -1,4 +1,4 @@
-# sentry_2022
+# Kinetic_2022
 
 ## MiniPC 与单片机的通信方式说明
 

@@ -1,4 +1,4 @@
-# Install script for directory: /home/nuc/Desktop/sentry_2022
+# Install script for directory: /home/nuc/Desktop/Kinetic_2022
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,12 +38,18 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for each subdirectory.
-  include("/home/nuc/Desktop/sentry_2022/build/autoaim/cmake_install.cmake")
-  include("/home/nuc/Desktop/sentry_2022/build/devices/cmake_install.cmake")
-  include("/home/nuc/Desktop/sentry_2022/build/utils/cmake_install.cmake")
-  include("/home/nuc/Desktop/sentry_2022/build/module/cmake_install.cmake")
+  # Include the install script for the subdirectory.
+  include("/home/nuc/Desktop/Kinetic_2022/build/devices/cmake_install.cmake")
+endif()
 
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/nuc/Desktop/Kinetic_2022/build/utils/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/nuc/Desktop/Kinetic_2022/build/module/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -54,5 +60,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/nuc/Desktop/sentry_2022/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/nuc/Desktop/Kinetic_2022/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

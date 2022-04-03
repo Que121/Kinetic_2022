@@ -12,7 +12,9 @@
                 "${workspaceFolder}/utils/**",
                 "${workspaceFolder}",
                 "/opt/intel/openvino_2021.4.752/deployment_tools/inference_engine/include",
-                "/opt/intel/openvino_2021.4.752/deployment_tools/inference_engine/include"
+                "/opt/intel/openvino_2021.4.752/opencv/include/opencv2/dnn/utils",
+                "/usr/local/include/opencv4",
+                "/usr/local/include/eigen3"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/g++",

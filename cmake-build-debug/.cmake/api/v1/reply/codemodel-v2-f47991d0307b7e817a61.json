@@ -1,0 +1,163 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.0"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "autoaim",
+					"jsonFile" : "directory-autoaim-Debug-61459ef771dab31c85cd.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "autoaim",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "devices",
+					"jsonFile" : "directory-devices-Debug-cfeba7fbfc4ff4c9cc71.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "devices",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "utils",
+					"jsonFile" : "directory-utils-Debug-ecc62ddb27eede1f7ffa.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "utils",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "module",
+					"jsonFile" : "directory-module-Debug-e032f238cb058b90ca93.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "module",
+					"targetIndexes" : 
+					[
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					],
+					"name" : "sentry_2022",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "autoaim::@d04759fb75e888d459f0",
+					"jsonFile" : "target-autoaim-Debug-414b9c7bd877106c81a8.json",
+					"name" : "autoaim",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "devices::@0b66dd025354e08ea917",
+					"jsonFile" : "target-devices-Debug-bbd63e94ed20b605f4bb.json",
+					"name" : "devices",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "module::@938c084cc1e01fd7b9cd",
+					"jsonFile" : "target-module-Debug-b2529c82666822439ec3.json",
+					"name" : "module",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sentry_2022::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sentry_2022-Debug-716cfe7183a5838a6360.json",
+					"name" : "sentry_2022",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "utils::@c810615cce0f7acb82dc",
+					"jsonFile" : "target-utils-Debug-773078be781626223870.json",
+					"name" : "utils",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/nuc/Desktop/sentry_2022/cmake-build-debug",
+		"source" : "/home/nuc/Desktop/sentry_2022"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

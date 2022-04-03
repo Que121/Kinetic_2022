@@ -1,6 +1,6 @@
 # Create project
-cmake_minimum_required(VERSION 3.10.0) # 版本要求
-project(sentry_2022)
+cmake_minimum_required(VERSION 3.15.0) # 版本要求
+project(Kinetic_2022)
 
 # Use standard c++20
 set(CMAKE_CXX_STANDARD 14)
@@ -50,9 +50,9 @@ find_package(fmt REQUIRED)
 find_package(Threads REQUIRED)
 
 # Add main.cpp to executable
-add_executable(sentry_2022 main.cpp)
+add_executable(Kinetic_2022 main.cpp)
 
-target_link_libraries(sentry_2022
+target_link_libraries(Kinetic_2022
   Threads::Threads
   fmt::fmt
   ${OpenCV_LIBS}
@@ -60,25 +60,20 @@ target_link_libraries(sentry_2022
   ${NGRAPH_LIBRARIES}
   )
 
-# 自瞄
-include_directories(autoaim)
-add_subdirectory(autoaim)
-target_link_libraries(sentry_2022 autoaim)
-
 # 相机与串口
 include_directories(devices)
 add_subdirectory(devices)
-target_link_libraries(sentry_2022 devices)
+target_link_libraries(Kinetic_2022 devices)
 
 # fps显示和相机重启
 include_directories(utils)
 add_subdirectory(utils)
-target_link_libraries(sentry_2022 utils)
+target_link_libraries(Kinetic_2022 utils)
 
 # 功能模块
 include_directories(module)
 add_subdirectory(module)
-target_link_libraries(sentry_2022 module)
+target_link_libraries(Kinetic_2022 module)
 
 # Set built binary to ~/bin
 set (EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
@@ -86,4 +81,4 @@ set (EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 # Set configs folder absolute path
 set(CONFIG_FILE_PATH ${PROJECT_SOURCE_DIR}/configs)
 set(SOURCE_PATH ${PROJECT_SOURCE_DIR})
-target_compile_definitions(sentry_2022 PRIVATE "CONFIG_FILE_PATH=\"${CONFIG_FILE_PATH}\"")
+target_compile_definitions(Kinetic_2022 PRIVATE "CONFIG_FILE_PATH=\"${CONFIG_FILE_PATH}\"")

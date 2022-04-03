@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/nuc/Desktop/sentry_2022/devices/camera/mv_video_capture.cpp
+/home/nuc/Desktop/Kinetic_2022/devices/camera/mv_video_capture.cpp
 mv_video_capture.hpp
-/home/nuc/Desktop/sentry_2022/devices/camera/mv_video_capture.hpp
+/home/nuc/Desktop/Kinetic_2022/devices/camera/mv_video_capture.hpp
 
-/home/nuc/Desktop/sentry_2022/devices/camera/mv_video_capture.hpp
+/home/nuc/Desktop/Kinetic_2022/devices/camera/mv_video_capture.hpp
 fmt/core.h
 -
 fmt/color.h
@@ -22,11 +22,11 @@ opencv2/imgproc/imgproc_c.h
 CameraApi.h
 -
 
-/home/nuc/Desktop/sentry_2022/devices/serial/uart_serial.cpp
+/home/nuc/Desktop/Kinetic_2022/devices/serial/uart_serial.cpp
 uart_serial.hpp
-/home/nuc/Desktop/sentry_2022/devices/serial/uart_serial.hpp
+/home/nuc/Desktop/Kinetic_2022/devices/serial/uart_serial.hpp
 
-/home/nuc/Desktop/sentry_2022/devices/serial/uart_serial.hpp
+/home/nuc/Desktop/Kinetic_2022/devices/serial/uart_serial.hpp
 string
 -
 fcntl.h

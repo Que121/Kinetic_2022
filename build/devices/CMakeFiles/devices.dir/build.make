@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nuc/Desktop/sentry_2022
+CMAKE_SOURCE_DIR = /home/nuc/Desktop/Kinetic_2022
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nuc/Desktop/sentry_2022/build
+CMAKE_BINARY_DIR = /home/nuc/Desktop/Kinetic_2022/build
 
 # Include any dependencies generated for this target.
 include devices/CMakeFiles/devices.dir/depend.make
@@ -59,29 +59,29 @@ include devices/CMakeFiles/devices.dir/flags.make
 
 devices/CMakeFiles/devices.dir/camera/mv_video_capture.cpp.o: devices/CMakeFiles/devices.dir/flags.make
 devices/CMakeFiles/devices.dir/camera/mv_video_capture.cpp.o: ../devices/camera/mv_video_capture.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nuc/Desktop/sentry_2022/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object devices/CMakeFiles/devices.dir/camera/mv_video_capture.cpp.o"
-	cd /home/nuc/Desktop/sentry_2022/build/devices && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/devices.dir/camera/mv_video_capture.cpp.o -c /home/nuc/Desktop/sentry_2022/devices/camera/mv_video_capture.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nuc/Desktop/Kinetic_2022/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object devices/CMakeFiles/devices.dir/camera/mv_video_capture.cpp.o"
+	cd /home/nuc/Desktop/Kinetic_2022/build/devices && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/devices.dir/camera/mv_video_capture.cpp.o -c /home/nuc/Desktop/Kinetic_2022/devices/camera/mv_video_capture.cpp
 
 devices/CMakeFiles/devices.dir/camera/mv_video_capture.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/devices.dir/camera/mv_video_capture.cpp.i"
-	cd /home/nuc/Desktop/sentry_2022/build/devices && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nuc/Desktop/sentry_2022/devices/camera/mv_video_capture.cpp > CMakeFiles/devices.dir/camera/mv_video_capture.cpp.i
+	cd /home/nuc/Desktop/Kinetic_2022/build/devices && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nuc/Desktop/Kinetic_2022/devices/camera/mv_video_capture.cpp > CMakeFiles/devices.dir/camera/mv_video_capture.cpp.i
 
 devices/CMakeFiles/devices.dir/camera/mv_video_capture.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/devices.dir/camera/mv_video_capture.cpp.s"
-	cd /home/nuc/Desktop/sentry_2022/build/devices && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nuc/Desktop/sentry_2022/devices/camera/mv_video_capture.cpp -o CMakeFiles/devices.dir/camera/mv_video_capture.cpp.s
+	cd /home/nuc/Desktop/Kinetic_2022/build/devices && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nuc/Desktop/Kinetic_2022/devices/camera/mv_video_capture.cpp -o CMakeFiles/devices.dir/camera/mv_video_capture.cpp.s
 
 devices/CMakeFiles/devices.dir/serial/uart_serial.cpp.o: devices/CMakeFiles/devices.dir/flags.make
 devices/CMakeFiles/devices.dir/serial/uart_serial.cpp.o: ../devices/serial/uart_serial.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nuc/Desktop/sentry_2022/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object devices/CMakeFiles/devices.dir/serial/uart_serial.cpp.o"
-	cd /home/nuc/Desktop/sentry_2022/build/devices && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/devices.dir/serial/uart_serial.cpp.o -c /home/nuc/Desktop/sentry_2022/devices/serial/uart_serial.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nuc/Desktop/Kinetic_2022/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object devices/CMakeFiles/devices.dir/serial/uart_serial.cpp.o"
+	cd /home/nuc/Desktop/Kinetic_2022/build/devices && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/devices.dir/serial/uart_serial.cpp.o -c /home/nuc/Desktop/Kinetic_2022/devices/serial/uart_serial.cpp
 
 devices/CMakeFiles/devices.dir/serial/uart_serial.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/devices.dir/serial/uart_serial.cpp.i"
-	cd /home/nuc/Desktop/sentry_2022/build/devices && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nuc/Desktop/sentry_2022/devices/serial/uart_serial.cpp > CMakeFiles/devices.dir/serial/uart_serial.cpp.i
+	cd /home/nuc/Desktop/Kinetic_2022/build/devices && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nuc/Desktop/Kinetic_2022/devices/serial/uart_serial.cpp > CMakeFiles/devices.dir/serial/uart_serial.cpp.i
 
 devices/CMakeFiles/devices.dir/serial/uart_serial.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/devices.dir/serial/uart_serial.cpp.s"
-	cd /home/nuc/Desktop/sentry_2022/build/devices && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nuc/Desktop/sentry_2022/devices/serial/uart_serial.cpp -o CMakeFiles/devices.dir/serial/uart_serial.cpp.s
+	cd /home/nuc/Desktop/Kinetic_2022/build/devices && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nuc/Desktop/Kinetic_2022/devices/serial/uart_serial.cpp -o CMakeFiles/devices.dir/serial/uart_serial.cpp.s
 
 devices: devices/CMakeFiles/devices.dir/camera/mv_video_capture.cpp.o
 devices: devices/CMakeFiles/devices.dir/serial/uart_serial.cpp.o
@@ -95,10 +95,10 @@ devices/CMakeFiles/devices.dir/build: devices
 .PHONY : devices/CMakeFiles/devices.dir/build
 
 devices/CMakeFiles/devices.dir/clean:
-	cd /home/nuc/Desktop/sentry_2022/build/devices && $(CMAKE_COMMAND) -P CMakeFiles/devices.dir/cmake_clean.cmake
+	cd /home/nuc/Desktop/Kinetic_2022/build/devices && $(CMAKE_COMMAND) -P CMakeFiles/devices.dir/cmake_clean.cmake
 .PHONY : devices/CMakeFiles/devices.dir/clean
 
 devices/CMakeFiles/devices.dir/depend:
-	cd /home/nuc/Desktop/sentry_2022/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nuc/Desktop/sentry_2022 /home/nuc/Desktop/sentry_2022/devices /home/nuc/Desktop/sentry_2022/build /home/nuc/Desktop/sentry_2022/build/devices /home/nuc/Desktop/sentry_2022/build/devices/CMakeFiles/devices.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/nuc/Desktop/Kinetic_2022/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nuc/Desktop/Kinetic_2022 /home/nuc/Desktop/Kinetic_2022/devices /home/nuc/Desktop/Kinetic_2022/build /home/nuc/Desktop/Kinetic_2022/build/devices /home/nuc/Desktop/Kinetic_2022/build/devices/CMakeFiles/devices.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : devices/CMakeFiles/devices.dir/depend
 

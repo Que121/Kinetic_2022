@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/nuc/Desktop/sentry_2022/devices/camera/mv_video_capture.cpp" "/home/nuc/Desktop/sentry_2022/build/devices/CMakeFiles/devices.dir/camera/mv_video_capture.cpp.o"
-  "/home/nuc/Desktop/sentry_2022/devices/serial/uart_serial.cpp" "/home/nuc/Desktop/sentry_2022/build/devices/CMakeFiles/devices.dir/serial/uart_serial.cpp.o"
+  "/home/nuc/Desktop/Kinetic_2022/devices/camera/mv_video_capture.cpp" "/home/nuc/Desktop/Kinetic_2022/build/devices/CMakeFiles/devices.dir/camera/mv_video_capture.cpp.o"
+  "/home/nuc/Desktop/Kinetic_2022/devices/serial/uart_serial.cpp" "/home/nuc/Desktop/Kinetic_2022/build/devices/CMakeFiles/devices.dir/serial/uart_serial.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -18,7 +18,6 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../"
   "."
-  "../autoaim"
   "../devices"
   "/opt/intel/openvino_2021.4.752/opencv/include"
   )

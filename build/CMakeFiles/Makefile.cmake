@@ -8,7 +8,6 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "../CMakeLists.txt"
-  "../autoaim/CMakeLists.txt"
   "CMakeFiles/3.16.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.16.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.16.3/CMakeSystem.cmake"
@@ -78,7 +77,6 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "autoaim/CMakeFiles/CMakeDirectoryInformation.cmake"
   "devices/CMakeFiles/CMakeDirectoryInformation.cmake"
   "utils/CMakeFiles/CMakeDirectoryInformation.cmake"
   "module/CMakeFiles/CMakeDirectoryInformation.cmake"
@@ -86,8 +84,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/sentry_2022.dir/DependInfo.cmake"
-  "autoaim/CMakeFiles/autoaim.dir/DependInfo.cmake"
+  "CMakeFiles/Kinetic_2022.dir/DependInfo.cmake"
   "devices/CMakeFiles/devices.dir/DependInfo.cmake"
   "utils/CMakeFiles/utils.dir/DependInfo.cmake"
   "module/CMakeFiles/module.dir/DependInfo.cmake"

@@ -240,9 +240,7 @@ namespace basic_armor
     draw_img_ = _src_img.clone();
 
     //
-    int openvinoNanodet_armorDetection(detector, draw_img_)
-    {
-    }
+    void openvinoNanodet_armorDetection(detector, draw_img_);
   }
 
   // 击打哨兵模式

@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nuc/Desktop/sentry_2022
+CMAKE_SOURCE_DIR = /home/nuc/Desktop/Kinetic_2022
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nuc/Desktop/sentry_2022/build
+CMAKE_BINARY_DIR = /home/nuc/Desktop/Kinetic_2022/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/nuc/Desktop/sentry_2022/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/nuc/Desktop/sentry_2022/build/CMakeFiles /home/nuc/Desktop/sentry_2022/build/module/CMakeFiles/progress.marks
-	cd /home/nuc/Desktop/sentry_2022/build && $(MAKE) -f CMakeFiles/Makefile2 module/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nuc/Desktop/sentry_2022/build/CMakeFiles 0
+	cd /home/nuc/Desktop/Kinetic_2022/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/nuc/Desktop/Kinetic_2022/build/CMakeFiles /home/nuc/Desktop/Kinetic_2022/build/module/CMakeFiles/progress.marks
+	cd /home/nuc/Desktop/Kinetic_2022/build && $(MAKE) -f CMakeFiles/Makefile2 module/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nuc/Desktop/Kinetic_2022/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/nuc/Desktop/sentry_2022/build && $(MAKE) -f CMakeFiles/Makefile2 module/clean
+	cd /home/nuc/Desktop/Kinetic_2022/build && $(MAKE) -f CMakeFiles/Makefile2 module/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/nuc/Desktop/sentry_2022/build && $(MAKE) -f CMakeFiles/Makefile2 module/preinstall
+	cd /home/nuc/Desktop/Kinetic_2022/build && $(MAKE) -f CMakeFiles/Makefile2 module/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/nuc/Desktop/sentry_2022/build && $(MAKE) -f CMakeFiles/Makefile2 module/preinstall
+	cd /home/nuc/Desktop/Kinetic_2022/build && $(MAKE) -f CMakeFiles/Makefile2 module/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/nuc/Desktop/sentry_2022/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/nuc/Desktop/Kinetic_2022/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 module/CMakeFiles/module.dir/rule:
-	cd /home/nuc/Desktop/sentry_2022/build && $(MAKE) -f CMakeFiles/Makefile2 module/CMakeFiles/module.dir/rule
+	cd /home/nuc/Desktop/Kinetic_2022/build && $(MAKE) -f CMakeFiles/Makefile2 module/CMakeFiles/module.dir/rule
 .PHONY : module/CMakeFiles/module.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ module: module/CMakeFiles/module.dir/rule
 
 # fast build rule for target.
 module/fast:
-	cd /home/nuc/Desktop/sentry_2022/build && $(MAKE) -f module/CMakeFiles/module.dir/build.make module/CMakeFiles/module.dir/build
+	cd /home/nuc/Desktop/Kinetic_2022/build && $(MAKE) -f module/CMakeFiles/module.dir/build.make module/CMakeFiles/module.dir/build
 .PHONY : module/fast
 
 angle_solve/basic_pnp.o: angle_solve/basic_pnp.cpp.o
@@ -131,7 +131,7 @@ angle_solve/basic_pnp.o: angle_solve/basic_pnp.cpp.o
 
 # target to build an object file
 angle_solve/basic_pnp.cpp.o:
-	cd /home/nuc/Desktop/sentry_2022/build && $(MAKE) -f module/CMakeFiles/module.dir/build.make module/CMakeFiles/module.dir/angle_solve/basic_pnp.cpp.o
+	cd /home/nuc/Desktop/Kinetic_2022/build && $(MAKE) -f module/CMakeFiles/module.dir/build.make module/CMakeFiles/module.dir/angle_solve/basic_pnp.cpp.o
 .PHONY : angle_solve/basic_pnp.cpp.o
 
 angle_solve/basic_pnp.i: angle_solve/basic_pnp.cpp.i
@@ -140,7 +140,7 @@ angle_solve/basic_pnp.i: angle_solve/basic_pnp.cpp.i
 
 # target to preprocess a source file
 angle_solve/basic_pnp.cpp.i:
-	cd /home/nuc/Desktop/sentry_2022/build && $(MAKE) -f module/CMakeFiles/module.dir/build.make module/CMakeFiles/module.dir/angle_solve/basic_pnp.cpp.i
+	cd /home/nuc/Desktop/Kinetic_2022/build && $(MAKE) -f module/CMakeFiles/module.dir/build.make module/CMakeFiles/module.dir/angle_solve/basic_pnp.cpp.i
 .PHONY : angle_solve/basic_pnp.cpp.i
 
 angle_solve/basic_pnp.s: angle_solve/basic_pnp.cpp.s
@@ -149,7 +149,7 @@ angle_solve/basic_pnp.s: angle_solve/basic_pnp.cpp.s
 
 # target to generate assembly for a file
 angle_solve/basic_pnp.cpp.s:
-	cd /home/nuc/Desktop/sentry_2022/build && $(MAKE) -f module/CMakeFiles/module.dir/build.make module/CMakeFiles/module.dir/angle_solve/basic_pnp.cpp.s
+	cd /home/nuc/Desktop/Kinetic_2022/build && $(MAKE) -f module/CMakeFiles/module.dir/build.make module/CMakeFiles/module.dir/angle_solve/basic_pnp.cpp.s
 .PHONY : angle_solve/basic_pnp.cpp.s
 
 armor/basic_armor.o: armor/basic_armor.cpp.o
@@ -158,7 +158,7 @@ armor/basic_armor.o: armor/basic_armor.cpp.o
 
 # target to build an object file
 armor/basic_armor.cpp.o:
-	cd /home/nuc/Desktop/sentry_2022/build && $(MAKE) -f module/CMakeFiles/module.dir/build.make module/CMakeFiles/module.dir/armor/basic_armor.cpp.o
+	cd /home/nuc/Desktop/Kinetic_2022/build && $(MAKE) -f module/CMakeFiles/module.dir/build.make module/CMakeFiles/module.dir/armor/basic_armor.cpp.o
 .PHONY : armor/basic_armor.cpp.o
 
 armor/basic_armor.i: armor/basic_armor.cpp.i
@@ -167,7 +167,7 @@ armor/basic_armor.i: armor/basic_armor.cpp.i
 
 # target to preprocess a source file
 armor/basic_armor.cpp.i:
-	cd /home/nuc/Desktop/sentry_2022/build && $(MAKE) -f module/CMakeFiles/module.dir/build.make module/CMakeFiles/module.dir/armor/basic_armor.cpp.i
+	cd /home/nuc/Desktop/Kinetic_2022/build && $(MAKE) -f module/CMakeFiles/module.dir/build.make module/CMakeFiles/module.dir/armor/basic_armor.cpp.i
 .PHONY : armor/basic_armor.cpp.i
 
 armor/basic_armor.s: armor/basic_armor.cpp.s
@@ -176,7 +176,7 @@ armor/basic_armor.s: armor/basic_armor.cpp.s
 
 # target to generate assembly for a file
 armor/basic_armor.cpp.s:
-	cd /home/nuc/Desktop/sentry_2022/build && $(MAKE) -f module/CMakeFiles/module.dir/build.make module/CMakeFiles/module.dir/armor/basic_armor.cpp.s
+	cd /home/nuc/Desktop/Kinetic_2022/build && $(MAKE) -f module/CMakeFiles/module.dir/build.make module/CMakeFiles/module.dir/armor/basic_armor.cpp.s
 .PHONY : armor/basic_armor.cpp.s
 
 filter/basic_kalman.o: filter/basic_kalman.cpp.o
@@ -185,7 +185,7 @@ filter/basic_kalman.o: filter/basic_kalman.cpp.o
 
 # target to build an object file
 filter/basic_kalman.cpp.o:
-	cd /home/nuc/Desktop/sentry_2022/build && $(MAKE) -f module/CMakeFiles/module.dir/build.make module/CMakeFiles/module.dir/filter/basic_kalman.cpp.o
+	cd /home/nuc/Desktop/Kinetic_2022/build && $(MAKE) -f module/CMakeFiles/module.dir/build.make module/CMakeFiles/module.dir/filter/basic_kalman.cpp.o
 .PHONY : filter/basic_kalman.cpp.o
 
 filter/basic_kalman.i: filter/basic_kalman.cpp.i
@@ -194,7 +194,7 @@ filter/basic_kalman.i: filter/basic_kalman.cpp.i
 
 # target to preprocess a source file
 filter/basic_kalman.cpp.i:
-	cd /home/nuc/Desktop/sentry_2022/build && $(MAKE) -f module/CMakeFiles/module.dir/build.make module/CMakeFiles/module.dir/filter/basic_kalman.cpp.i
+	cd /home/nuc/Desktop/Kinetic_2022/build && $(MAKE) -f module/CMakeFiles/module.dir/build.make module/CMakeFiles/module.dir/filter/basic_kalman.cpp.i
 .PHONY : filter/basic_kalman.cpp.i
 
 filter/basic_kalman.s: filter/basic_kalman.cpp.s
@@ -203,8 +203,35 @@ filter/basic_kalman.s: filter/basic_kalman.cpp.s
 
 # target to generate assembly for a file
 filter/basic_kalman.cpp.s:
-	cd /home/nuc/Desktop/sentry_2022/build && $(MAKE) -f module/CMakeFiles/module.dir/build.make module/CMakeFiles/module.dir/filter/basic_kalman.cpp.s
+	cd /home/nuc/Desktop/Kinetic_2022/build && $(MAKE) -f module/CMakeFiles/module.dir/build.make module/CMakeFiles/module.dir/filter/basic_kalman.cpp.s
 .PHONY : filter/basic_kalman.cpp.s
+
+openvinoNanodet/openvinoNanodet_armorDetection.o: openvinoNanodet/openvinoNanodet_armorDetection.cpp.o
+
+.PHONY : openvinoNanodet/openvinoNanodet_armorDetection.o
+
+# target to build an object file
+openvinoNanodet/openvinoNanodet_armorDetection.cpp.o:
+	cd /home/nuc/Desktop/Kinetic_2022/build && $(MAKE) -f module/CMakeFiles/module.dir/build.make module/CMakeFiles/module.dir/openvinoNanodet/openvinoNanodet_armorDetection.cpp.o
+.PHONY : openvinoNanodet/openvinoNanodet_armorDetection.cpp.o
+
+openvinoNanodet/openvinoNanodet_armorDetection.i: openvinoNanodet/openvinoNanodet_armorDetection.cpp.i
+
+.PHONY : openvinoNanodet/openvinoNanodet_armorDetection.i
+
+# target to preprocess a source file
+openvinoNanodet/openvinoNanodet_armorDetection.cpp.i:
+	cd /home/nuc/Desktop/Kinetic_2022/build && $(MAKE) -f module/CMakeFiles/module.dir/build.make module/CMakeFiles/module.dir/openvinoNanodet/openvinoNanodet_armorDetection.cpp.i
+.PHONY : openvinoNanodet/openvinoNanodet_armorDetection.cpp.i
+
+openvinoNanodet/openvinoNanodet_armorDetection.s: openvinoNanodet/openvinoNanodet_armorDetection.cpp.s
+
+.PHONY : openvinoNanodet/openvinoNanodet_armorDetection.s
+
+# target to generate assembly for a file
+openvinoNanodet/openvinoNanodet_armorDetection.cpp.s:
+	cd /home/nuc/Desktop/Kinetic_2022/build && $(MAKE) -f module/CMakeFiles/module.dir/build.make module/CMakeFiles/module.dir/openvinoNanodet/openvinoNanodet_armorDetection.cpp.s
+.PHONY : openvinoNanodet/openvinoNanodet_armorDetection.cpp.s
 
 record/record.o: record/record.cpp.o
 
@@ -212,7 +239,7 @@ record/record.o: record/record.cpp.o
 
 # target to build an object file
 record/record.cpp.o:
-	cd /home/nuc/Desktop/sentry_2022/build && $(MAKE) -f module/CMakeFiles/module.dir/build.make module/CMakeFiles/module.dir/record/record.cpp.o
+	cd /home/nuc/Desktop/Kinetic_2022/build && $(MAKE) -f module/CMakeFiles/module.dir/build.make module/CMakeFiles/module.dir/record/record.cpp.o
 .PHONY : record/record.cpp.o
 
 record/record.i: record/record.cpp.i
@@ -221,7 +248,7 @@ record/record.i: record/record.cpp.i
 
 # target to preprocess a source file
 record/record.cpp.i:
-	cd /home/nuc/Desktop/sentry_2022/build && $(MAKE) -f module/CMakeFiles/module.dir/build.make module/CMakeFiles/module.dir/record/record.cpp.i
+	cd /home/nuc/Desktop/Kinetic_2022/build && $(MAKE) -f module/CMakeFiles/module.dir/build.make module/CMakeFiles/module.dir/record/record.cpp.i
 .PHONY : record/record.cpp.i
 
 record/record.s: record/record.cpp.s
@@ -230,7 +257,7 @@ record/record.s: record/record.cpp.s
 
 # target to generate assembly for a file
 record/record.cpp.s:
-	cd /home/nuc/Desktop/sentry_2022/build && $(MAKE) -f module/CMakeFiles/module.dir/build.make module/CMakeFiles/module.dir/record/record.cpp.s
+	cd /home/nuc/Desktop/Kinetic_2022/build && $(MAKE) -f module/CMakeFiles/module.dir/build.make module/CMakeFiles/module.dir/record/record.cpp.s
 .PHONY : record/record.cpp.s
 
 roi/basic_roi.o: roi/basic_roi.cpp.o
@@ -239,7 +266,7 @@ roi/basic_roi.o: roi/basic_roi.cpp.o
 
 # target to build an object file
 roi/basic_roi.cpp.o:
-	cd /home/nuc/Desktop/sentry_2022/build && $(MAKE) -f module/CMakeFiles/module.dir/build.make module/CMakeFiles/module.dir/roi/basic_roi.cpp.o
+	cd /home/nuc/Desktop/Kinetic_2022/build && $(MAKE) -f module/CMakeFiles/module.dir/build.make module/CMakeFiles/module.dir/roi/basic_roi.cpp.o
 .PHONY : roi/basic_roi.cpp.o
 
 roi/basic_roi.i: roi/basic_roi.cpp.i
@@ -248,7 +275,7 @@ roi/basic_roi.i: roi/basic_roi.cpp.i
 
 # target to preprocess a source file
 roi/basic_roi.cpp.i:
-	cd /home/nuc/Desktop/sentry_2022/build && $(MAKE) -f module/CMakeFiles/module.dir/build.make module/CMakeFiles/module.dir/roi/basic_roi.cpp.i
+	cd /home/nuc/Desktop/Kinetic_2022/build && $(MAKE) -f module/CMakeFiles/module.dir/build.make module/CMakeFiles/module.dir/roi/basic_roi.cpp.i
 .PHONY : roi/basic_roi.cpp.i
 
 roi/basic_roi.s: roi/basic_roi.cpp.s
@@ -257,7 +284,7 @@ roi/basic_roi.s: roi/basic_roi.cpp.s
 
 # target to generate assembly for a file
 roi/basic_roi.cpp.s:
-	cd /home/nuc/Desktop/sentry_2022/build && $(MAKE) -f module/CMakeFiles/module.dir/build.make module/CMakeFiles/module.dir/roi/basic_roi.cpp.s
+	cd /home/nuc/Desktop/Kinetic_2022/build && $(MAKE) -f module/CMakeFiles/module.dir/build.make module/CMakeFiles/module.dir/roi/basic_roi.cpp.s
 .PHONY : roi/basic_roi.cpp.s
 
 # Help Target
@@ -278,6 +305,9 @@ help:
 	@echo "... filter/basic_kalman.o"
 	@echo "... filter/basic_kalman.i"
 	@echo "... filter/basic_kalman.s"
+	@echo "... openvinoNanodet/openvinoNanodet_armorDetection.o"
+	@echo "... openvinoNanodet/openvinoNanodet_armorDetection.i"
+	@echo "... openvinoNanodet/openvinoNanodet_armorDetection.s"
 	@echo "... record/record.o"
 	@echo "... record/record.i"
 	@echo "... record/record.s"
@@ -295,6 +325,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/nuc/Desktop/sentry_2022/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/nuc/Desktop/Kinetic_2022/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

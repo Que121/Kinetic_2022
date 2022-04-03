@@ -22,7 +22,7 @@
 
 #include "devices/serial/uart_serial.hpp"
 #include "module/filter/basic_kalman.hpp"
-#include "autoaim/detector/nanodet_openvino.hpp"
+#include "module/openvinoNanodet/openvinoNanodet_armorDetection.hpp"
 
 namespace basic_armor
 {
@@ -449,6 +449,7 @@ namespace basic_armor
     float last_deviation_angle_ = 0.f;
     // 初始化陀螺仪 Yaw 轴位置
     float initial_gyroscope_ = 0.f;
+    // Nanodet
   };
 
 } // namespace basic_armor

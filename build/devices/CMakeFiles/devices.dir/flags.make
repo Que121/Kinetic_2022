@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -std=gnu++14
 
 CXX_DEFINES = -DFMT_LOCALE
 
-CXX_INCLUDES = -I/home/nuc/Desktop/sentry_2022 -I/home/nuc/Desktop/sentry_2022/build -I/home/nuc/Desktop/sentry_2022/autoaim -I/home/nuc/Desktop/sentry_2022/devices -isystem /opt/intel/openvino_2021.4.752/opencv/include 
+CXX_INCLUDES = -I/home/nuc/Desktop/Kinetic_2022 -I/home/nuc/Desktop/Kinetic_2022/build -I/home/nuc/Desktop/Kinetic_2022/devices -isystem /opt/intel/openvino_2021.4.752/opencv/include 
 

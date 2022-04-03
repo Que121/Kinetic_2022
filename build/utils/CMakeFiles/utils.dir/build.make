@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nuc/Desktop/sentry_2022
+CMAKE_SOURCE_DIR = /home/nuc/Desktop/Kinetic_2022
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nuc/Desktop/sentry_2022/build
+CMAKE_BINARY_DIR = /home/nuc/Desktop/Kinetic_2022/build
 
 # Include any dependencies generated for this target.
 include utils/CMakeFiles/utils.dir/depend.make
@@ -67,10 +67,10 @@ utils/CMakeFiles/utils.dir/build: utils
 .PHONY : utils/CMakeFiles/utils.dir/build
 
 utils/CMakeFiles/utils.dir/clean:
-	cd /home/nuc/Desktop/sentry_2022/build/utils && $(CMAKE_COMMAND) -P CMakeFiles/utils.dir/cmake_clean.cmake
+	cd /home/nuc/Desktop/Kinetic_2022/build/utils && $(CMAKE_COMMAND) -P CMakeFiles/utils.dir/cmake_clean.cmake
 .PHONY : utils/CMakeFiles/utils.dir/clean
 
 utils/CMakeFiles/utils.dir/depend:
-	cd /home/nuc/Desktop/sentry_2022/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nuc/Desktop/sentry_2022 /home/nuc/Desktop/sentry_2022/utils /home/nuc/Desktop/sentry_2022/build /home/nuc/Desktop/sentry_2022/build/utils /home/nuc/Desktop/sentry_2022/build/utils/CMakeFiles/utils.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/nuc/Desktop/Kinetic_2022/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nuc/Desktop/Kinetic_2022 /home/nuc/Desktop/Kinetic_2022/utils /home/nuc/Desktop/Kinetic_2022/build /home/nuc/Desktop/Kinetic_2022/build/utils /home/nuc/Desktop/Kinetic_2022/build/utils/CMakeFiles/utils.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : utils/CMakeFiles/utils.dir/depend
 

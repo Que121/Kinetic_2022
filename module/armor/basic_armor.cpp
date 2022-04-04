@@ -200,7 +200,7 @@ namespace basic_armor
 
     if (findLight()) // 寻找灯条
     {
-      if (fittingArmor()) // 装甲板匹配]
+      if (fittingArmor()) // 装甲板匹配
       {
         finalArmor(); // 确定装甲板
         lost_cnt_ = 10;
@@ -239,8 +239,18 @@ namespace basic_armor
     // 复制原图像
     draw_img_ = _src_img.clone();
 
-    //
-    void openvinoNanodet_armorDetection(detector, draw_img_);
+    object_rect effect_roi{};
+
+    cv::Mat resized_img;
+
+    // 归一化
+    resize_uniform(draw_img_, resized_img, cv::Size(detector.input_size[0], detector.input_size[1]), effect_roi);
+
+    // 推理结果
+    auto inference_results = detector.detect(resized_img, 0.4, 0.5);
+
+    // 画框
+    draw_bboxes(_src_img, inference_results, effect_roi);
   }
 
   // 击打哨兵模式
@@ -486,6 +496,7 @@ namespace basic_armor
             // 装甲板内颜色平均强度
             if (averageColor() < 30)
             {
+
               // 储存装甲板
               armor_.push_back(armor_data_);
               if (armor_config_.armor_draw == 1 ||
@@ -669,8 +680,8 @@ namespace basic_armor
   }
 
   // GRAY 预处理
-  inline cv::Mat Detector::grayPretreat(const cv::Mat &_src_img,
-                                        const int _my_color)
+  inline cv::Mat Detector::grayPretreat(const cv::Mat &_src_img, const int _my_color)
+
   {
     cv::cvtColor(_src_img, gray_img_, cv::COLOR_BGR2GRAY);
 

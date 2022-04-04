@@ -133,9 +133,9 @@ utils/clean: utils/CMakeFiles/utils.dir/clean
 # Target rules for target CMakeFiles/Kinetic_2022.dir
 
 # All Build rule for target.
+CMakeFiles/Kinetic_2022.dir/all: devices/CMakeFiles/devices.dir/all
 CMakeFiles/Kinetic_2022.dir/all: utils/CMakeFiles/utils.dir/all
 CMakeFiles/Kinetic_2022.dir/all: module/CMakeFiles/module.dir/all
-CMakeFiles/Kinetic_2022.dir/all: devices/CMakeFiles/devices.dir/all
 	$(MAKE) -f CMakeFiles/Kinetic_2022.dir/build.make CMakeFiles/Kinetic_2022.dir/depend
 	$(MAKE) -f CMakeFiles/Kinetic_2022.dir/build.make CMakeFiles/Kinetic_2022.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nuc/Desktop/Kinetic_2022/build/CMakeFiles --progress-num=1,2 "Built target Kinetic_2022"
@@ -143,7 +143,7 @@ CMakeFiles/Kinetic_2022.dir/all: devices/CMakeFiles/devices.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Kinetic_2022.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nuc/Desktop/Kinetic_2022/build/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nuc/Desktop/Kinetic_2022/build/CMakeFiles 12
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Kinetic_2022.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/nuc/Desktop/Kinetic_2022/build/CMakeFiles 0
 .PHONY : CMakeFiles/Kinetic_2022.dir/rule
@@ -219,12 +219,12 @@ utils/CMakeFiles/utils.dir/clean:
 module/CMakeFiles/module.dir/all:
 	$(MAKE) -f module/CMakeFiles/module.dir/build.make module/CMakeFiles/module.dir/depend
 	$(MAKE) -f module/CMakeFiles/module.dir/build.make module/CMakeFiles/module.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nuc/Desktop/Kinetic_2022/build/CMakeFiles --progress-num=5,6,7,8,9,10,11 "Built target module"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nuc/Desktop/Kinetic_2022/build/CMakeFiles --progress-num=5,6,7,8,9,10,11,12 "Built target module"
 .PHONY : module/CMakeFiles/module.dir/all
 
 # Build rule for subdir invocation for target.
 module/CMakeFiles/module.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nuc/Desktop/Kinetic_2022/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nuc/Desktop/Kinetic_2022/build/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 module/CMakeFiles/module.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/nuc/Desktop/Kinetic_2022/build/CMakeFiles 0
 .PHONY : module/CMakeFiles/module.dir/rule

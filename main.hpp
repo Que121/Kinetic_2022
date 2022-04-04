@@ -10,12 +10,12 @@
 #include <iostream>
 #include <string>
 
-#include "autoaim/autoaim.hpp"
 #include "devices/camera/mv_video_capture.hpp"
 #include "devices/serial/uart_serial.hpp"
 #include "utils/fps.hpp"
 #include "angle_solve/basic_pnp.hpp"
 #include "record/record.hpp"
 #include "module/armor/basic_armor.hpp"
+#include "module/openvinoNanodet/openvinoNanodet_armorDetection.hpp"
 
 auto idntifier = fmt::format(fg(fmt::color::green) | fmt::emphasis::bold, "sentry_2022");

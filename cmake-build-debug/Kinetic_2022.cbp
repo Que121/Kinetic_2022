@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Kinetic_2022"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\opt\;CMake Files\..\..\..\..\opt\intel\;CMake Files\..\..\..\..\opt\intel\openvino_2021\;CMake Files\..\..\..\..\opt\intel\openvino_2021\opencv\;CMake Files\..\..\..\..\opt\intel\openvino_2021\opencv\cmake\;CMake Files\..\..\..\..\opt\intel\openvino_2021\deployment_tools\;CMake Files\..\..\..\..\opt\intel\openvino_2021\deployment_tools\inference_engine\;CMake Files\..\..\..\..\opt\intel\openvino_2021\deployment_tools\inference_engine\share\;CMake Files\..\..\..\..\opt\intel\openvino_2021\deployment_tools\inference_engine\external\;CMake Files\..\..\..\..\opt\intel\openvino_2021\deployment_tools\inference_engine\external\tbb\;CMake Files\..\..\..\..\opt\intel\openvino_2021\deployment_tools\inference_engine\external\tbb\cmake\;CMake Files\..\..\..\..\opt\intel\openvino_2021\deployment_tools\ngraph\;CMake Files\..\..\..\..\opt\intel\openvino_2021\deployment_tools\ngraph\cmake\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\local\;CMake Files\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\usr\local\lib\cmake\fmt\;CMake Files\..\..\..\..\usr\local\lib\cmake\Ceres\;CMake Files\..\..\..\..\usr\local\share\;CMake Files\..\..\..\..\usr\local\share\eigen3\;CMake Files\..\..\..\..\usr\local\share\eigen3\cmake\;CMake Files\devices\;CMake Files\utils\;CMake Files\module\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/nuc/Desktop/Kinetic_2022/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/nuc/Desktop/Kinetic_2022/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/nuc/Desktop/Kinetic_2022/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/nuc/Desktop/Kinetic_2022/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/nuc/Desktop/Kinetic_2022/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/nuc/Desktop/Kinetic_2022/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/nuc/Desktop/Kinetic_2022/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/nuc/Desktop/Kinetic_2022/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/nuc/Desktop/Kinetic_2022/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/nuc/Desktop/Kinetic_2022/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/nuc/Desktop/Kinetic_2022/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/nuc/Desktop/Kinetic_2022/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/nuc/Desktop/Kinetic_2022/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/nuc/Desktop/Kinetic_2022/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/nuc/Desktop/Kinetic_2022/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Kinetic_2022">
+				<Option output="/home/nuc/Desktop/Kinetic_2022/bin/Kinetic_2022" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/nuc/Desktop/Kinetic_2022/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCONFIG_FILE_PATH=&quot;/home/nuc/Desktop/Kinetic_2022/configs&quot;"/>
+					<Add option="-DFMT_LOCALE"/>
+					<Add directory="/home/nuc/Desktop/Kinetic_2022"/>
+					<Add directory="/home/nuc/Desktop/Kinetic_2022/cmake-build-debug"/>
+					<Add directory="/home/nuc/Desktop/Kinetic_2022/devices"/>
+					<Add directory="/home/nuc/Desktop/Kinetic_2022/utils"/>
+					<Add directory="/home/nuc/Desktop/Kinetic_2022/module"/>
+					<Add directory="/opt/intel/openvino_2021.4.752/opencv/include"/>
+					<Add directory="/opt/intel/openvino_2021/deployment_tools/inference_engine/include"/>
+					<Add directory="/opt/intel/openvino_2021/deployment_tools/ngraph/include"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/nuc/Desktop/Kinetic_2022/cmake-build-debug/Makefile&quot;  VERBOSE=1 Kinetic_2022"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/nuc/Desktop/Kinetic_2022/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/nuc/Desktop/Kinetic_2022/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/nuc/Desktop/Kinetic_2022/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Kinetic_2022/fast">
+				<Option output="/home/nuc/Desktop/Kinetic_2022/bin/Kinetic_2022" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/nuc/Desktop/Kinetic_2022/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCONFIG_FILE_PATH=&quot;/home/nuc/Desktop/Kinetic_2022/configs&quot;"/>
+					<Add option="-DFMT_LOCALE"/>
+					<Add directory="/home/nuc/Desktop/Kinetic_2022"/>
+					<Add directory="/home/nuc/Desktop/Kinetic_2022/cmake-build-debug"/>
+					<Add directory="/home/nuc/Desktop/Kinetic_2022/devices"/>
+					<Add directory="/home/nuc/Desktop/Kinetic_2022/utils"/>
+					<Add directory="/home/nuc/Desktop/Kinetic_2022/module"/>
+					<Add directory="/opt/intel/openvino_2021.4.752/opencv/include"/>
+					<Add directory="/opt/intel/openvino_2021/deployment_tools/inference_engine/include"/>
+					<Add directory="/opt/intel/openvino_2021/deployment_tools/ngraph/include"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/nuc/Desktop/Kinetic_2022/cmake-build-debug/Makefile&quot;  VERBOSE=1 Kinetic_2022/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/nuc/Desktop/Kinetic_2022/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/nuc/Desktop/Kinetic_2022/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/nuc/Desktop/Kinetic_2022/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="devices">
+				<Option output="/home/nuc/Desktop/Kinetic_2022/cmake-build-debug/devices/CMakeFiles/devices.dir/devices.objlib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/nuc/Desktop/Kinetic_2022/cmake-build-debug/devices"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DFMT_LOCALE"/>
+					<Add directory="/home/nuc/Desktop/Kinetic_2022"/>
+					<Add directory="/home/nuc/Desktop/Kinetic_2022/cmake-build-debug"/>
+					<Add directory="/home/nuc/Desktop/Kinetic_2022/devices"/>
+					<Add directory="/opt/intel/openvino_2021.4.752/opencv/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/nuc/Desktop/Kinetic_2022/cmake-build-debug/devices/Makefile&quot;  VERBOSE=1 devices"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/nuc/Desktop/Kinetic_2022/cmake-build-debug/devices/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/nuc/Desktop/Kinetic_2022/cmake-build-debug/devices/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/nuc/Desktop/Kinetic_2022/cmake-build-debug/devices/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="devices/fast">
+				<Option output="/home/nuc/Desktop/Kinetic_2022/cmake-build-debug/devices/CMakeFiles/devices.dir/devices.objlib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/nuc/Desktop/Kinetic_2022/cmake-build-debug/devices"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DFMT_LOCALE"/>
+					<Add directory="/home/nuc/Desktop/Kinetic_2022"/>
+					<Add directory="/home/nuc/Desktop/Kinetic_2022/cmake-build-debug"/>
+					<Add directory="/home/nuc/Desktop/Kinetic_2022/devices"/>
+					<Add directory="/opt/intel/openvino_2021.4.752/opencv/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/nuc/Desktop/Kinetic_2022/cmake-build-debug/devices/Makefile&quot;  VERBOSE=1 devices/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/nuc/Desktop/Kinetic_2022/cmake-build-debug/devices/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/nuc/Desktop/Kinetic_2022/cmake-build-debug/devices/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/nuc/Desktop/Kinetic_2022/cmake-build-debug/devices/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="utils">
+				<Option output="/home/nuc/Desktop/Kinetic_2022/cmake-build-debug/utils/CMakeFiles/utils.dir/utils.objlib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/nuc/Desktop/Kinetic_2022/cmake-build-debug/utils"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DFMT_LOCALE"/>
+					<Add directory="/home/nuc/Desktop/Kinetic_2022"/>
+					<Add directory="/home/nuc/Desktop/Kinetic_2022/cmake-build-debug"/>
+					<Add directory="/home/nuc/Desktop/Kinetic_2022/devices"/>
+					<Add directory="/home/nuc/Desktop/Kinetic_2022/utils"/>
+					<Add directory="/opt/intel/openvino_2021.4.752/opencv/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/nuc/Desktop/Kinetic_2022/cmake-build-debug/utils/Makefile&quot;  VERBOSE=1 utils"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/nuc/Desktop/Kinetic_2022/cmake-build-debug/utils/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/nuc/Desktop/Kinetic_2022/cmake-build-debug/utils/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/nuc/Desktop/Kinetic_2022/cmake-build-debug/utils/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="utils/fast">
+				<Option output="/home/nuc/Desktop/Kinetic_2022/cmake-build-debug/utils/CMakeFiles/utils.dir/utils.objlib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/nuc/Desktop/Kinetic_2022/cmake-build-debug/utils"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DFMT_LOCALE"/>
+					<Add directory="/home/nuc/Desktop/Kinetic_2022"/>
+					<Add directory="/home/nuc/Desktop/Kinetic_2022/cmake-build-debug"/>
+					<Add directory="/home/nuc/Desktop/Kinetic_2022/devices"/>
+					<Add directory="/home/nuc/Desktop/Kinetic_2022/utils"/>
+					<Add directory="/opt/intel/openvino_2021.4.752/opencv/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/nuc/Desktop/Kinetic_2022/cmake-build-debug/utils/Makefile&quot;  VERBOSE=1 utils/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/nuc/Desktop/Kinetic_2022/cmake-build-debug/utils/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/nuc/Desktop/Kinetic_2022/cmake-build-debug/utils/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/nuc/Desktop/Kinetic_2022/cmake-build-debug/utils/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="module">
+				<Option output="/home/nuc/Desktop/Kinetic_2022/cmake-build-debug/module/libmodule.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/nuc/Desktop/Kinetic_2022/cmake-build-debug/module"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DFMT_LOCALE"/>
+					<Add directory="/home/nuc/Desktop/Kinetic_2022"/>
+					<Add directory="/home/nuc/Desktop/Kinetic_2022/cmake-build-debug"/>
+					<Add directory="/home/nuc/Desktop/Kinetic_2022/devices"/>
+					<Add directory="/home/nuc/Desktop/Kinetic_2022/utils"/>
+					<Add directory="/home/nuc/Desktop/Kinetic_2022/module"/>
+					<Add directory="/home/nuc/Desktop/Kinetic_2022/cmake-build-debug/module"/>
+					<Add directory="/opt/intel/openvino_2021.4.752/opencv/include"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/opt/intel/openvino_2021/deployment_tools/inference_engine/include"/>
+					<Add directory="/opt/intel/openvino_2021/deployment_tools/ngraph/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/nuc/Desktop/Kinetic_2022/cmake-build-debug/module/Makefile&quot;  VERBOSE=1 module"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/nuc/Desktop/Kinetic_2022/cmake-build-debug/module/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/nuc/Desktop/Kinetic_2022/cmake-build-debug/module/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/nuc/Desktop/Kinetic_2022/cmake-build-debug/module/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="module/fast">
+				<Option output="/home/nuc/Desktop/Kinetic_2022/cmake-build-debug/module/libmodule.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/nuc/Desktop/Kinetic_2022/cmake-build-debug/module"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DFMT_LOCALE"/>
+					<Add directory="/home/nuc/Desktop/Kinetic_2022"/>
+					<Add directory="/home/nuc/Desktop/Kinetic_2022/cmake-build-debug"/>
+					<Add directory="/home/nuc/Desktop/Kinetic_2022/devices"/>
+					<Add directory="/home/nuc/Desktop/Kinetic_2022/utils"/>
+					<Add directory="/home/nuc/Desktop/Kinetic_2022/module"/>
+					<Add directory="/home/nuc/Desktop/Kinetic_2022/cmake-build-debug/module"/>
+					<Add directory="/opt/intel/openvino_2021.4.752/opencv/include"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/opt/intel/openvino_2021/deployment_tools/inference_engine/include"/>
+					<Add directory="/opt/intel/openvino_2021/deployment_tools/ngraph/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/nuc/Desktop/Kinetic_2022/cmake-build-debug/module/Makefile&quot;  VERBOSE=1 module/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/nuc/Desktop/Kinetic_2022/cmake-build-debug/module/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/nuc/Desktop/Kinetic_2022/cmake-build-debug/module/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/nuc/Desktop/Kinetic_2022/cmake-build-debug/module/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/nuc/Desktop/Kinetic_2022/cmake-build-debug/devices/CMakeFiles/devices.dir/camera/mv_video_capture.cpp.o">
+			<Option target="Kinetic_2022"/>
+		</Unit>
+		<Unit filename="/home/nuc/Desktop/Kinetic_2022/cmake-build-debug/devices/CMakeFiles/devices.dir/serial/uart_serial.cpp.o">
+			<Option target="Kinetic_2022"/>
+		</Unit>
+		<Unit filename="/home/nuc/Desktop/Kinetic_2022/devices/camera/mv_video_capture.cpp">
+			<Option target="devices"/>
+		</Unit>
+		<Unit filename="/home/nuc/Desktop/Kinetic_2022/devices/camera/mv_video_capture.hpp">
+			<Option target="devices"/>
+		</Unit>
+		<Unit filename="/home/nuc/Desktop/Kinetic_2022/devices/serial/uart_serial.cpp">
+			<Option target="devices"/>
+		</Unit>
+		<Unit filename="/home/nuc/Desktop/Kinetic_2022/devices/serial/uart_serial.hpp">
+			<Option target="devices"/>
+		</Unit>
+		<Unit filename="/home/nuc/Desktop/Kinetic_2022/main.cpp">
+			<Option target="Kinetic_2022"/>
+		</Unit>
+		<Unit filename="/home/nuc/Desktop/Kinetic_2022/main.hpp">
+			<Option target="Kinetic_2022"/>
+		</Unit>
+		<Unit filename="/home/nuc/Desktop/Kinetic_2022/module/angle_solve/basic_pnp.cpp">
+			<Option target="module"/>
+		</Unit>
+		<Unit filename="/home/nuc/Desktop/Kinetic_2022/module/angle_solve/basic_pnp.hpp">
+			<Option target="module"/>
+		</Unit>
+		<Unit filename="/home/nuc/Desktop/Kinetic_2022/module/armor/basic_armor.cpp">
+			<Option target="module"/>
+		</Unit>
+		<Unit filename="/home/nuc/Desktop/Kinetic_2022/module/armor/basic_armor.hpp">
+			<Option target="module"/>
+		</Unit>
+		<Unit filename="/home/nuc/Desktop/Kinetic_2022/module/filter/basic_kalman.cpp">
+			<Option target="module"/>
+		</Unit>
+		<Unit filename="/home/nuc/Desktop/Kinetic_2022/module/filter/basic_kalman.hpp">
+			<Option target="module"/>
+		</Unit>
+		<Unit filename="/home/nuc/Desktop/Kinetic_2022/module/openvinoNanodet/openvinoNanodet_armorDetection.cpp">
+			<Option target="module"/>
+		</Unit>
+		<Unit filename="/home/nuc/Desktop/Kinetic_2022/module/openvinoNanodet/openvinoNanodet_armorDetection.hpp">
+			<Option target="module"/>
+		</Unit>
+		<Unit filename="/home/nuc/Desktop/Kinetic_2022/module/record/record.cpp">
+			<Option target="module"/>
+		</Unit>
+		<Unit filename="/home/nuc/Desktop/Kinetic_2022/module/record/record.hpp">
+			<Option target="module"/>
+		</Unit>
+		<Unit filename="/home/nuc/Desktop/Kinetic_2022/module/roi/basic_roi.cpp">
+			<Option target="module"/>
+		</Unit>
+		<Unit filename="/home/nuc/Desktop/Kinetic_2022/module/roi/basic_roi.hpp">
+			<Option target="module"/>
+		</Unit>
+		<Unit filename="/home/nuc/Desktop/Kinetic_2022/utils/fps.hpp">
+			<Option target="utils"/>
+		</Unit>
+		<Unit filename="/home/nuc/Desktop/Kinetic_2022/utils/reset_mv_camera.hpp">
+			<Option target="utils"/>
+		</Unit>
+		<Unit filename="/home/nuc/Desktop/Kinetic_2022/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/nuc/Desktop/Kinetic_2022/../../../../opt/intel/openvino_2021/opencv/cmake/OpenCVConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\opt\intel\openvino_2021\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/nuc/Desktop/Kinetic_2022/../../../../opt/intel/openvino_2021/opencv/cmake/OpenCVConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\opt\intel\openvino_2021\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/nuc/Desktop/Kinetic_2022/../../../../opt/intel/openvino_2021/opencv/cmake/OpenCVModules-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\opt\intel\openvino_2021\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/nuc/Desktop/Kinetic_2022/../../../../opt/intel/openvino_2021/opencv/cmake/OpenCVModules.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\opt\intel\openvino_2021\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/nuc/Desktop/Kinetic_2022/../../../../opt/intel/openvino_2021/deployment_tools/inference_engine/share/InferenceEngineConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\opt\intel\openvino_2021\deployment_tools\inference_engine\share\"/>
+		</Unit>
+		<Unit filename="/home/nuc/Desktop/Kinetic_2022/../../../../opt/intel/openvino_2021/deployment_tools/inference_engine/share/InferenceEngineConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\opt\intel\openvino_2021\deployment_tools\inference_engine\share\"/>
+		</Unit>
+		<Unit filename="/home/nuc/Desktop/Kinetic_2022/../../../../opt/intel/openvino_2021/deployment_tools/inference_engine/share/InferenceEngineTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\opt\intel\openvino_2021\deployment_tools\inference_engine\share\"/>
+		</Unit>
+		<Unit filename="/home/nuc/Desktop/Kinetic_2022/../../../../opt/intel/openvino_2021/deployment_tools/inference_engine/share/InferenceEngineTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\opt\intel\openvino_2021\deployment_tools\inference_engine\share\"/>
+		</Unit>
+		<Unit filename="/home/nuc/Desktop/Kinetic_2022/../../../../opt/intel/openvino_2021/deployment_tools/inference_engine/external/tbb/cmake/TBBConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\opt\intel\openvino_2021\deployment_tools\inference_engine\external\tbb\cmake\"/>
+		</Unit>
+		<Unit filename="/home/nuc/Desktop/Kinetic_2022/../../../../opt/intel/openvino_2021/deployment_tools/inference_engine/external/tbb/cmake/TBBConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\opt\intel\openvino_2021\deployment_tools\inference_engine\external\tbb\cmake\"/>
+		</Unit>
+		<Unit filename="/home/nuc/Desktop/Kinetic_2022/../../../../opt/intel/openvino_2021/deployment_tools/ngraph/cmake/ngraphConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\opt\intel\openvino_2021\deployment_tools\ngraph\cmake\"/>
+		</Unit>
+		<Unit filename="/home/nuc/Desktop/Kinetic_2022/../../../../opt/intel/openvino_2021/deployment_tools/ngraph/cmake/ngraphConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\opt\intel\openvino_2021\deployment_tools\ngraph\cmake\"/>
+		</Unit>
+		<Unit filename="/home/nuc/Desktop/Kinetic_2022/../../../../opt/intel/openvino_2021/deployment_tools/ngraph/cmake/ngraphTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\opt\intel\openvino_2021\deployment_tools\ngraph\cmake\"/>
+		</Unit>
+		<Unit filename="/home/nuc/Desktop/Kinetic_2022/../../../../opt/intel/openvino_2021/deployment_tools/ngraph/cmake/ngraphTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\opt\intel\openvino_2021\deployment_tools\ngraph\cmake\"/>
+		</Unit>
+		<Unit filename="/home/nuc/Desktop/Kinetic_2022/../../../../usr/local/lib/cmake/fmt/fmt-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\fmt\"/>
+		</Unit>
+		<Unit filename="/home/nuc/Desktop/Kinetic_2022/../../../../usr/local/lib/cmake/fmt/fmt-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\fmt\"/>
+		</Unit>
+		<Unit filename="/home/nuc/Desktop/Kinetic_2022/../../../../usr/local/lib/cmake/fmt/fmt-targets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\fmt\"/>
+		</Unit>
+		<Unit filename="/home/nuc/Desktop/Kinetic_2022/../../../../usr/local/lib/cmake/fmt/fmt-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\fmt\"/>
+		</Unit>
+		<Unit filename="/home/nuc/Desktop/Kinetic_2022/../../../../usr/local/lib/cmake/Ceres/CeresConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Ceres\"/>
+		</Unit>
+		<Unit filename="/home/nuc/Desktop/Kinetic_2022/../../../../usr/local/lib/cmake/Ceres/CeresConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Ceres\"/>
+		</Unit>
+		<Unit filename="/home/nuc/Desktop/Kinetic_2022/../../../../usr/local/lib/cmake/Ceres/CeresTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Ceres\"/>
+		</Unit>
+		<Unit filename="/home/nuc/Desktop/Kinetic_2022/../../../../usr/local/lib/cmake/Ceres/CeresTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Ceres\"/>
+		</Unit>
+		<Unit filename="/home/nuc/Desktop/Kinetic_2022/../../../../usr/local/lib/cmake/Ceres/FindGlog.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Ceres\"/>
+		</Unit>
+		<Unit filename="/home/nuc/Desktop/Kinetic_2022/../../../../usr/local/share/eigen3/cmake/Eigen3Config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\share\eigen3\cmake\"/>
+		</Unit>
+		<Unit filename="/home/nuc/Desktop/Kinetic_2022/../../../../usr/local/share/eigen3/cmake/Eigen3ConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\share\eigen3\cmake\"/>
+		</Unit>
+		<Unit filename="/home/nuc/Desktop/Kinetic_2022/../../../../usr/local/share/eigen3/cmake/Eigen3Targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\share\eigen3\cmake\"/>
+		</Unit>
+		<Unit filename="/home/nuc/Desktop/Kinetic_2022/devices/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\devices\"/>
+		</Unit>
+		<Unit filename="/home/nuc/Desktop/Kinetic_2022/utils/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\utils\"/>
+		</Unit>
+		<Unit filename="/home/nuc/Desktop/Kinetic_2022/module/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\module\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

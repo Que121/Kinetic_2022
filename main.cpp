@@ -104,6 +104,7 @@ int main(int argc, char **argv)
         break;
 
       // 反小陀螺模式（暂未完善）
+      // 不如洒水吧.......
       case uart::TOP_MODE:
         break;
 

@@ -57,10 +57,10 @@ RM = /home/nuc/clion/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nuc/Desktop/sentry_2022
+CMAKE_SOURCE_DIR = /home/nuc/Desktop/Kinetic_2022
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nuc/Desktop/sentry_2022/cmake-build-debug
+CMAKE_BINARY_DIR = /home/nuc/Desktop/Kinetic_2022/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/nuc/Desktop/sentry_2022/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/nuc/Desktop/sentry_2022/cmake-build-debug/CMakeFiles /home/nuc/Desktop/sentry_2022/cmake-build-debug/devices//CMakeFiles/progress.marks
-	cd /home/nuc/Desktop/sentry_2022/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 devices/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nuc/Desktop/sentry_2022/cmake-build-debug/CMakeFiles 0
+	cd /home/nuc/Desktop/Kinetic_2022/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/nuc/Desktop/Kinetic_2022/cmake-build-debug/CMakeFiles /home/nuc/Desktop/Kinetic_2022/cmake-build-debug/devices//CMakeFiles/progress.marks
+	cd /home/nuc/Desktop/Kinetic_2022/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 devices/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nuc/Desktop/Kinetic_2022/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/nuc/Desktop/sentry_2022/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 devices/clean
+	cd /home/nuc/Desktop/Kinetic_2022/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 devices/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/nuc/Desktop/sentry_2022/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 devices/preinstall
+	cd /home/nuc/Desktop/Kinetic_2022/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 devices/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/nuc/Desktop/sentry_2022/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 devices/preinstall
+	cd /home/nuc/Desktop/Kinetic_2022/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 devices/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/nuc/Desktop/sentry_2022/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/nuc/Desktop/Kinetic_2022/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 devices/CMakeFiles/devices.dir/rule:
-	cd /home/nuc/Desktop/sentry_2022/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 devices/CMakeFiles/devices.dir/rule
+	cd /home/nuc/Desktop/Kinetic_2022/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 devices/CMakeFiles/devices.dir/rule
 .PHONY : devices/CMakeFiles/devices.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ devices: devices/CMakeFiles/devices.dir/rule
 
 # fast build rule for target.
 devices/fast:
-	cd /home/nuc/Desktop/sentry_2022/cmake-build-debug && $(MAKE) $(MAKESILENT) -f devices/CMakeFiles/devices.dir/build.make devices/CMakeFiles/devices.dir/build
+	cd /home/nuc/Desktop/Kinetic_2022/cmake-build-debug && $(MAKE) $(MAKESILENT) -f devices/CMakeFiles/devices.dir/build.make devices/CMakeFiles/devices.dir/build
 .PHONY : devices/fast
 
 camera/mv_video_capture.o: camera/mv_video_capture.cpp.o
@@ -135,7 +135,7 @@ camera/mv_video_capture.o: camera/mv_video_capture.cpp.o
 
 # target to build an object file
 camera/mv_video_capture.cpp.o:
-	cd /home/nuc/Desktop/sentry_2022/cmake-build-debug && $(MAKE) $(MAKESILENT) -f devices/CMakeFiles/devices.dir/build.make devices/CMakeFiles/devices.dir/camera/mv_video_capture.cpp.o
+	cd /home/nuc/Desktop/Kinetic_2022/cmake-build-debug && $(MAKE) $(MAKESILENT) -f devices/CMakeFiles/devices.dir/build.make devices/CMakeFiles/devices.dir/camera/mv_video_capture.cpp.o
 .PHONY : camera/mv_video_capture.cpp.o
 
 camera/mv_video_capture.i: camera/mv_video_capture.cpp.i
@@ -143,7 +143,7 @@ camera/mv_video_capture.i: camera/mv_video_capture.cpp.i
 
 # target to preprocess a source file
 camera/mv_video_capture.cpp.i:
-	cd /home/nuc/Desktop/sentry_2022/cmake-build-debug && $(MAKE) $(MAKESILENT) -f devices/CMakeFiles/devices.dir/build.make devices/CMakeFiles/devices.dir/camera/mv_video_capture.cpp.i
+	cd /home/nuc/Desktop/Kinetic_2022/cmake-build-debug && $(MAKE) $(MAKESILENT) -f devices/CMakeFiles/devices.dir/build.make devices/CMakeFiles/devices.dir/camera/mv_video_capture.cpp.i
 .PHONY : camera/mv_video_capture.cpp.i
 
 camera/mv_video_capture.s: camera/mv_video_capture.cpp.s
@@ -151,7 +151,7 @@ camera/mv_video_capture.s: camera/mv_video_capture.cpp.s
 
 # target to generate assembly for a file
 camera/mv_video_capture.cpp.s:
-	cd /home/nuc/Desktop/sentry_2022/cmake-build-debug && $(MAKE) $(MAKESILENT) -f devices/CMakeFiles/devices.dir/build.make devices/CMakeFiles/devices.dir/camera/mv_video_capture.cpp.s
+	cd /home/nuc/Desktop/Kinetic_2022/cmake-build-debug && $(MAKE) $(MAKESILENT) -f devices/CMakeFiles/devices.dir/build.make devices/CMakeFiles/devices.dir/camera/mv_video_capture.cpp.s
 .PHONY : camera/mv_video_capture.cpp.s
 
 serial/uart_serial.o: serial/uart_serial.cpp.o
@@ -159,7 +159,7 @@ serial/uart_serial.o: serial/uart_serial.cpp.o
 
 # target to build an object file
 serial/uart_serial.cpp.o:
-	cd /home/nuc/Desktop/sentry_2022/cmake-build-debug && $(MAKE) $(MAKESILENT) -f devices/CMakeFiles/devices.dir/build.make devices/CMakeFiles/devices.dir/serial/uart_serial.cpp.o
+	cd /home/nuc/Desktop/Kinetic_2022/cmake-build-debug && $(MAKE) $(MAKESILENT) -f devices/CMakeFiles/devices.dir/build.make devices/CMakeFiles/devices.dir/serial/uart_serial.cpp.o
 .PHONY : serial/uart_serial.cpp.o
 
 serial/uart_serial.i: serial/uart_serial.cpp.i
@@ -167,7 +167,7 @@ serial/uart_serial.i: serial/uart_serial.cpp.i
 
 # target to preprocess a source file
 serial/uart_serial.cpp.i:
-	cd /home/nuc/Desktop/sentry_2022/cmake-build-debug && $(MAKE) $(MAKESILENT) -f devices/CMakeFiles/devices.dir/build.make devices/CMakeFiles/devices.dir/serial/uart_serial.cpp.i
+	cd /home/nuc/Desktop/Kinetic_2022/cmake-build-debug && $(MAKE) $(MAKESILENT) -f devices/CMakeFiles/devices.dir/build.make devices/CMakeFiles/devices.dir/serial/uart_serial.cpp.i
 .PHONY : serial/uart_serial.cpp.i
 
 serial/uart_serial.s: serial/uart_serial.cpp.s
@@ -175,7 +175,7 @@ serial/uart_serial.s: serial/uart_serial.cpp.s
 
 # target to generate assembly for a file
 serial/uart_serial.cpp.s:
-	cd /home/nuc/Desktop/sentry_2022/cmake-build-debug && $(MAKE) $(MAKESILENT) -f devices/CMakeFiles/devices.dir/build.make devices/CMakeFiles/devices.dir/serial/uart_serial.cpp.s
+	cd /home/nuc/Desktop/Kinetic_2022/cmake-build-debug && $(MAKE) $(MAKESILENT) -f devices/CMakeFiles/devices.dir/build.make devices/CMakeFiles/devices.dir/serial/uart_serial.cpp.s
 .PHONY : serial/uart_serial.cpp.s
 
 # Help Target
@@ -204,6 +204,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/nuc/Desktop/sentry_2022/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/nuc/Desktop/Kinetic_2022/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -8,11 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/nuc/Desktop/sentry_2022/module/angle_solve/basic_pnp.cpp" "module/CMakeFiles/module.dir/angle_solve/basic_pnp.cpp.o" "gcc" "module/CMakeFiles/module.dir/angle_solve/basic_pnp.cpp.o.d"
-  "/home/nuc/Desktop/sentry_2022/module/armor/basic_armor.cpp" "module/CMakeFiles/module.dir/armor/basic_armor.cpp.o" "gcc" "module/CMakeFiles/module.dir/armor/basic_armor.cpp.o.d"
-  "/home/nuc/Desktop/sentry_2022/module/filter/basic_kalman.cpp" "module/CMakeFiles/module.dir/filter/basic_kalman.cpp.o" "gcc" "module/CMakeFiles/module.dir/filter/basic_kalman.cpp.o.d"
-  "/home/nuc/Desktop/sentry_2022/module/record/record.cpp" "module/CMakeFiles/module.dir/record/record.cpp.o" "gcc" "module/CMakeFiles/module.dir/record/record.cpp.o.d"
-  "/home/nuc/Desktop/sentry_2022/module/roi/basic_roi.cpp" "module/CMakeFiles/module.dir/roi/basic_roi.cpp.o" "gcc" "module/CMakeFiles/module.dir/roi/basic_roi.cpp.o.d"
+  "/home/nuc/Desktop/Kinetic_2022/module/angle_solve/basic_pnp.cpp" "module/CMakeFiles/module.dir/angle_solve/basic_pnp.cpp.o" "gcc" "module/CMakeFiles/module.dir/angle_solve/basic_pnp.cpp.o.d"
+  "/home/nuc/Desktop/Kinetic_2022/module/armor/basic_armor.cpp" "module/CMakeFiles/module.dir/armor/basic_armor.cpp.o" "gcc" "module/CMakeFiles/module.dir/armor/basic_armor.cpp.o.d"
+  "/home/nuc/Desktop/Kinetic_2022/module/filter/basic_kalman.cpp" "module/CMakeFiles/module.dir/filter/basic_kalman.cpp.o" "gcc" "module/CMakeFiles/module.dir/filter/basic_kalman.cpp.o.d"
+  "/home/nuc/Desktop/Kinetic_2022/module/openvinoNanodet/openvinoNanodet_armorDetection.cpp" "module/CMakeFiles/module.dir/openvinoNanodet/openvinoNanodet_armorDetection.cpp.o" "gcc" "module/CMakeFiles/module.dir/openvinoNanodet/openvinoNanodet_armorDetection.cpp.o.d"
+  "/home/nuc/Desktop/Kinetic_2022/module/record/record.cpp" "module/CMakeFiles/module.dir/record/record.cpp.o" "gcc" "module/CMakeFiles/module.dir/record/record.cpp.o.d"
+  "/home/nuc/Desktop/Kinetic_2022/module/roi/basic_roi.cpp" "module/CMakeFiles/module.dir/roi/basic_roi.cpp.o" "gcc" "module/CMakeFiles/module.dir/roi/basic_roi.cpp.o.d"
   )
 
 # Targets to which this target links.

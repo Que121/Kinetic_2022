@@ -206,6 +206,33 @@ filter/basic_kalman.cpp.s:
 	cd /home/nuc/Desktop/Kinetic_2022/build && $(MAKE) -f module/CMakeFiles/module.dir/build.make module/CMakeFiles/module.dir/filter/basic_kalman.cpp.s
 .PHONY : filter/basic_kalman.cpp.s
 
+openvinoNanodet/nanodet_openvino.o: openvinoNanodet/nanodet_openvino.cpp.o
+
+.PHONY : openvinoNanodet/nanodet_openvino.o
+
+# target to build an object file
+openvinoNanodet/nanodet_openvino.cpp.o:
+	cd /home/nuc/Desktop/Kinetic_2022/build && $(MAKE) -f module/CMakeFiles/module.dir/build.make module/CMakeFiles/module.dir/openvinoNanodet/nanodet_openvino.cpp.o
+.PHONY : openvinoNanodet/nanodet_openvino.cpp.o
+
+openvinoNanodet/nanodet_openvino.i: openvinoNanodet/nanodet_openvino.cpp.i
+
+.PHONY : openvinoNanodet/nanodet_openvino.i
+
+# target to preprocess a source file
+openvinoNanodet/nanodet_openvino.cpp.i:
+	cd /home/nuc/Desktop/Kinetic_2022/build && $(MAKE) -f module/CMakeFiles/module.dir/build.make module/CMakeFiles/module.dir/openvinoNanodet/nanodet_openvino.cpp.i
+.PHONY : openvinoNanodet/nanodet_openvino.cpp.i
+
+openvinoNanodet/nanodet_openvino.s: openvinoNanodet/nanodet_openvino.cpp.s
+
+.PHONY : openvinoNanodet/nanodet_openvino.s
+
+# target to generate assembly for a file
+openvinoNanodet/nanodet_openvino.cpp.s:
+	cd /home/nuc/Desktop/Kinetic_2022/build && $(MAKE) -f module/CMakeFiles/module.dir/build.make module/CMakeFiles/module.dir/openvinoNanodet/nanodet_openvino.cpp.s
+.PHONY : openvinoNanodet/nanodet_openvino.cpp.s
+
 openvinoNanodet/openvinoNanodet_armorDetection.o: openvinoNanodet/openvinoNanodet_armorDetection.cpp.o
 
 .PHONY : openvinoNanodet/openvinoNanodet_armorDetection.o
@@ -305,6 +332,9 @@ help:
 	@echo "... filter/basic_kalman.o"
 	@echo "... filter/basic_kalman.i"
 	@echo "... filter/basic_kalman.s"
+	@echo "... openvinoNanodet/nanodet_openvino.o"
+	@echo "... openvinoNanodet/nanodet_openvino.i"
+	@echo "... openvinoNanodet/nanodet_openvino.s"
 	@echo "... openvinoNanodet/openvinoNanodet_armorDetection.o"
 	@echo "... openvinoNanodet/openvinoNanodet_armorDetection.i"
 	@echo "... openvinoNanodet/openvinoNanodet_armorDetection.s"

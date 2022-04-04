@@ -7,7 +7,7 @@
 #include <inference_engine.hpp>
 #include <array>
 #include <opencv2/opencv.hpp>
-#include "detector/nanodet_openvino.hpp"
+#include "nanodet_openvino.hpp"
 
 /**
  * @brief openvino加速nanodet识别装甲板主函数

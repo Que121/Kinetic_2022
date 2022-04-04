@@ -1,12 +1,3 @@
-/**
- * @file basic_armor.hpp
- * @author XX (2796393320@qq.com)
- * @brief 装甲板识别
- * @date 2021-08-28
- *
- * @copyright Copyright (c) 2021 GUCROBOT_WOLF
- *
- */
 #pragma once
 
 #include <algorithm>
@@ -51,6 +42,33 @@ namespace basic_armor
 
     float light_height_aspect = 0;
     float light_width_aspect = 0;
+  };
+
+  struct openvinoNanodet_Armor_Data
+  {
+    float width = 0;        // 装甲板宽度
+    float height = 0;       // 装甲板高度
+    float aspect_ratio = 0; // 装甲板宽高比
+    float tan_angle = 0;    // 装甲板tan角度
+
+    cv::RotatedRect armor_rect; // 装甲板旋转矩形
+
+    int distance_center = 0; // 装甲板距离中心点距离
+    // int distinguish = 0;     // 装甲板类型（ 0 小装甲板 1 大装甲板）
+    int distinguish_num = 0; // 装甲板数字 (具体可见inference.txt)
+
+    // 取消使用灯条匹配
+    /*
+    float left_light_width = 0;
+    float right_light_width = 0;
+    float left_light_height = 0;
+    float right_light_height = 0;
+
+    float light_height_aspect = 0;
+    float light_width_aspect = 0;
+    cv::RotatedRect left_light;  // 左灯条旋转矩形
+    cv::RotatedRect right_light; // 右灯条旋转矩形
+    */
   };
 
   struct Armor_Config
@@ -222,6 +240,7 @@ namespace basic_armor
      * @return Armor_Data  返回装甲板的结构体
      */
     inline Armor_Data returnFinalArmor(const int _num) { return armor_[_num]; }
+
     /**
      * @brief 返回装甲板类型
      *
@@ -229,6 +248,14 @@ namespace basic_armor
      * @return int  返回装甲板类型（ 0 小装甲板 1 大装甲板）
      */
     inline int returnFinalArmorDistinguish(const int _num) { return armor_[_num].distinguish; }
+
+    /**
+     *
+     * @param _num
+     * @return
+     */
+    inline int returnFinalArmorDistinguishNum(const int _num) {return openvinoNanodet_armor_[_num].distinguish_num;}
+
     /**
      * @brief 返回最优装甲板的旋转矩形
      *
@@ -385,6 +412,7 @@ namespace basic_armor
     cv::Point armor_center;
     // 所有装甲板数据 （每帧清空）
     std::vector<Armor_Data> armor_;
+    std::vector<openvinoNanodet_Armor_Data> openvinoNanodet_armor_;
     // 所有灯条数据 （每帧清空）
     std::vector<cv::RotatedRect> light_;
 

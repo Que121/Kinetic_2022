@@ -57,10 +57,10 @@ RM = /home/nuc/clion/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nuc/Desktop/sentry_2022
+CMAKE_SOURCE_DIR = /home/nuc/Desktop/Kinetic_2022
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nuc/Desktop/sentry_2022/cmake-build-debug
+CMAKE_BINARY_DIR = /home/nuc/Desktop/Kinetic_2022/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nuc/Desktop/sentry_2022/cmake-build-debug/CMakeFiles /home/nuc/Desktop/sentry_2022/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nuc/Desktop/Kinetic_2022/cmake-build-debug/CMakeFiles /home/nuc/Desktop/Kinetic_2022/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nuc/Desktop/sentry_2022/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nuc/Desktop/Kinetic_2022/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,30 +117,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named sentry_2022
+# Target rules for targets named Kinetic_2022
 
 # Build rule for target.
-sentry_2022: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sentry_2022
-.PHONY : sentry_2022
+Kinetic_2022: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Kinetic_2022
+.PHONY : Kinetic_2022
 
 # fast build rule for target.
-sentry_2022/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sentry_2022.dir/build.make CMakeFiles/sentry_2022.dir/build
-.PHONY : sentry_2022/fast
-
-#=============================================================================
-# Target rules for targets named autoaim
-
-# Build rule for target.
-autoaim: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 autoaim
-.PHONY : autoaim
-
-# fast build rule for target.
-autoaim/fast:
-	$(MAKE) $(MAKESILENT) -f autoaim/CMakeFiles/autoaim.dir/build.make autoaim/CMakeFiles/autoaim.dir/build
-.PHONY : autoaim/fast
+Kinetic_2022/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Kinetic_2022.dir/build.make CMakeFiles/Kinetic_2022.dir/build
+.PHONY : Kinetic_2022/fast
 
 #=============================================================================
 # Target rules for targets named devices
@@ -186,7 +173,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sentry_2022.dir/build.make CMakeFiles/sentry_2022.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Kinetic_2022.dir/build.make CMakeFiles/Kinetic_2022.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -194,7 +181,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sentry_2022.dir/build.make CMakeFiles/sentry_2022.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Kinetic_2022.dir/build.make CMakeFiles/Kinetic_2022.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -202,7 +189,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sentry_2022.dir/build.make CMakeFiles/sentry_2022.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Kinetic_2022.dir/build.make CMakeFiles/Kinetic_2022.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -213,10 +200,9 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... autoaim"
+	@echo "... Kinetic_2022"
 	@echo "... devices"
 	@echo "... module"
-	@echo "... sentry_2022"
 	@echo "... utils"
 	@echo "... main.o"
 	@echo "... main.i"

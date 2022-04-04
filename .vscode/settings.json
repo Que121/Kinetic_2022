@@ -59,8 +59,11 @@
         "thread": "cpp",
         "cinttypes": "cpp",
         "typeindex": "cpp",
-        "typeinfo": "cpp"
+        "typeinfo": "cpp",
+        "core": "cpp",
+        "geometry": "cpp"
     },
     "editor.formatOnType": true,
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "C_Cpp.errorSquiggles": "Enabled"
 }

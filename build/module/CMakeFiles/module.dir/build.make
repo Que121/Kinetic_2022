@@ -57,9 +57,22 @@ include module/CMakeFiles/module.dir/progress.make
 # Include the compile flags for this target's objects.
 include module/CMakeFiles/module.dir/flags.make
 
+module/CMakeFiles/module.dir/openvinoNanodet/nanodet_openvino.cpp.o: module/CMakeFiles/module.dir/flags.make
+module/CMakeFiles/module.dir/openvinoNanodet/nanodet_openvino.cpp.o: ../module/openvinoNanodet/nanodet_openvino.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nuc/Desktop/Kinetic_2022/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object module/CMakeFiles/module.dir/openvinoNanodet/nanodet_openvino.cpp.o"
+	cd /home/nuc/Desktop/Kinetic_2022/build/module && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/module.dir/openvinoNanodet/nanodet_openvino.cpp.o -c /home/nuc/Desktop/Kinetic_2022/module/openvinoNanodet/nanodet_openvino.cpp
+
+module/CMakeFiles/module.dir/openvinoNanodet/nanodet_openvino.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/module.dir/openvinoNanodet/nanodet_openvino.cpp.i"
+	cd /home/nuc/Desktop/Kinetic_2022/build/module && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nuc/Desktop/Kinetic_2022/module/openvinoNanodet/nanodet_openvino.cpp > CMakeFiles/module.dir/openvinoNanodet/nanodet_openvino.cpp.i
+
+module/CMakeFiles/module.dir/openvinoNanodet/nanodet_openvino.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/module.dir/openvinoNanodet/nanodet_openvino.cpp.s"
+	cd /home/nuc/Desktop/Kinetic_2022/build/module && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nuc/Desktop/Kinetic_2022/module/openvinoNanodet/nanodet_openvino.cpp -o CMakeFiles/module.dir/openvinoNanodet/nanodet_openvino.cpp.s
+
 module/CMakeFiles/module.dir/openvinoNanodet/openvinoNanodet_armorDetection.cpp.o: module/CMakeFiles/module.dir/flags.make
 module/CMakeFiles/module.dir/openvinoNanodet/openvinoNanodet_armorDetection.cpp.o: ../module/openvinoNanodet/openvinoNanodet_armorDetection.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nuc/Desktop/Kinetic_2022/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object module/CMakeFiles/module.dir/openvinoNanodet/openvinoNanodet_armorDetection.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nuc/Desktop/Kinetic_2022/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object module/CMakeFiles/module.dir/openvinoNanodet/openvinoNanodet_armorDetection.cpp.o"
 	cd /home/nuc/Desktop/Kinetic_2022/build/module && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/module.dir/openvinoNanodet/openvinoNanodet_armorDetection.cpp.o -c /home/nuc/Desktop/Kinetic_2022/module/openvinoNanodet/openvinoNanodet_armorDetection.cpp
 
 module/CMakeFiles/module.dir/openvinoNanodet/openvinoNanodet_armorDetection.cpp.i: cmake_force
@@ -72,7 +85,7 @@ module/CMakeFiles/module.dir/openvinoNanodet/openvinoNanodet_armorDetection.cpp.
 
 module/CMakeFiles/module.dir/angle_solve/basic_pnp.cpp.o: module/CMakeFiles/module.dir/flags.make
 module/CMakeFiles/module.dir/angle_solve/basic_pnp.cpp.o: ../module/angle_solve/basic_pnp.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nuc/Desktop/Kinetic_2022/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object module/CMakeFiles/module.dir/angle_solve/basic_pnp.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nuc/Desktop/Kinetic_2022/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object module/CMakeFiles/module.dir/angle_solve/basic_pnp.cpp.o"
 	cd /home/nuc/Desktop/Kinetic_2022/build/module && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/module.dir/angle_solve/basic_pnp.cpp.o -c /home/nuc/Desktop/Kinetic_2022/module/angle_solve/basic_pnp.cpp
 
 module/CMakeFiles/module.dir/angle_solve/basic_pnp.cpp.i: cmake_force
@@ -85,7 +98,7 @@ module/CMakeFiles/module.dir/angle_solve/basic_pnp.cpp.s: cmake_force
 
 module/CMakeFiles/module.dir/armor/basic_armor.cpp.o: module/CMakeFiles/module.dir/flags.make
 module/CMakeFiles/module.dir/armor/basic_armor.cpp.o: ../module/armor/basic_armor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nuc/Desktop/Kinetic_2022/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object module/CMakeFiles/module.dir/armor/basic_armor.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nuc/Desktop/Kinetic_2022/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object module/CMakeFiles/module.dir/armor/basic_armor.cpp.o"
 	cd /home/nuc/Desktop/Kinetic_2022/build/module && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/module.dir/armor/basic_armor.cpp.o -c /home/nuc/Desktop/Kinetic_2022/module/armor/basic_armor.cpp
 
 module/CMakeFiles/module.dir/armor/basic_armor.cpp.i: cmake_force
@@ -98,7 +111,7 @@ module/CMakeFiles/module.dir/armor/basic_armor.cpp.s: cmake_force
 
 module/CMakeFiles/module.dir/filter/basic_kalman.cpp.o: module/CMakeFiles/module.dir/flags.make
 module/CMakeFiles/module.dir/filter/basic_kalman.cpp.o: ../module/filter/basic_kalman.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nuc/Desktop/Kinetic_2022/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object module/CMakeFiles/module.dir/filter/basic_kalman.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nuc/Desktop/Kinetic_2022/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object module/CMakeFiles/module.dir/filter/basic_kalman.cpp.o"
 	cd /home/nuc/Desktop/Kinetic_2022/build/module && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/module.dir/filter/basic_kalman.cpp.o -c /home/nuc/Desktop/Kinetic_2022/module/filter/basic_kalman.cpp
 
 module/CMakeFiles/module.dir/filter/basic_kalman.cpp.i: cmake_force
@@ -111,7 +124,7 @@ module/CMakeFiles/module.dir/filter/basic_kalman.cpp.s: cmake_force
 
 module/CMakeFiles/module.dir/record/record.cpp.o: module/CMakeFiles/module.dir/flags.make
 module/CMakeFiles/module.dir/record/record.cpp.o: ../module/record/record.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nuc/Desktop/Kinetic_2022/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object module/CMakeFiles/module.dir/record/record.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nuc/Desktop/Kinetic_2022/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object module/CMakeFiles/module.dir/record/record.cpp.o"
 	cd /home/nuc/Desktop/Kinetic_2022/build/module && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/module.dir/record/record.cpp.o -c /home/nuc/Desktop/Kinetic_2022/module/record/record.cpp
 
 module/CMakeFiles/module.dir/record/record.cpp.i: cmake_force
@@ -124,7 +137,7 @@ module/CMakeFiles/module.dir/record/record.cpp.s: cmake_force
 
 module/CMakeFiles/module.dir/roi/basic_roi.cpp.o: module/CMakeFiles/module.dir/flags.make
 module/CMakeFiles/module.dir/roi/basic_roi.cpp.o: ../module/roi/basic_roi.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nuc/Desktop/Kinetic_2022/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object module/CMakeFiles/module.dir/roi/basic_roi.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nuc/Desktop/Kinetic_2022/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object module/CMakeFiles/module.dir/roi/basic_roi.cpp.o"
 	cd /home/nuc/Desktop/Kinetic_2022/build/module && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/module.dir/roi/basic_roi.cpp.o -c /home/nuc/Desktop/Kinetic_2022/module/roi/basic_roi.cpp
 
 module/CMakeFiles/module.dir/roi/basic_roi.cpp.i: cmake_force
@@ -137,6 +150,7 @@ module/CMakeFiles/module.dir/roi/basic_roi.cpp.s: cmake_force
 
 # Object files for target module
 module_OBJECTS = \
+"CMakeFiles/module.dir/openvinoNanodet/nanodet_openvino.cpp.o" \
 "CMakeFiles/module.dir/openvinoNanodet/openvinoNanodet_armorDetection.cpp.o" \
 "CMakeFiles/module.dir/angle_solve/basic_pnp.cpp.o" \
 "CMakeFiles/module.dir/armor/basic_armor.cpp.o" \
@@ -147,6 +161,7 @@ module_OBJECTS = \
 # External object files for target module
 module_EXTERNAL_OBJECTS =
 
+module/libmodule.so: module/CMakeFiles/module.dir/openvinoNanodet/nanodet_openvino.cpp.o
 module/libmodule.so: module/CMakeFiles/module.dir/openvinoNanodet/openvinoNanodet_armorDetection.cpp.o
 module/libmodule.so: module/CMakeFiles/module.dir/angle_solve/basic_pnp.cpp.o
 module/libmodule.so: module/CMakeFiles/module.dir/armor/basic_armor.cpp.o
@@ -176,7 +191,7 @@ module/libmodule.so: /opt/intel/openvino_2021/opencv/lib/libopencv_imgproc.so.4.
 module/libmodule.so: /opt/intel/openvino_2021/opencv/lib/libopencv_core.so.4.5.3
 module/libmodule.so: /usr/lib/x86_64-linux-gnu/libglog.so
 module/libmodule.so: module/CMakeFiles/module.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nuc/Desktop/Kinetic_2022/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX shared library libmodule.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nuc/Desktop/Kinetic_2022/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX shared library libmodule.so"
 	cd /home/nuc/Desktop/Kinetic_2022/build/module && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/module.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

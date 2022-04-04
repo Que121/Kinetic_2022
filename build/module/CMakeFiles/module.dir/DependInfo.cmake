@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/nuc/Desktop/Kinetic_2022/module/angle_solve/basic_pnp.cpp" "/home/nuc/Desktop/Kinetic_2022/build/module/CMakeFiles/module.dir/angle_solve/basic_pnp.cpp.o"
   "/home/nuc/Desktop/Kinetic_2022/module/armor/basic_armor.cpp" "/home/nuc/Desktop/Kinetic_2022/build/module/CMakeFiles/module.dir/armor/basic_armor.cpp.o"
   "/home/nuc/Desktop/Kinetic_2022/module/filter/basic_kalman.cpp" "/home/nuc/Desktop/Kinetic_2022/build/module/CMakeFiles/module.dir/filter/basic_kalman.cpp.o"
+  "/home/nuc/Desktop/Kinetic_2022/module/openvinoNanodet/nanodet_openvino.cpp" "/home/nuc/Desktop/Kinetic_2022/build/module/CMakeFiles/module.dir/openvinoNanodet/nanodet_openvino.cpp.o"
   "/home/nuc/Desktop/Kinetic_2022/module/openvinoNanodet/openvinoNanodet_armorDetection.cpp" "/home/nuc/Desktop/Kinetic_2022/build/module/CMakeFiles/module.dir/openvinoNanodet/openvinoNanodet_armorDetection.cpp.o"
   "/home/nuc/Desktop/Kinetic_2022/module/record/record.cpp" "/home/nuc/Desktop/Kinetic_2022/build/module/CMakeFiles/module.dir/record/record.cpp.o"
   "/home/nuc/Desktop/Kinetic_2022/module/roi/basic_roi.cpp" "/home/nuc/Desktop/Kinetic_2022/build/module/CMakeFiles/module.dir/roi/basic_roi.cpp.o"

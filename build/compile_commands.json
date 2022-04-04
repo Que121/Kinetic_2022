@@ -16,6 +16,11 @@
 },
 {
   "directory": "/home/nuc/Desktop/Kinetic_2022/build/module",
+  "command": "/usr/bin/g++  -DFMT_LOCALE -Dmodule_EXPORTS -I/home/nuc/Desktop/Kinetic_2022 -I/home/nuc/Desktop/Kinetic_2022/build -I/home/nuc/Desktop/Kinetic_2022/devices -I/home/nuc/Desktop/Kinetic_2022/utils -I/home/nuc/Desktop/Kinetic_2022/module -I/home/nuc/Desktop/Kinetic_2022/build/module -isystem /opt/intel/openvino_2021.4.752/opencv/include -isystem /usr/local/include/eigen3 -isystem /opt/intel/openvino_2021/deployment_tools/inference_engine/include -isystem /opt/intel/openvino_2021/deployment_tools/ngraph/include  -g -fPIC   -Wno-error=deprecated-declarations -std=gnu++14 -o CMakeFiles/module.dir/openvinoNanodet/nanodet_openvino.cpp.o -c /home/nuc/Desktop/Kinetic_2022/module/openvinoNanodet/nanodet_openvino.cpp",
+  "file": "/home/nuc/Desktop/Kinetic_2022/module/openvinoNanodet/nanodet_openvino.cpp"
+},
+{
+  "directory": "/home/nuc/Desktop/Kinetic_2022/build/module",
   "command": "/usr/bin/g++  -DFMT_LOCALE -Dmodule_EXPORTS -I/home/nuc/Desktop/Kinetic_2022 -I/home/nuc/Desktop/Kinetic_2022/build -I/home/nuc/Desktop/Kinetic_2022/devices -I/home/nuc/Desktop/Kinetic_2022/utils -I/home/nuc/Desktop/Kinetic_2022/module -I/home/nuc/Desktop/Kinetic_2022/build/module -isystem /opt/intel/openvino_2021.4.752/opencv/include -isystem /usr/local/include/eigen3 -isystem /opt/intel/openvino_2021/deployment_tools/inference_engine/include -isystem /opt/intel/openvino_2021/deployment_tools/ngraph/include  -g -fPIC   -Wno-error=deprecated-declarations -std=gnu++14 -o CMakeFiles/module.dir/openvinoNanodet/openvinoNanodet_armorDetection.cpp.o -c /home/nuc/Desktop/Kinetic_2022/module/openvinoNanodet/openvinoNanodet_armorDetection.cpp",
   "file": "/home/nuc/Desktop/Kinetic_2022/module/openvinoNanodet/openvinoNanodet_armorDetection.cpp"
 },

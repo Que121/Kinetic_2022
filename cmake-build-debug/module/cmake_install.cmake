@@ -1,4 +1,4 @@
-# Install script for directory: /home/nuc/Desktop/sentry_2022/module
+# Install script for directory: /home/nuc/Desktop/Kinetic_2022/module
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

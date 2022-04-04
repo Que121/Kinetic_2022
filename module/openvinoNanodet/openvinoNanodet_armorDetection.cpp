@@ -75,21 +75,21 @@ int resize_uniform(cv::Mat &src, cv::Mat &dst, cv::Size dst_size,
   return 0;
 }
 
-void openvinoNanodet_armorDetection(NanoDet &detector, cv::Mat image)
-{
-  object_rect effect_roi{};
+// void openvinoNanodet_armorDetection(NanoDet &detector, cv::Mat image)
+// {
+//   object_rect effect_roi{};
 
-  cv::Mat resized_img;
+//   cv::Mat resized_img;
 
-  // 归一化
-  resize_uniform(image, resized_img, cv::Size(detector.input_size[0], detector.input_size[1]), effect_roi);
+//   // 归一化
+//   resize_uniform(image, resized_img, cv::Size(detector.input_size[0], detector.input_size[1]), effect_roi);
 
-  // 推理结果
-  auto inference_results = detector.detect(resized_img, 0.4, 0.5);
+//   // 推理结果
+//   auto inference_results = detector.detect(resized_img, 0.4, 0.5);
 
-  // 画框
-  draw_bboxes(image, inference_results, effect_roi);
+//   // 画框
+//   draw_bboxes(image, inference_results, effect_roi);
 
-  cv::waitKey(1);
+//   cv::waitKey(1);
 
-}
+// }

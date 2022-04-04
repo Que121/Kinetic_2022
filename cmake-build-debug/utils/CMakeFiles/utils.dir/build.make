@@ -53,10 +53,10 @@ RM = /home/nuc/clion/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nuc/Desktop/sentry_2022
+CMAKE_SOURCE_DIR = /home/nuc/Desktop/Kinetic_2022
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nuc/Desktop/sentry_2022/cmake-build-debug
+CMAKE_BINARY_DIR = /home/nuc/Desktop/Kinetic_2022/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include utils/CMakeFiles/utils.dir/depend.make
@@ -77,10 +77,10 @@ utils/CMakeFiles/utils.dir/build: utils
 .PHONY : utils/CMakeFiles/utils.dir/build
 
 utils/CMakeFiles/utils.dir/clean:
-	cd /home/nuc/Desktop/sentry_2022/cmake-build-debug/utils && $(CMAKE_COMMAND) -P CMakeFiles/utils.dir/cmake_clean.cmake
+	cd /home/nuc/Desktop/Kinetic_2022/cmake-build-debug/utils && $(CMAKE_COMMAND) -P CMakeFiles/utils.dir/cmake_clean.cmake
 .PHONY : utils/CMakeFiles/utils.dir/clean
 
 utils/CMakeFiles/utils.dir/depend:
-	cd /home/nuc/Desktop/sentry_2022/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nuc/Desktop/sentry_2022 /home/nuc/Desktop/sentry_2022/utils /home/nuc/Desktop/sentry_2022/cmake-build-debug /home/nuc/Desktop/sentry_2022/cmake-build-debug/utils /home/nuc/Desktop/sentry_2022/cmake-build-debug/utils/CMakeFiles/utils.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/nuc/Desktop/Kinetic_2022/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nuc/Desktop/Kinetic_2022 /home/nuc/Desktop/Kinetic_2022/utils /home/nuc/Desktop/Kinetic_2022/cmake-build-debug /home/nuc/Desktop/Kinetic_2022/cmake-build-debug/utils /home/nuc/Desktop/Kinetic_2022/cmake-build-debug/utils/CMakeFiles/utils.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : utils/CMakeFiles/utils.dir/depend
 

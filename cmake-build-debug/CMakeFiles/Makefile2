@@ -54,51 +54,33 @@ RM = /home/nuc/clion/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nuc/Desktop/sentry_2022
+CMAKE_SOURCE_DIR = /home/nuc/Desktop/Kinetic_2022
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nuc/Desktop/sentry_2022/cmake-build-debug
+CMAKE_BINARY_DIR = /home/nuc/Desktop/Kinetic_2022/cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/sentry_2022.dir/all
-all: autoaim/all
+all: CMakeFiles/Kinetic_2022.dir/all
 all: devices/all
 all: utils/all
 all: module/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall: autoaim/preinstall
 preinstall: devices/preinstall
 preinstall: utils/preinstall
 preinstall: module/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/sentry_2022.dir/clean
-clean: autoaim/clean
+clean: CMakeFiles/Kinetic_2022.dir/clean
 clean: devices/clean
 clean: utils/clean
 clean: module/clean
 .PHONY : clean
-
-#=============================================================================
-# Directory level rules for directory autoaim
-
-# Recursive "all" directory target.
-autoaim/all: autoaim/CMakeFiles/autoaim.dir/all
-.PHONY : autoaim/all
-
-# Recursive "preinstall" directory target.
-autoaim/preinstall:
-.PHONY : autoaim/preinstall
-
-# Recursive "clean" directory target.
-autoaim/clean: autoaim/CMakeFiles/autoaim.dir/clean
-.PHONY : autoaim/clean
 
 #=============================================================================
 # Directory level rules for directory devices
@@ -146,59 +128,32 @@ utils/clean: utils/CMakeFiles/utils.dir/clean
 .PHONY : utils/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/sentry_2022.dir
+# Target rules for target CMakeFiles/Kinetic_2022.dir
 
 # All Build rule for target.
-CMakeFiles/sentry_2022.dir/all: module/CMakeFiles/module.dir/all
-CMakeFiles/sentry_2022.dir/all: devices/CMakeFiles/devices.dir/all
-CMakeFiles/sentry_2022.dir/all: autoaim/CMakeFiles/autoaim.dir/all
-CMakeFiles/sentry_2022.dir/all: utils/CMakeFiles/utils.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sentry_2022.dir/build.make CMakeFiles/sentry_2022.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sentry_2022.dir/build.make CMakeFiles/sentry_2022.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nuc/Desktop/sentry_2022/cmake-build-debug/CMakeFiles --progress-num=13,14 "Built target sentry_2022"
-.PHONY : CMakeFiles/sentry_2022.dir/all
+CMakeFiles/Kinetic_2022.dir/all: module/CMakeFiles/module.dir/all
+CMakeFiles/Kinetic_2022.dir/all: devices/CMakeFiles/devices.dir/all
+CMakeFiles/Kinetic_2022.dir/all: utils/CMakeFiles/utils.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Kinetic_2022.dir/build.make CMakeFiles/Kinetic_2022.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Kinetic_2022.dir/build.make CMakeFiles/Kinetic_2022.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nuc/Desktop/Kinetic_2022/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target Kinetic_2022"
+.PHONY : CMakeFiles/Kinetic_2022.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/sentry_2022.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nuc/Desktop/sentry_2022/cmake-build-debug/CMakeFiles 14
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/sentry_2022.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nuc/Desktop/sentry_2022/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/sentry_2022.dir/rule
+CMakeFiles/Kinetic_2022.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nuc/Desktop/Kinetic_2022/cmake-build-debug/CMakeFiles 11
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Kinetic_2022.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nuc/Desktop/Kinetic_2022/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/Kinetic_2022.dir/rule
 
 # Convenience name for target.
-sentry_2022: CMakeFiles/sentry_2022.dir/rule
-.PHONY : sentry_2022
+Kinetic_2022: CMakeFiles/Kinetic_2022.dir/rule
+.PHONY : Kinetic_2022
 
 # clean rule for target.
-CMakeFiles/sentry_2022.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sentry_2022.dir/build.make CMakeFiles/sentry_2022.dir/clean
-.PHONY : CMakeFiles/sentry_2022.dir/clean
-
-#=============================================================================
-# Target rules for target autoaim/CMakeFiles/autoaim.dir
-
-# All Build rule for target.
-autoaim/CMakeFiles/autoaim.dir/all:
-	$(MAKE) $(MAKESILENT) -f autoaim/CMakeFiles/autoaim.dir/build.make autoaim/CMakeFiles/autoaim.dir/depend
-	$(MAKE) $(MAKESILENT) -f autoaim/CMakeFiles/autoaim.dir/build.make autoaim/CMakeFiles/autoaim.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nuc/Desktop/sentry_2022/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4 "Built target autoaim"
-.PHONY : autoaim/CMakeFiles/autoaim.dir/all
-
-# Build rule for subdir invocation for target.
-autoaim/CMakeFiles/autoaim.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nuc/Desktop/sentry_2022/cmake-build-debug/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 autoaim/CMakeFiles/autoaim.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nuc/Desktop/sentry_2022/cmake-build-debug/CMakeFiles 0
-.PHONY : autoaim/CMakeFiles/autoaim.dir/rule
-
-# Convenience name for target.
-autoaim: autoaim/CMakeFiles/autoaim.dir/rule
-.PHONY : autoaim
-
-# clean rule for target.
-autoaim/CMakeFiles/autoaim.dir/clean:
-	$(MAKE) $(MAKESILENT) -f autoaim/CMakeFiles/autoaim.dir/build.make autoaim/CMakeFiles/autoaim.dir/clean
-.PHONY : autoaim/CMakeFiles/autoaim.dir/clean
+CMakeFiles/Kinetic_2022.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Kinetic_2022.dir/build.make CMakeFiles/Kinetic_2022.dir/clean
+.PHONY : CMakeFiles/Kinetic_2022.dir/clean
 
 #=============================================================================
 # Target rules for target devices/CMakeFiles/devices.dir
@@ -207,14 +162,14 @@ autoaim/CMakeFiles/autoaim.dir/clean:
 devices/CMakeFiles/devices.dir/all:
 	$(MAKE) $(MAKESILENT) -f devices/CMakeFiles/devices.dir/build.make devices/CMakeFiles/devices.dir/depend
 	$(MAKE) $(MAKESILENT) -f devices/CMakeFiles/devices.dir/build.make devices/CMakeFiles/devices.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nuc/Desktop/sentry_2022/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target devices"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nuc/Desktop/Kinetic_2022/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target devices"
 .PHONY : devices/CMakeFiles/devices.dir/all
 
 # Build rule for subdir invocation for target.
 devices/CMakeFiles/devices.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nuc/Desktop/sentry_2022/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nuc/Desktop/Kinetic_2022/cmake-build-debug/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 devices/CMakeFiles/devices.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nuc/Desktop/sentry_2022/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nuc/Desktop/Kinetic_2022/cmake-build-debug/CMakeFiles 0
 .PHONY : devices/CMakeFiles/devices.dir/rule
 
 # Convenience name for target.
@@ -233,14 +188,14 @@ devices/CMakeFiles/devices.dir/clean:
 utils/CMakeFiles/utils.dir/all:
 	$(MAKE) $(MAKESILENT) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/depend
 	$(MAKE) $(MAKESILENT) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nuc/Desktop/sentry_2022/cmake-build-debug/CMakeFiles --progress-num= "Built target utils"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nuc/Desktop/Kinetic_2022/cmake-build-debug/CMakeFiles --progress-num= "Built target utils"
 .PHONY : utils/CMakeFiles/utils.dir/all
 
 # Build rule for subdir invocation for target.
 utils/CMakeFiles/utils.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nuc/Desktop/sentry_2022/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nuc/Desktop/Kinetic_2022/cmake-build-debug/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 utils/CMakeFiles/utils.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nuc/Desktop/sentry_2022/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nuc/Desktop/Kinetic_2022/cmake-build-debug/CMakeFiles 0
 .PHONY : utils/CMakeFiles/utils.dir/rule
 
 # Convenience name for target.
@@ -259,14 +214,14 @@ utils/CMakeFiles/utils.dir/clean:
 module/CMakeFiles/module.dir/all:
 	$(MAKE) $(MAKESILENT) -f module/CMakeFiles/module.dir/build.make module/CMakeFiles/module.dir/depend
 	$(MAKE) $(MAKESILENT) -f module/CMakeFiles/module.dir/build.make module/CMakeFiles/module.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nuc/Desktop/sentry_2022/cmake-build-debug/CMakeFiles --progress-num=7,8,9,10,11,12 "Built target module"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nuc/Desktop/Kinetic_2022/cmake-build-debug/CMakeFiles --progress-num=5,6,7,8,9,10,11 "Built target module"
 .PHONY : module/CMakeFiles/module.dir/all
 
 # Build rule for subdir invocation for target.
 module/CMakeFiles/module.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nuc/Desktop/sentry_2022/cmake-build-debug/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nuc/Desktop/Kinetic_2022/cmake-build-debug/CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 module/CMakeFiles/module.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nuc/Desktop/sentry_2022/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nuc/Desktop/Kinetic_2022/cmake-build-debug/CMakeFiles 0
 .PHONY : module/CMakeFiles/module.dir/rule
 
 # Convenience name for target.

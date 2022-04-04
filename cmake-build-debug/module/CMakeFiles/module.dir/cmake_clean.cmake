@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/module.dir/armor/basic_armor.cpp.o.d"
   "CMakeFiles/module.dir/filter/basic_kalman.cpp.o"
   "CMakeFiles/module.dir/filter/basic_kalman.cpp.o.d"
+  "CMakeFiles/module.dir/openvinoNanodet/openvinoNanodet_armorDetection.cpp.o"
+  "CMakeFiles/module.dir/openvinoNanodet/openvinoNanodet_armorDetection.cpp.o.d"
   "CMakeFiles/module.dir/record/record.cpp.o"
   "CMakeFiles/module.dir/record/record.cpp.o.d"
   "CMakeFiles/module.dir/roi/basic_roi.cpp.o"

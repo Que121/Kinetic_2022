@@ -197,11 +197,19 @@ namespace basic_armor
      * @return false  没有找到灯条
      */
     bool findLight();
+
     /**
      * @brief 最优装甲板排序
      *
      */
     void finalArmor();
+
+    /**
+     * @brief 最优装甲板排序(openvinoNanodet)
+     *
+     */
+    void openvinoNanodet_finalArmor();
+
     /**
      * @brief 释放内存
      *
@@ -250,11 +258,12 @@ namespace basic_armor
     inline int returnFinalArmorDistinguish(const int _num) { return armor_[_num].distinguish; }
 
     /**
+     * @brief 返回装甲板数字
      *
      * @param _num
-     * @return
+     * @return int 返回装甲板数字 （具体见inference.txt)
      */
-    inline int returnFinalArmorDistinguishNum(const int _num) {return openvinoNanodet_armor_[_num].distinguish_num;}
+    inline int returnFinalArmorDistinguishNum(const int _num) { return openvinoNanodet_armor_[_num].distinguish_num; }
 
     /**
      * @brief 返回最优装甲板的旋转矩形

@@ -156,7 +156,7 @@ std::vector<BoxInfo> NanoDet::detect(cv::Mat image, float score_threshold, float
 
   // auto end = std::chrono::steady_clock::now();
   // double time = std::chrono::duration<double, std::milli>(end - start).count();
-  // std::cout << "inference time:" << time << "ms" << std::endl;
+  std::cout << "inference time:" << time << "ms" << std::endl;
   return dets;
 }
 

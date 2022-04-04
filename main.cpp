@@ -81,7 +81,7 @@ int main(int argc, char **argv)
       {
       // 基础自瞄模式
       case uart::SUP_SHOOT:
-        if (basic_armor_.runBasicArmor(src_img_, serial_.returnReceive()))
+        if (basic_armor_.openvinoNanodet_runBasicArmor(src_img_, serial_.returnReceive(), detector))
         {
           // 基础自瞄模式pnp角度解算
           pnp_.solvePnP(serial_.returnReceiveBulletVelocity(),

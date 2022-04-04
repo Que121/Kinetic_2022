@@ -249,8 +249,17 @@ namespace basic_armor
     // 推理结果
     auto inference_results = detector.detect(resized_img, 0.4, 0.5);
 
-    // 画框
-    draw_bboxes(_src_img, inference_results, effect_roi);
+    if (inference_results.size() != 0)
+    {
+      finalArmor();
+
+      // 画框
+      draw_bboxes(_src_img, inference_results, effect_roi);
+
+      return true;
+    }
+
+    return false;
   }
 
   // 击打哨兵模式
@@ -404,6 +413,35 @@ namespace basic_armor
 
   // 最优装甲板排序
   void Detector::finalArmor()
+  {
+    armor_success = true; // 成功匹配到装甲板
+
+    if (armor_.size() == 1) // 如果只有一块装甲板，打印输出only one armor
+    {
+      fmt::print("[{}] Info, only one armor\n", idntifier_green);
+    }
+
+    else
+    {
+      fmt::print("[{}] Info, multiple armors\n", idntifier_green);
+      // 离图像中心点大小排序从小到大
+      std::sort(armor_.begin(), armor_.end(),
+                [](Armor_Data _a, Armor_Data _b)
+                {
+                  return _a.distance_center < _b.distance_center;
+                });
+
+      if (armor_config_.armor_draw == 1 ||
+          armor_config_.armor_edit == 1)
+      {
+        cv::rectangle(draw_img_, armor_[0].armor_rect.boundingRect(),
+                      cv::Scalar(0, 255, 0), 3, 8);
+      }
+    }
+  }
+
+  // 最优装甲板排序(openvinoNanodet)
+  void Detector::openvinoNanodet_finalArmor()
   {
     armor_success = true; // 成功匹配到装甲板
 

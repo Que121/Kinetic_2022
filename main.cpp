@@ -43,7 +43,7 @@ int main(int argc, char **argv)
   cv::FileStorage re_config_get(record_.video_save_path_, cv::FileStorage::READ); // 打开录制视频
   re_config_get["_PATH"] >> record_.path_;
   std::string save_path_ = "/record/";
-  vw_src.open(CONFIG_FILE_PATH + save_path_ + to_string(record_.path_) + ".avi", cv::VideoWriter::fourcc('M', 'J', 'P', 'G'),
+  vw_src.open(CONFIG_FILE_PATH + save_path_ + std::to_string(record_.path_) + ".avi", cv::VideoWriter::fourcc('M', 'J', 'P', 'G'),
               66, cv::Size(1280, 800), true); // 记得修改分辨率
 
   // 显示fps

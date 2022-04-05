@@ -252,6 +252,7 @@ namespace basic_armor
     if (inference_results.size() != 0)
     {
       finalArmor();
+      lost_cnt_ = 10;
 
       // 画框
       draw_bboxes(_src_img, inference_results, effect_roi);
@@ -445,7 +446,7 @@ namespace basic_armor
   {
     armor_success = true; // 成功匹配到装甲板
 
-    if (armor_.size() == 1) // 如果只有一块装甲板，打印输出only one armor
+    if (openvinoNanodet_armor_.size() == 1) // 如果只有一块装甲板，打印输出only one armor
     {
       fmt::print("[{}] Info, only one armor\n", idntifier_green);
     }
@@ -453,23 +454,25 @@ namespace basic_armor
     else
     {
       fmt::print("[{}] Info, multiple armors\n", idntifier_green);
+
       // 离图像中心点大小排序从小到大
-      std::sort(armor_.begin(), armor_.end(),
+      std::sort(openvinoNanodet_armor_.begin(), openvinoNanodet_armor_.end(),
                 [](Armor_Data _a, Armor_Data _b)
                 {
                   return _a.distance_center < _b.distance_center;
                 });
 
-      if (armor_config_.armor_draw == 1 ||
-          armor_config_.armor_edit == 1)
-      {
-        cv::rectangle(draw_img_, armor_[0].armor_rect.boundingRect(),
-                      cv::Scalar(0, 255, 0), 3, 8);
-      }
+      // 画框
+    }
+
+    if (armor_.size() < 1)
+    {
+      fmt::print("[{}] Info, armor not found\n", idntifier_green);
     }
   }
 
   // 匹配装甲板（弃用）
+
   bool Detector::fittingArmor()
   {
     if (armor_config_.armor_edit == 1)
@@ -560,6 +563,7 @@ namespace basic_armor
   }
 
   // 灯条拟合装甲板 （弃用）
+  /*
   bool Detector::lightJudge(const int i, const int j)
   {
     armor_data_.left_light_height =
@@ -630,6 +634,7 @@ namespace basic_armor
 
     return false;
   }
+  */
 
   // 计算图像颜色平均强度
   int Detector::averageColor()

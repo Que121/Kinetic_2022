@@ -49,6 +49,7 @@ module/CMakeFiles/module.dir/angle_solve/basic_pnp.cpp.o: /opt/intel/openvino_20
 module/CMakeFiles/module.dir/armor/basic_armor.cpp.o: ../devices/serial/uart_serial.hpp
 module/CMakeFiles/module.dir/armor/basic_armor.cpp.o: ../module/filter/abstract_kalman.hpp
 module/CMakeFiles/module.dir/armor/basic_armor.cpp.o: ../module/filter/basic_kalman.hpp
+module/CMakeFiles/module.dir/armor/basic_armor.cpp.o: ../module/openvinoNanodet/nanodet_openvino.hpp
 module/CMakeFiles/module.dir/armor/basic_armor.cpp.o: ../module/openvinoNanodet/openvinoNanodet_armorDetection.hpp
 module/CMakeFiles/module.dir/armor/basic_armor.cpp.o: ../module/armor/basic_armor.cpp
 module/CMakeFiles/module.dir/armor/basic_armor.cpp.o: ../module/armor/basic_armor.hpp
@@ -341,6 +342,7 @@ module/CMakeFiles/module.dir/openvinoNanodet/nanodet_openvino.cpp.o: /opt/intel/
 module/CMakeFiles/module.dir/openvinoNanodet/nanodet_openvino.cpp.o: /opt/intel/openvino_2021/deployment_tools/inference_engine/include/inference_engine.hpp
 module/CMakeFiles/module.dir/openvinoNanodet/nanodet_openvino.cpp.o: /opt/intel/openvino_2021/deployment_tools/inference_engine/include/multi-device/multi_device_config.hpp
 
+module/CMakeFiles/module.dir/openvinoNanodet/openvinoNanodet_armorDetection.cpp.o: ../module/openvinoNanodet/nanodet_openvino.hpp
 module/CMakeFiles/module.dir/openvinoNanodet/openvinoNanodet_armorDetection.cpp.o: ../module/openvinoNanodet/openvinoNanodet_armorDetection.cpp
 module/CMakeFiles/module.dir/openvinoNanodet/openvinoNanodet_armorDetection.cpp.o: ../module/openvinoNanodet/openvinoNanodet_armorDetection.hpp
 module/CMakeFiles/module.dir/openvinoNanodet/openvinoNanodet_armorDetection.cpp.o: /opt/intel/openvino_2021.4.752/opencv/include/opencv2/calib3d.hpp

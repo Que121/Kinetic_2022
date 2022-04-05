@@ -2,6 +2,7 @@
  * @file uart_serial.cpp
  * @brief  串口通讯
  */
+
 #include "uart_serial.hpp"
 
 namespace uart
@@ -277,6 +278,19 @@ namespace uart
     crc_buff_[10] = returnHighBit(depth);
   }
 
+  /**
+   * @brief
+   *
+   * @param data_type 是否发现目标
+   * @param is_shooting  开火命令
+   * @param _yaw  yaw 符号
+   * @param yaw  yaw 绝对值
+   * @param _pitch  pitch 符号
+   * @param pitch  pitch 绝对值
+   * @param depth  深度
+   * @param CRC  CRC 校验码
+   *
+   */
   void SerialPort::getDataForSend(const int &data_type,
                                   const int &is_shooting,
                                   const int &_yaw,
@@ -301,7 +315,7 @@ namespace uart
     write_buff_[12] = 0x45;
   }
 
-  // 判断串口接收数据是否错误或者为空
+  // 判断串口接收数据是否正常
   bool SerialPort::isEmpty()
   {
     if (receive_buff_[0] != '0' || receive_buff_[REC_INFO_LENGTH - 1] != '0')
@@ -315,19 +329,18 @@ namespace uart
     }
   }
 
-  // 更新串口接收信息
+  // 更新数据信息
   void SerialPort::updateReceiveInformation()
   {
 
     receiveData();
 
-    // 判断是否接收为空
+    // 判断串口接收数据是否正常
     if (isEmpty())
     {
       return;
     }
 
-    // 如果接收为空，则使用上一次接收的数据
     else
     {
       last_receive_data_ = receive_data_;
@@ -376,15 +389,15 @@ namespace uart
     case RECORD_MODE:
       receive_data_.now_run_mode = RECORD_MODE;
       break;
-    // 无人机模式（暂无）  
+    // 无人机模式（暂无）
     case PLANE_MODE:
       receive_data_.now_run_mode = PLANE_MODE;
       break;
-    // 哨兵模式  
+    // 哨兵模式
     case SENTINEL_AUTONOMOUS_MODE:
       receive_data_.now_run_mode = SENTINEL_AUTONOMOUS_MODE;
       break;
-    // 雷达模式  
+    // 雷达模式
     case RADAR_MODE:
       receive_data_.now_run_mode = RADAR_MODE;
     // 默认模式=>基础自瞄模式
@@ -392,7 +405,7 @@ namespace uart
       receive_data_.now_run_mode = SUP_SHOOT;
       break;
     }
-    
+
     // 机器人id
     switch (transform_arr_[2])
     {
@@ -415,32 +428,45 @@ namespace uart
       receive_data_.my_robot_id = INFANTRY;
       break;
     }
-    
-    // 弹丸速度。“-2”是为了微调？
+
+    // 弹丸速度。“-2”是为了微调？阙浩华疑惑？喵喵喵？
     receive_data_.bullet_velocity = receive_buff_[14] - 2;
-    
-    // yaw轴陀螺仪数据（联合体）
+
+    // yaw角度
     for (size_t i = 0; i != sizeof(receive_data_.Receive_Yaw_Angle_Info.arr_yaw_angle); ++i)
     {
       receive_data_.Receive_Yaw_Angle_Info.arr_yaw_angle[i] = receive_buff_[i + 4];
     }
 
-    // pitch轴陀螺仪数据（联合体）
+    // yaw角加速度
     for (size_t i = 0; i != sizeof(receive_data_.Receive_Yaw_Velocity_Info.arr_yaw_velocity); ++i)
     {
       receive_data_.Receive_Yaw_Velocity_Info.arr_yaw_velocity[i] = receive_buff_[i + 10];
     }
 
-    // 陀螺仪Yaw轴速度数据
+    // pitch角度
     for (size_t i = 0; i != sizeof(this->receive_data_.Receive_Pitch_Angle_Info.arr_pitch_angle); ++i)
     {
       receive_data_.Receive_Pitch_Angle_Info.arr_pitch_angle[i] = receive_buff_[i + 8];
     }
-
-    // 陀螺仪Pitch轴速度数据
+    // pitch角加速度
     for (size_t i = 0; i != sizeof(this->receive_data_.Receive_Pitch_Velocity_Info.arr_pitch_velocity); ++i)
     {
       receive_data_.Receive_Pitch_Velocity_Info.arr_pitch_velocity[i] = receive_buff_[i + 12];
     }
   }
-} // namespace uart
+}
+/* Receiving protocol:
+ *  0:      'S'
+ *  1:      color
+ *  2:      model
+ *  3:      robot_id
+ *  4~7:    yaw_angle (union)
+ *  8~11:   pitch_angle (union)
+ *  12~13:  yaw_velocity
+ *  14~15:  pitch_velocity
+ *  16:     bullet_velocity
+ *  17:     'E'
+ */
+
+// namespace uart

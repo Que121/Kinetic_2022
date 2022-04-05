@@ -227,6 +227,7 @@ namespace basic_pnp
     cv::Mat ptz = cameraPtz(tvec_);
     cv::Point3f angle = getAngle(ptz, _ballet_speed, 1);
 
+    // pnp结算后发送至电控的angle
     pnp_info_.pitch_angle = angle.y + pnp_config_.offset_armor_pitch;
     pnp_info_.yaw_angle = angle.x + pnp_config_.offset_armor_yaw;
     pnp_info_.depth = angle.z;
@@ -376,7 +377,8 @@ namespace basic_pnp
 
     cv::Mat ptz = cameraPtz(tvec_);
     cv::Point3f angle = getAngle(ptz, _ballet_speed, 1);
-
+    
+    // ？绝对值
     pnp_info_.pitch_angle = angle.y + pnp_config_.offset_armor_pitch;
     pnp_info_.yaw_angle = angle.x + pnp_config_.offset_armor_yaw;
     pnp_info_.depth = angle.z;

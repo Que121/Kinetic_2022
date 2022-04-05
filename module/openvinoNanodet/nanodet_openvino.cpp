@@ -127,6 +127,7 @@ std::vector<BoxInfo> NanoDet::detect(cv::Mat image, float score_threshold, float
 
   // get output
   std::vector<std::vector<BoxInfo>> results;
+
   results.resize(this->num_class);
 
   {
@@ -144,6 +145,7 @@ std::vector<BoxInfo> NanoDet::detect(cv::Mat image, float score_threshold, float
   }
 
   std::vector<BoxInfo> dets;
+
   for (int i = 0; i < (int)results.size(); i++)
   {
     this->nms(results[i], nms_threshold);
@@ -262,20 +264,9 @@ void NanoDet::nms(std::vector<BoxInfo> &input_boxes, float NMS_THRESH)
 void draw_bboxes(const cv::Mat &bgr, const std::vector<BoxInfo> &bboxes, object_rect effect_roi)
 {
   // 类别
-  static const char *class_names[] = {"person", "bicycle", "car", "motorcycle", "airplane", "bus",
-                                      "train", "truck", "boat", "traffic light", "fire hydrant",
-                                      "stop sign", "parking meter", "bench", "bird", "cat", "dog",
-                                      "horse", "sheep", "cow", "elephant", "bear", "zebra", "giraffe",
-                                      "backpack", "umbrella", "handbag", "tie", "suitcase", "frisbee",
-                                      "skis", "snowboard", "sports ball", "kite", "baseball bat",
-                                      "baseball glove", "skateboard", "surfboard", "tennis racket",
-                                      "bottle", "wine glass", "cup", "fork", "knife", "spoon", "bowl",
-                                      "banana", "apple", "sandwich", "orange", "broccoli", "carrot",
-                                      "hot dog", "pizza", "donut", "cake", "chair", "couch",
-                                      "potted plant", "bed", "dining table", "toilet", "tv", "laptop",
-                                      "mouse", "remote", "keyboard", "cell phone", "microwave", "oven",
-                                      "toaster", "sink", "refrigerator", "book", "clock", "vase",
-                                      "scissors", "teddy bear", "hair drier", "toothbrush"};
+  static const char *class_names[] = {"0", "1", "2", "3", "4", "5",
+                                      "6", "7", "8", "8", "9",
+                                      "10", "11", "12", "13"};
 
   cv::Mat image = bgr.clone();
 
@@ -288,6 +279,7 @@ void draw_bboxes(const cv::Mat &bgr, const std::vector<BoxInfo> &bboxes, object_
   float width_ratio = (float)src_w / (float)dst_w;
   float height_ratio = (float)src_h / (float)dst_h;
 
+  // 遍历推理结果
   for (size_t i = 0; i < bboxes.size(); i++)
   {
     const BoxInfo &bbox = bboxes[i];

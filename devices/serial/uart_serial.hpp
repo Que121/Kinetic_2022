@@ -18,7 +18,8 @@
 
 namespace uart
 {
-
+  
+  // fmt规定打印格式
   auto idntifier_green = fmt::format(fg(fmt::color::green) | fmt::emphasis::bold, "uart_serial");
   auto idntifier_red = fmt::format(fg(fmt::color::red) | fmt::emphasis::bold, "uart_serial");
 
@@ -98,6 +99,7 @@ namespace uart
     int bullet_velocity; // 弹丸速度
 
     // Description of the yaw axis angle of the gyroscope (signed)
+    
     // yaw轴的陀螺仪数据（联合体）
     union Receive_Yaw_Angle_Information
     {
@@ -316,7 +318,7 @@ namespace uart
     int transform_arr_[4];
     unsigned char write_buff_[WRITE_BUFF_LENGTH];
     unsigned char crc_buff_[CRC_BUFF_LENGTH];
-    unsigned char receive_buff_[REC_INFO_LENGTH]; //
+    unsigned char receive_buff_[REC_INFO_LENGTH]; // REC_INFO_LENGTH = 22
     unsigned char receive_buff_temp_[REC_INFO_LENGTH * 2];
     unsigned char exchangebyte_;
 

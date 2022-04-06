@@ -115,6 +115,7 @@ void NanoDet::preprocess(cv::Mat &image, InferenceEngine::Blob::Ptr &blob)
   }
 }
 
+// 推理完成将装甲板识别结果推入容器
 std::vector<BoxInfo> NanoDet::detect(cv::Mat image, float score_threshold, float nms_threshold)
 {
   // auto start = std::chrono::steady_clock::now();
@@ -260,13 +261,27 @@ void NanoDet::nms(std::vector<BoxInfo> &input_boxes, float NMS_THRESH)
   }
 }
 
-// 画框
-void draw_bboxes(const cv::Mat &bgr, const std::vector<BoxInfo> &bboxes, object_rect effect_roi)
+void finalArmor_draw_bboxes(const cv::Mat &bgr,
+                            const std::vector<BoxInfo> &bboxes,
+                            object_rect effect_roi,
+                            const uart::Receive_Data _receive_data)
 {
-  // 类别
-  static const char *class_names[] = {"0", "1", "2", "3", "4", "5",
-                                      "6", "7", "8", "8", "9",
-                                      "10", "11", "12", "13"};
+  for (size_t i = 0; i < bboxes.size(); i++)
+  {
+    switch (_receive_data.my_color)
+    {
+    case uart::RED:
+      if (bboxes[i].label > 6)
+      {
+        bboxes.erase(i);
+      }
+      break;
+    case uart::BLUE:
+      break;
+    default:
+      break;
+    }
+  }
 
   cv::Mat image = bgr.clone();
 
@@ -288,6 +303,7 @@ void draw_bboxes(const cv::Mat &bgr, const std::vector<BoxInfo> &bboxes, object_
     cv::Scalar color = cv::Scalar(color_list[bbox.label][0],
                                   color_list[bbox.label][1],
                                   color_list[bbox.label][2]);
+
     // fprintf(stderr, "%d = %.5f at %.2f %.2f %.2f %.2f\n", bbox.label, bbox.score,
     //     bbox.x1, bbox.y1, bbox.x2, bbox.y2);
 

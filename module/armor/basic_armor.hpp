@@ -208,7 +208,7 @@ namespace basic_armor
      * @brief 最优装甲板排序(openvinoNanodet)
      *
      */
-    void openvinoNanodet_finalArmor();
+    void openvinoNanodet_finalArmor(const uart::Receive_Data _receive_data);
 
     /**
      * @brief 释放内存

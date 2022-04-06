@@ -5,6 +5,7 @@
 #include <opencv2/core.hpp>
 #include <inference_engine.hpp>
 #include <opencv2/opencv.hpp>
+#include "devices/serial/uart_serial.hpp"
 
 typedef struct HeadInfo
 {
@@ -29,34 +30,6 @@ typedef struct BoxInfo
   float score;
   int label;
 } BoxInfo;
-
-class NanoDet
-{
-public:
-  NanoDet(const char *param);
-
-  ~NanoDet();
-
-  InferenceEngine::ExecutableNetwork network_;
-  InferenceEngine::InferRequest infer_request_;
-  // static bool hasGPU;
-
-  // modify these parameters to the same with your config if you want to use your own model
-  int input_size[2] = {416, 416};             // input height and width
-  int num_class = 14;                         // number of classes. 80 for COCO
-  int reg_max = 7;                            // `reg_max` set in the training config. Default: 7.
-  std::vector<int> strides = {8, 16, 32, 64}; // strides of the multi-level feature.
-
-  std::vector<BoxInfo> detect(cv::Mat image, float score_threshold, float nms_threshold);
-
-private:
-  void preprocess(cv::Mat &image, InferenceEngine::Blob::Ptr &blob);
-  void decode_infer(const float *&pred, std::vector<CenterPrior> &center_priors, float threshold, std::vector<std::vector<BoxInfo>> &results);
-  BoxInfo disPred2Bbox(const float *&dfl_det, int label, float score, int x, int y, int stride);
-  static void nms(std::vector<BoxInfo> &result, float nms_threshold);
-  std::string input_name_ = "data";
-  std::string output_name_ = "output";
-};
 
 const int color_list[80][3] =
     {
@@ -151,7 +124,50 @@ struct object_rect
   int height;
 };
 
-// 画框
-void draw_bboxes(const cv::Mat &bgr, const std::vector<BoxInfo> &bboxes, object_rect effect_roi);
+class NanoDet
+{
+public:
+  NanoDet(const char *param);
+
+  ~NanoDet();
+
+  InferenceEngine::ExecutableNetwork network_;
+  InferenceEngine::InferRequest infer_request_;
+  // static bool hasGPU;
+
+  // modify these parameters to the same with your config if you want to use your own model
+  int input_size[2] = {416, 416};             // input height and width
+  int num_class = 14;                         // number of classes.
+  int reg_max = 7;                            // `reg_max` set in the training config. Default: 7.
+  std::vector<int> strides = {8, 16, 32, 64}; // strides of the multi-level feature.
+
+  std::vector<BoxInfo> detect(cv::Mat image, float score_threshold, float nms_threshold);
+
+private:
+  void preprocess(cv::Mat &image, InferenceEngine::Blob::Ptr &blob);
+  void decode_infer(const float *&pred, std::vector<CenterPrior> &center_priors, float threshold, std::vector<std::vector<BoxInfo>> &results);
+  BoxInfo disPred2Bbox(const float *&dfl_det, int label, float score, int x, int y, int stride);
+  static void nms(std::vector<BoxInfo> &result, float nms_threshold);
+  std::string input_name_ = "data";
+  std::string output_name_ = "output";
+};
+
+// 类别
+static const char *class_names[] = {"0", "1", "2", "3", "4", "5",
+                                    "6", "7", "8", "8", "9",
+                                    "10", "11", "12", "13"};
+
+/**
+ * @brief 确定装甲板并且画框
+ *
+ * @param bgr 源图像
+ * @param bboxes 装甲板容器
+ * @param effect_roi roi区域
+ * @param _receive_data 接受的串口数据
+ */
+void finalArmor_draw_bboxes(const cv::Mat &bgr,
+                            const std::vector<BoxInfo> &bboxes,
+                            object_rect effect_roi,
+                            const uart::Receive_Data _receive_data);
 
 #endif //_NANODE_TOPENVINO_H_

@@ -201,6 +201,7 @@ module/CMakeFiles/module.dir/filter/basic_kalman.cpp.o
  /home/nuc/Desktop/Kinetic_2022/module/filter/basic_kalman.cpp
  /home/nuc/Desktop/Kinetic_2022/module/filter/basic_kalman.hpp
 module/CMakeFiles/module.dir/openvinoNanodet/nanodet_openvino.cpp.o
+ ../devices/serial/uart_serial.hpp
  /home/nuc/Desktop/Kinetic_2022/module/openvinoNanodet/nanodet_openvino.cpp
  /home/nuc/Desktop/Kinetic_2022/module/openvinoNanodet/nanodet_openvino.hpp
  /opt/intel/openvino_2021.4.752/opencv/include/opencv2/calib3d.hpp
@@ -343,6 +344,7 @@ module/CMakeFiles/module.dir/openvinoNanodet/nanodet_openvino.cpp.o
  /opt/intel/openvino_2021/deployment_tools/inference_engine/include/inference_engine.hpp
  /opt/intel/openvino_2021/deployment_tools/inference_engine/include/multi-device/multi_device_config.hpp
 module/CMakeFiles/module.dir/openvinoNanodet/openvinoNanodet_armorDetection.cpp.o
+ ../devices/serial/uart_serial.hpp
  /home/nuc/Desktop/Kinetic_2022/module/openvinoNanodet/nanodet_openvino.hpp
  /home/nuc/Desktop/Kinetic_2022/module/openvinoNanodet/openvinoNanodet_armorDetection.cpp
  /home/nuc/Desktop/Kinetic_2022/module/openvinoNanodet/openvinoNanodet_armorDetection.hpp

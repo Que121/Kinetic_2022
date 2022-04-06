@@ -251,11 +251,11 @@ namespace basic_armor
 
     if (inference_results.size() != 0)
     {
-      finalArmor();
+
       lost_cnt_ = 10;
 
       // 画框
-      draw_bboxes(_src_img, inference_results, effect_roi);
+      finalArmor_draw_bboxes(_src_img, inference_results, effect_roi, _receive_data);
 
       return true;
     }
@@ -442,7 +442,7 @@ namespace basic_armor
   }
 
   // 最优装甲板排序(openvinoNanodet)
-  void Detector::openvinoNanodet_finalArmor()
+  void Detector::openvinoNanodet_finalArmor(const uart::Receive_Data _receive_data)
   {
     armor_success = true; // 成功匹配到装甲板
 

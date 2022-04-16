@@ -46,29 +46,14 @@ namespace basic_armor
 
   struct openvinoNanodet_Armor_Data
   {
-    float width = 0;        // 装甲板宽度
-    float height = 0;       // 装甲板高度
-    float aspect_ratio = 0; // 装甲板宽高比
-    float tan_angle = 0;    // 装甲板tan角度
+    float width = 0;  // 装甲板宽度
+    float height = 0; // 装甲板高度
 
-    cv::RotatedRect armor_rect; // 装甲板旋转矩形
+    cv::Rect armor_rect; // 装甲板旋转矩形
 
     int distance_center = 0; // 装甲板距离中心点距离
-    // int distinguish = 0;     // 装甲板类型（ 0 小装甲板 1 大装甲板）
+    int distinguish = 0;     // 装甲板类型（ 0 小装甲板 1 大装甲板）
     int distinguish_num = 0; // 装甲板数字 (具体可见inference.txt)
-
-    // 取消使用灯条匹配
-    /*
-    float left_light_width = 0;
-    float right_light_width = 0;
-    float left_light_height = 0;
-    float right_light_height = 0;
-
-    float light_height_aspect = 0;
-    float light_width_aspect = 0;
-    cv::RotatedRect left_light;  // 左灯条旋转矩形
-    cv::RotatedRect right_light; // 右灯条旋转矩形
-    */
   };
 
   struct Armor_Config
@@ -190,6 +175,26 @@ namespace basic_armor
      * @return false  没有匹配到装甲板
      */
     bool fittingArmor();
+
+    /**
+     * @brief Nanodet装甲板匹配
+     *
+     * @param bgr
+     * @param efect_roi
+     * @param openvinoNanodetBboxes 过滤后装甲板
+     * @return true
+     * @return false
+     */
+    bool openvinoNanodet_fittingArmor(const cv::Mat &bgr, object_rect effect_roi, std::vector<BoxInfo> &openvinoNanodetBboxes);
+
+    /**
+     * @brief Nanodet装甲板排序
+     *
+     * @return true
+     * @return false
+     */
+    bool openvinoNanodet_SortArmor();
+
     /**
      * @brief 寻找灯条
      *
@@ -207,8 +212,10 @@ namespace basic_armor
     /**
      * @brief 最优装甲板排序(openvinoNanodet)
      *
-     */
+
+
     void openvinoNanodet_finalArmor(const uart::Receive_Data _receive_data);
+    */
 
     /**
      * @brief 释放内存
@@ -389,6 +396,7 @@ namespace basic_armor
     Image_Config image_config_;
     Light_Config light_config_;
     Armor_Data armor_data_;
+    openvinoNanodet_Armor_Data openvinoNanodet_armor_data_;
 
     basic_kalman::firstKalman kalman_ = basic_kalman::firstKalman();
     cv::Mat frame;
@@ -419,9 +427,11 @@ namespace basic_armor
     cv::RotatedRect last_armor_rect_;
     cv::Point lost_armor_center;
     cv::Point armor_center;
+
     // 所有装甲板数据 （每帧清空）
     std::vector<Armor_Data> armor_;
     std::vector<openvinoNanodet_Armor_Data> openvinoNanodet_armor_;
+
     // 所有灯条数据 （每帧清空）
     std::vector<cv::RotatedRect> light_;
 

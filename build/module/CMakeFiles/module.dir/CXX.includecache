@@ -37,6 +37,12 @@ inference_engine.hpp
 -
 opencv2/opencv.hpp
 -
+vector
+-
+iostream
+-
+algorithm
+-
 devices/serial/uart_serial.hpp
 ../module/openvinoNanodet/devices/serial/uart_serial.hpp
 
@@ -102,6 +108,12 @@ opencv2/core.hpp
 inference_engine.hpp
 -
 opencv2/opencv.hpp
+-
+vector
+-
+iostream
+-
+algorithm
 -
 devices/serial/uart_serial.hpp
 /home/nuc/Desktop/Kinetic_2022/module/openvinoNanodet/devices/serial/uart_serial.hpp

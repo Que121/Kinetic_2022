@@ -234,6 +234,7 @@ namespace basic_armor
   }
 
   // openvino加速nanodet识别装甲板
+
   bool Detector::openvinoNanodet_runBasicArmor(const cv::Mat &_src_img, const uart::Receive_Data _receive_data, NanoDet &detector)
   {
     // 复制原图像
@@ -244,7 +245,9 @@ namespace basic_armor
     cv::Mat resized_img;
 
     // 归一化
-    resize_uniform(draw_img_, resized_img, cv::Size(detector.input_size[0], detector.input_size[1]), effect_roi);
+    resize_uniform(draw_img_, resized_img,
+                   cv::Size(detector.input_size[0], detector.input_size[1]),
+                   effect_roi);
 
     // 推理结果
     auto inference_results = detector.detect(resized_img, 0.4, 0.5);
@@ -254,8 +257,11 @@ namespace basic_armor
 
       lost_cnt_ = 10;
 
-      // 画框
-      finalArmor_draw_bboxes(_src_img, inference_results, effect_roi, _receive_data);
+      std::vector<BoxInfo> openvinoNanodetBboxes;
+
+      finalArmor_draw_bboxes(_src_img, inference_results,
+                             openvinoNanodetBboxes,
+                             effect_roi, _receive_data);
 
       return true;
     }
@@ -442,36 +448,36 @@ namespace basic_armor
   }
 
   // 最优装甲板排序(openvinoNanodet)
-  void Detector::openvinoNanodet_finalArmor(const uart::Receive_Data _receive_data)
-  {
-    armor_success = true; // 成功匹配到装甲板
-
-    if (openvinoNanodet_armor_.size() == 1) // 如果只有一块装甲板，打印输出only one armor
+  /*
+    void Detector::openvinoNanodet_finalArmor(const uart::Receive_Data _receive_data)
     {
-      fmt::print("[{}] Info, only one armor\n", idntifier_green);
+      armor_success = true; // 成功匹配到装甲板
+
+      if (openvinoNanodet_armor_.size() == 1) // 如果只有一块装甲板，打印输出only one armor
+      {
+        fmt::print("[{}] Info, only one armor\n", idntifier_green);
+      }
+
+      else
+      {
+        fmt::print("[{}] Info, multiple armors\n", idntifier_green);
+
+        // 离图像中心点大小排序从小到大
+        std::sort(openvinoNanodet_armor_.begin(), openvinoNanodet_armor_.end(),
+                  [](Armor_Data _a, Armor_Data _b)
+                  {
+                    return _a.distance_center < _b.distance_center;
+                  });
+
+        // 画框
+      }
+
+      if (armor_.size() < 1)
+      {
+        fmt::print("[{}] Info, armor not found\n", idntifier_green);
+      }
     }
-
-    else
-    {
-      fmt::print("[{}] Info, multiple armors\n", idntifier_green);
-
-      // 离图像中心点大小排序从小到大
-      std::sort(openvinoNanodet_armor_.begin(), openvinoNanodet_armor_.end(),
-                [](Armor_Data _a, Armor_Data _b)
-                {
-                  return _a.distance_center < _b.distance_center;
-                });
-
-      // 画框
-    }
-
-    if (armor_.size() < 1)
-    {
-      fmt::print("[{}] Info, armor not found\n", idntifier_green);
-    }
-  }
-
-  // 匹配装甲板（弃用）
+  */
 
   bool Detector::fittingArmor()
   {
@@ -503,6 +509,8 @@ namespace basic_armor
 
       cv::imshow(window_name, armor_trackbar_);
     }
+
+    /*======================================================================================================*/
 
     for (size_t i = 0; i != light_.size(); ++i)
     {
@@ -552,6 +560,8 @@ namespace basic_armor
       }
     }
 
+    /*======================================================================================================*/
+
     if (armor_.size() < 1)
     {
       fmt::print("[{}] Info, armor not found\n", idntifier_green);
@@ -560,6 +570,28 @@ namespace basic_armor
     }
 
     return true;
+  }
+
+  bool Detector::openvinoNanodet_fittingArmor(const cv::Mat &bgr, object_rect effect_roi, std::vector<BoxInfo> &openvinoNanodetBboxes)
+  {
+    cv::Mat image = bgr.clone();
+
+    int src_w = image.cols;
+    int src_h = image.rows;
+
+    int dst_w = effect_roi.width;
+    int dst_h = effect_roi.height;
+
+    float width_ratio = (float)src_w / (float)dst_w;
+    float height_ratio = (float)src_h / (float)dst_h;
+
+    for (size_t i = 0; i < openvinoNanodetBboxes.size(); i++)
+    {
+        }
+  }
+
+  bool Detector::openvinoNanodet_SortArmor()
+  {
   }
 
   // 灯条拟合装甲板 （弃用）

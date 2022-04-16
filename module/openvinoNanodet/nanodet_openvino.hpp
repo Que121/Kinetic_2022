@@ -5,7 +5,13 @@
 #include <opencv2/core.hpp>
 #include <inference_engine.hpp>
 #include <opencv2/opencv.hpp>
+#include <vector>
+#include <iostream>
+#include <algorithm>
 #include "devices/serial/uart_serial.hpp"
+#include "module/armor/basic_armor.hpp"
+
+using namespace std;
 
 typedef struct HeadInfo
 {
@@ -157,17 +163,5 @@ static const char *class_names[] = {"0", "1", "2", "3", "4", "5",
                                     "6", "7", "8", "8", "9",
                                     "10", "11", "12", "13"};
 
-/**
- * @brief 确定装甲板并且画框
- *
- * @param bgr 源图像
- * @param bboxes 装甲板容器
- * @param effect_roi roi区域
- * @param _receive_data 接受的串口数据
- */
-void finalArmor_draw_bboxes(const cv::Mat &bgr,
-                            const std::vector<BoxInfo> &bboxes,
-                            object_rect effect_roi,
-                            const uart::Receive_Data _receive_data);
 
 #endif //_NANODE_TOPENVINO_H_

@@ -133,9 +133,9 @@ utils/clean: utils/CMakeFiles/utils.dir/clean
 # Target rules for target CMakeFiles/Kinetic_2022.dir
 
 # All Build rule for target.
-CMakeFiles/Kinetic_2022.dir/all: devices/CMakeFiles/devices.dir/all
 CMakeFiles/Kinetic_2022.dir/all: utils/CMakeFiles/utils.dir/all
 CMakeFiles/Kinetic_2022.dir/all: module/CMakeFiles/module.dir/all
+CMakeFiles/Kinetic_2022.dir/all: devices/CMakeFiles/devices.dir/all
 	$(MAKE) -f CMakeFiles/Kinetic_2022.dir/build.make CMakeFiles/Kinetic_2022.dir/depend
 	$(MAKE) -f CMakeFiles/Kinetic_2022.dir/build.make CMakeFiles/Kinetic_2022.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nuc/Desktop/Kinetic_2022/build/CMakeFiles --progress-num=1,2 "Built target Kinetic_2022"

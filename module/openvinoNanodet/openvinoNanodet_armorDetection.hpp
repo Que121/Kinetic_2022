@@ -15,7 +15,7 @@
  * @param detector
  * @param image
  */
-void openvinoNanodet_armorDetection(NanoDet &detector, cv::Mat image);
+// void openvinoNanodet_armorDetection(NanoDet &detector, cv::Mat image);
 
 /**
  * @brief 归一化
@@ -27,3 +27,18 @@ void openvinoNanodet_armorDetection(NanoDet &detector, cv::Mat image);
  * @return int
  */
 int resize_uniform(cv::Mat &src, cv::Mat &dst, cv::Size dst_size, object_rect &effect_area);
+
+/**
+ * @brief 确定装甲板并且画框
+ *
+ * @param bgr 源图像
+ * @param bboxes 装甲板
+ * @param openvinoNanodetBboxes 
+ * @param effect_roi roi区域
+ * @param _receive_data 接受的串口数据
+ */
+void finalArmor_draw_bboxes(const cv::Mat &bgr,
+                            const std::vector<BoxInfo> &bboxes,
+                            std::vector<BoxInfo> &openvinoNanodetBboxes,
+                            object_rect effect_roi,
+                            const uart::Receive_Data _receive_data);

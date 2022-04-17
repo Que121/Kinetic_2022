@@ -121,6 +121,7 @@ void finalArmor_draw_bboxes(const cv::Mat &bgr,
 
   float width_ratio = (float)src_w / (float)dst_w;
   float height_ratio = (float)src_h / (float)dst_h;
+  float x1, y1, x2, y2;
 
   // 遍历过滤器后推理结果
   for (size_t i = 0; i < bboxesFiltered.size(); i++)
@@ -136,12 +137,17 @@ void finalArmor_draw_bboxes(const cv::Mat &bgr,
     // fprintf(stderr, "%d = %.5f at %.2f %.2f %.2f %.2f\n", bbox.label, bbox.score,
     //     bbox.x1, bbox.y1, bbox.x2, bbox.y2);
 
+    // 左上角坐标
+    x1 = (bbox.x1 - effect_roi.x) * width_ratio;
+    y1 = (bbox.y1 - effect_roi.y) * height_ratio;
+
+    // 右上角坐标
+    x2 = (bbox.x2 - effect_roi.x) * width_ratio;
+    y2 = (bbox.y2 - effect_roi.y) * height_ratio;
     // 画出过滤后装甲板
     cv::rectangle(image,
-                  cv::Rect(cv::Point((bbox.x1 - effect_roi.x) * width_ratio,
-                                     (bbox.y1 - effect_roi.y) * height_ratio),
-                           cv::Point((bbox.x2 - effect_roi.x) * width_ratio,
-                                     (bbox.y2 - effect_roi.y) * height_ratio)),
+                  cv::Rect(cv::Point(x1, y1),
+                           cv::Point(x2, y2)),
                   color);
 
     /*========================================= Prints labels and probabilities ===========================================*/
